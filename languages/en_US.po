@@ -1,0 +1,464 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Text in function
+#: index.php:1
+msgid "Add New"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "Add New Category"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "Add New Client"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "Add New Gallery"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "Add New Gallery Category"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "Add New Portfolio"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "Add New Position"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "Add New Skill"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "Add New Slider Group"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "Add New Staff"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "Add New Testimonial"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "Categories"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "Category"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "Client"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "Clients"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "Edit Category"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "Edit Client"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "Edit Gallery"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "Edit Gallery Category"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "Edit Portfolio"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "Edit Position"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "Edit Skill"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "Edit Slider Group"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "Edit Staff"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "Edit Testimonial"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "Galleries"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "Gallery"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "Gallery Categories"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "Gallery Category"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "Group"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "New Category"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "New Client"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "New Gallery"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "New Gallery Category"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "New Portfolio"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "New Position"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "New Skill"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "New Slider Group"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "New Staff"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "New Testimonial"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "No Categories found"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "No Categories found in Trash"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "No Clients found"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "No Clients found in Trash"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "No Galleries found"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "No Galleries found in Trash"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "No Gallery Categories found"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "No Gallery Categories found in Trash"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "No Portfolios found"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "No Portfolios found in Trash"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "No Position found"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "No Position found in Trash"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "No Skills found"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "No Skills found in Trash"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "No Slide Groups found"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "No Slide Groups found in Trash"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "No Testimonials found"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "No Testimonials found in Trash"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "Nothing found"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "Nothing found in Trash"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "Portfolio"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "Portfolios"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "Position"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "Search Categories"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "Search Clients"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "Search GPosition"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "Search Gallery"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "Search Gallery Categories"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "Search In Staff"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "Search Portfolios"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "Search Skills"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "Search Slider Groups"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "Search Testimonials"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "Skill"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "Skills"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "Slider Groups"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "Staff"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "Testimonial"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "Testimonials"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "View Category"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "View Client"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "View Gallery"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "View Gallery Category"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "View Portfolio"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "View Position"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "View Skill"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "View Slider Group"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "View Staff"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "View Testimonial"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "category"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "client"
+msgstr ""
+
+#. Text in function
+#: index.php:1
+msgid "skill"
+msgstr ""
