@@ -1,9 +1,9 @@
 <?php
 
 /*
- * Plugin Name: ThemeMakers Diplomat Features
+ * Plugin Name: ThemeMakers Engorgio Features
  * Plugin URI: http://webtemplatemasters.com
- * Description: Advanced Features for Diplomat Theme
+ * Description: Advanced Features for Engorgio Theme
  * Author: ThemeMakers
  * Version: 1.0.0
  * Author URI: http://themeforest.net/user/ThemeMakers
