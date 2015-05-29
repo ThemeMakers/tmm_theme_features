@@ -5,7 +5,7 @@
  * Plugin URI: http://webtemplatemasters.com
  * Description: Advanced Features for Diplomat Theme
  * Author: ThemeMakers
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author URI: http://themeforest.net/user/ThemeMakers
  * Text Domain: tmm_theme_features
 */
@@ -100,12 +100,12 @@ class TMM_Theme_Features {
 		}
 
 		/*
-		 * Register Position Taxonomy and Staff Post Type
+		 * Register Position Taxonomy and Team (staff) Post Type
 		 */
 
 		if (class_exists('TMM_Staff')) {
 
-			$cpt_name = isset(TMM_Staff::$slug) ? TMM_Staff::$slug : 'staff-page';
+			$cpt_name = isset(TMM_Staff::$slug) ? TMM_Staff::$slug : 'team-page';
 
 			register_taxonomy("position", array($cpt_name), array(
 				"hierarchical" => true,
@@ -129,14 +129,14 @@ class TMM_Theme_Features {
 
 			register_post_type($cpt_name, array(
 				'labels' => array(
-					'name' => __('Staff', self::$slug),
-					'singular_name' => __('Staff', self::$slug),
+					'name' => __('Team', self::$slug),
+					'singular_name' => __('Team', self::$slug),
 					'add_new' => __('Add New', self::$slug),
-					'add_new_item' => __('Add New Staff', self::$slug),
-					'edit_item' => __('Edit Staff', self::$slug),
-					'new_item' => __('New Staff', self::$slug),
-					'view_item' => __('View Staff', self::$slug),
-					'search_items' => __('Search In Staff', self::$slug),
+					'add_new_item' => __('Add New Team Member', self::$slug),
+					'edit_item' => __('Edit Team Member', self::$slug),
+					'new_item' => __('New Team Member', self::$slug),
+					'view_item' => __('View Team Member', self::$slug),
+					'search_items' => __('Search In Team', self::$slug),
 					'not_found' => __('Nothing found', self::$slug),
 					'not_found_in_trash' => __('Nothing found in Trash', self::$slug),
 					'parent_item_colon' => ''
