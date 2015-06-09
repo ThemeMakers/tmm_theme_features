@@ -325,6 +325,8 @@ class TMM_Theme_Features {
 					'not_found_in_trash' => __('No Clients found in Trash', self::$slug),
 					'parent_item_colon' => ''
 				),
+				"show_tagcloud" => true,
+				'query_var' => true,
 				"rewrite" => true,
 				'show_in_nav_menus' => false,
 				'capabilities' => array('manage_terms'),
