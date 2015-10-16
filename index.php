@@ -415,7 +415,7 @@ class TMM_Theme_Features {
 
 	}
 
-	public function flush_rewrite_rules() {
+	public static function flush_rewrite_rules() {
 
 		self::get_instance();
 		flush_rewrite_rules();
