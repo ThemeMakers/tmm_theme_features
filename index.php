@@ -158,7 +158,7 @@ class TMM_Theme_Features {
 
 	}
 
-	public function flush_rewrite_rules() {
+	public static function flush_rewrite_rules() {
 
 		self::get_instance();
 		flush_rewrite_rules();
@@ -186,5 +186,3 @@ class TMM_Theme_Features {
 add_action( 'init', array('TMM_Theme_Features', 'get_instance') );
 
 register_activation_hook( __FILE__, array('TMM_Theme_Features', 'flush_rewrite_rules') );
-
-?>
