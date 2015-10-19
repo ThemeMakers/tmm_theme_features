@@ -175,7 +175,7 @@ class TMM_Theme_Features {
 		return self::$instance;
 	}
 	
-	public function load_plugin_textdomain() {
+	public static function load_plugin_textdomain() {
 
 		load_plugin_textdomain( 'tmm_theme_features', false, plugin_basename( dirname( __FILE__ ) ) . '/languages' );
 	}
