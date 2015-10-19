@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ThemeMakers Cardealer Features\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-13 22:58+0200\n"
-"PO-Revision-Date: 2019-06-13 22:59+0200\n"
+"POT-Creation-Date: 2023-12-08 00:16+0100\n"
+"PO-Revision-Date: 2023-12-08 00:16+0100\n"
 "Last-Translator: ThemeMakers <support@webtemplatemasters.com>\n"
 "Language-Team: Turkish\n"
 "Language: tr_TR\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Poedit 2.2.3\n"
+"X-Generator: Poedit 3.2\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-WPHeader: index.php\n"
 "X-Poedit-SourceCharset: UTF-8\n"
@@ -21,153 +21,77 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: index.php:28
-msgid "Slider Groups"
+#: index.php:51
+#, fuzzy
+#| msgid "Slider Groups"
+msgid "Slider Group"
 msgstr "Slayt Grubu"
 
-#: index.php:29
-msgid "Group"
-msgstr "Grup"
-
-#: index.php:30 index.php:67 index.php:103 index.php:128
-msgid "Add New"
-msgstr "Yeni Ekle"
-
-#: index.php:31
-msgid "Add New Slider Group"
-msgstr "Yeni Slayt Grubu Ekle"
-
-#: index.php:32
-msgid "Edit Slider Group"
-msgstr "Slayt Grubunu Düzenle"
-
-#: index.php:33
-msgid "New Slider Group"
-msgstr "Yeni Slayt Grubu"
-
-#: index.php:34
-msgid "View Slider Group"
-msgstr "Slayt Grubunu Görüntüle"
-
-#: index.php:35
-msgid "Search Slider Groups"
-msgstr "Slayt Grubunu Ara"
-
-#: index.php:36
-msgid "No Slide Groups found"
-msgstr "Hiç Bir Slayt Grubu Bulunamadı"
-
-#: index.php:37
-msgid "No Slide Groups found in Trash"
-msgstr "Çöp Kutusunda Hiç Bir Slayt Grubu Bulunamadı"
-
-#: index.php:65 index.php:66
+#: index.php:52
 msgid "Staff"
 msgstr "Çalışan"
 
-#: index.php:68
-msgid "Add New Staff"
-msgstr "Yeni Çalışan Ekle"
-
-#: index.php:69
-msgid "Edit Staff"
-msgstr "Çalışanı Düzenle"
-
-#: index.php:70
-msgid "New Staff"
-msgstr "Yeni Çalışan"
-
-#: index.php:71
-msgid "View Staff"
-msgstr "Çalışanı Görüntüle"
-
-#: index.php:72
-msgid "Search In Staff"
-msgstr "Çalışanlarda Ara"
-
-#: index.php:73
-msgid "Nothing found"
-msgstr "Hiçbir şey bulunamadı"
-
-#: index.php:74
-msgid "Nothing found in Trash"
-msgstr "Çöp Kutusunda Hiçbir şey bulunamadı"
-
-#: index.php:101
-msgid "Producers"
-msgstr "Üreticiler"
-
-#: index.php:102
-msgid "Producer"
-msgstr "Üretici"
-
-#: index.php:104
-msgid "Add New Cars Producer"
-msgstr "Yeni Araç Üreticisi Ekle"
-
-#: index.php:105
-msgid "Edit Cars Producer"
-msgstr "Araç Üreticilerini Düzenle"
-
-#: index.php:106
-msgid "New Cars Producer"
-msgstr "Yeni Araç Üreticisi"
-
-#: index.php:107
-msgid "View Cars Producer"
-msgstr "Araç Üreticilerini Görüntüle"
-
-#: index.php:108
-msgid "Search Cars Producer"
-msgstr "İlan Markası Ara"
-
-#: index.php:109
-msgid "No Cars Producers found"
-msgstr "İlan Markası Bulunamadı"
-
-#: index.php:110
-msgid "No Cars Producers found in Trash"
-msgstr "Çöp kutusunda Marka bulunmadı"
-
-#: index.php:113
-msgid "carproducer"
-msgstr "araç üreticisi"
-
-#: index.php:126
+#: index.php:53
 msgid "Cars"
 msgstr "Araçlar"
 
-#: index.php:127
-msgid "Car"
-msgstr "Araç"
+#: index.php:61
+msgid "Add New"
+msgstr "Yeni Ekle"
 
-#: index.php:129
-msgid "Add New Car"
-msgstr "Yeni Araç Ekle"
+#: index.php:62 index.php:111
+#, fuzzy
+#| msgid "Add New"
+msgid "Add New "
+msgstr "Yeni Ekle"
 
-#: index.php:130
-msgid "Edit Car"
+#: index.php:63 index.php:109
+#, fuzzy
+#| msgid "Edit Car"
+msgid "Edit "
 msgstr "Araç Düzenle"
 
-#: index.php:131
-msgid "New Car"
+#: index.php:64 index.php:112
+#, fuzzy
+#| msgid "New Car"
+msgid "New "
 msgstr "Yeni Araç"
 
-#: index.php:132
-msgid "View Car"
+#: index.php:65 index.php:106
+msgid "All "
+msgstr ""
+
+#: index.php:66
+#, fuzzy
+#| msgid "View Car"
+msgid "View "
 msgstr "Araç Görüntüle"
 
-#: index.php:133
-msgid "Search Cars"
+#: index.php:67 index.php:105
+#, fuzzy
+#| msgid "Search Cars"
+msgid "Search "
 msgstr "Araç Araştır"
 
-#: index.php:134
-msgid "No Cars found"
-msgstr "İlan Bulunamadı"
+#: index.php:68 index.php:69
+msgid "No "
+msgstr ""
 
-#: index.php:135
-msgid "No Cars found in Trash"
-msgstr "Çöpte İlan Bulunamadı"
+#: index.php:97
+msgid "Producers"
+msgstr "Üreticiler"
+
+#: index.php:97
+msgid "Producer"
+msgstr "Üretici"
+
+#: index.php:107 index.php:108
+msgid "Parent "
+msgstr ""
+
+#: index.php:110
+msgid "Update "
+msgstr ""
 
 #. Plugin Name of the plugin/theme
 msgid "ThemeMakers Cardealer Features"
@@ -188,3 +112,84 @@ msgstr "ThemeMakers"
 #. Author URI of the plugin/theme
 msgid "http://themeforest.net/user/ThemeMakers"
 msgstr "http://themeforest.net/user/ThemeMakers"
+
+#~ msgid "Group"
+#~ msgstr "Grup"
+
+#~ msgid "Add New Slider Group"
+#~ msgstr "Yeni Slayt Grubu Ekle"
+
+#~ msgid "Edit Slider Group"
+#~ msgstr "Slayt Grubunu Düzenle"
+
+#~ msgid "New Slider Group"
+#~ msgstr "Yeni Slayt Grubu"
+
+#~ msgid "View Slider Group"
+#~ msgstr "Slayt Grubunu Görüntüle"
+
+#~ msgid "Search Slider Groups"
+#~ msgstr "Slayt Grubunu Ara"
+
+#~ msgid "No Slide Groups found"
+#~ msgstr "Hiç Bir Slayt Grubu Bulunamadı"
+
+#~ msgid "No Slide Groups found in Trash"
+#~ msgstr "Çöp Kutusunda Hiç Bir Slayt Grubu Bulunamadı"
+
+#~ msgid "Add New Staff"
+#~ msgstr "Yeni Çalışan Ekle"
+
+#~ msgid "Edit Staff"
+#~ msgstr "Çalışanı Düzenle"
+
+#~ msgid "New Staff"
+#~ msgstr "Yeni Çalışan"
+
+#~ msgid "View Staff"
+#~ msgstr "Çalışanı Görüntüle"
+
+#~ msgid "Search In Staff"
+#~ msgstr "Çalışanlarda Ara"
+
+#~ msgid "Nothing found"
+#~ msgstr "Hiçbir şey bulunamadı"
+
+#~ msgid "Nothing found in Trash"
+#~ msgstr "Çöp Kutusunda Hiçbir şey bulunamadı"
+
+#~ msgid "Add New Cars Producer"
+#~ msgstr "Yeni Araç Üreticisi Ekle"
+
+#~ msgid "Edit Cars Producer"
+#~ msgstr "Araç Üreticilerini Düzenle"
+
+#~ msgid "New Cars Producer"
+#~ msgstr "Yeni Araç Üreticisi"
+
+#~ msgid "View Cars Producer"
+#~ msgstr "Araç Üreticilerini Görüntüle"
+
+#~ msgid "Search Cars Producer"
+#~ msgstr "İlan Markası Ara"
+
+#~ msgid "No Cars Producers found"
+#~ msgstr "İlan Markası Bulunamadı"
+
+#~ msgid "No Cars Producers found in Trash"
+#~ msgstr "Çöp kutusunda Marka bulunmadı"
+
+#~ msgid "carproducer"
+#~ msgstr "araç üreticisi"
+
+#~ msgid "Car"
+#~ msgstr "Araç"
+
+#~ msgid "Add New Car"
+#~ msgstr "Yeni Araç Ekle"
+
+#~ msgid "No Cars found"
+#~ msgstr "İlan Bulunamadı"
+
+#~ msgid "No Cars found in Trash"
+#~ msgstr "Çöpte İlan Bulunamadı"

@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ThemeMakers Cardealer Features\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-13 20:19+0200\n"
-"PO-Revision-Date: 2019-06-13 20:21+0200\n"
+"POT-Creation-Date: 2023-12-08 00:39+0100\n"
+"PO-Revision-Date: 2023-12-08 00:40+0100\n"
 "Last-Translator: ThemeMakers <support@webtemplatemasters.com>\n"
 "Language-Team: Czech\n"
 "Language: cs_CZ\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=( n == 1 ) ? 0 : ( n >= 2 && n <= 4 ) ? 1 : "
 "2;\n"
-"X-Generator: Poedit 2.2.3\n"
+"X-Generator: Poedit 3.2\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-WPHeader: index.php\n"
 "X-Poedit-SourceCharset: UTF-8\n"
@@ -22,153 +22,67 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: index.php:28
-msgid "Slider Groups"
+#: index.php:51
+#, fuzzy
+#| msgid "Slider Groups"
+msgid "Slider Group"
 msgstr "Slider skupiny"
 
-#: index.php:29
-msgid "Group"
-msgstr "Skupina"
-
-#: index.php:30 index.php:67 index.php:103 index.php:128
-msgid "Add New"
-msgstr "Přidání nového"
-
-#: index.php:31
-msgid "Add New Slider Group"
-msgstr "Přidání nové slider skupiny"
-
-#: index.php:32
-msgid "Edit Slider Group"
-msgstr "Edit slider group"
-
-#: index.php:33
-msgid "New Slider Group"
-msgstr "Nová skupina jezdců"
-
-#: index.php:34
-msgid "View Slider Group"
-msgstr "Zobrazit skupinu jezdců"
-
-#: index.php:35
-msgid "Search Slider Groups"
-msgstr "Skupiny jezdců vyhledávání"
-
-#: index.php:36
-msgid "No Slide Groups found"
-msgstr "Nebyly nalezeny žádné skupiny snímků"
-
-#: index.php:37
-msgid "No Slide Groups found in Trash"
-msgstr ""
-
-#: index.php:65 index.php:66
+#: index.php:52
 msgid "Staff"
 msgstr "Staff"
 
-#: index.php:68
-msgid "Add New Staff"
-msgstr "Přidání nového zaměstnance"
-
-#: index.php:69
-msgid "Edit Staff"
-msgstr "Upravit zaměstnance"
-
-#: index.php:70
-msgid "New Staff"
-msgstr "Nový personál"
-
-#: index.php:71
-msgid "View Staff"
-msgstr "Zobrazit zaměstnance"
-
-#: index.php:72
-msgid "Search In Staff"
-msgstr "Hledat v zaměstnancích"
-
-#: index.php:73
-msgid "Nothing found"
-msgstr "Nic nebylo nalezeno"
-
-#: index.php:74
-msgid "Nothing found in Trash"
-msgstr "Nic jsme v koši nenašli"
-
-#: index.php:101
-msgid "Producers"
-msgstr ""
-
-#: index.php:102
-msgid "Producer"
-msgstr "Výrobce"
-
-#: index.php:104
-msgid "Add New Cars Producer"
-msgstr "Přidat nové výrobce automobilů"
-
-#: index.php:105
-msgid "Edit Cars Producer"
-msgstr "Upravit výrobce automobilů"
-
-#: index.php:106
-msgid "New Cars Producer"
-msgstr "Nový výrobce automobilů"
-
-#: index.php:107
-msgid "View Cars Producer"
-msgstr "Zobrazit výrobce automobilů"
-
-#: index.php:108
-msgid "Search Cars Producer"
-msgstr "Vyhledat výrobce automobilů"
-
-#: index.php:109
-msgid "No Cars Producers found"
-msgstr "Výrobci automobilů nenalezli"
-
-#: index.php:110
-msgid "No Cars Producers found in Trash"
-msgstr ""
-
-#: index.php:113
-msgid "carproducer"
-msgstr ""
-
-#: index.php:126
+#: index.php:53
 msgid "Cars"
 msgstr "Vozidla"
 
-#: index.php:127
-msgid "Car"
-msgstr "Auto"
+#: index.php:61
+msgid "Add New"
+msgstr "Přidání nového"
 
-#: index.php:129
-msgid "Add New Car"
-msgstr "Přidat auto"
+#: index.php:62 index.php:111
+msgid "Add New "
+msgstr "Přidat nový "
 
-#: index.php:130
-msgid "Edit Car"
-msgstr "Upravit auto"
+#: index.php:63 index.php:109
+msgid "Edit "
+msgstr "Upravit "
 
-#: index.php:131
-msgid "New Car"
-msgstr "Nové auto"
+#: index.php:64 index.php:112
+msgid "New "
+msgstr "Nový "
 
-#: index.php:132
-msgid "View Car"
-msgstr "Zobrazit auto"
+#: index.php:65 index.php:106
+msgid "All "
+msgstr "Vše "
 
-#: index.php:133
-msgid "Search Cars"
-msgstr "Prohledat vozy"
+#: index.php:66
+msgid "View "
+msgstr "Zobrazit "
 
-#: index.php:134
-msgid "No Cars found"
-msgstr "Žádná auta nebyla nalezena"
+#: index.php:67 index.php:105
+msgid "Search "
+msgstr "Hledat "
 
-#: index.php:135
-msgid "No Cars found in Trash"
-msgstr "V koši nebyly nalezeny žádné vozy"
+#: index.php:68 index.php:69
+msgid "No "
+msgstr "Ne "
+
+#: index.php:97
+msgid "Producers"
+msgstr "Výrobci"
+
+#: index.php:97
+msgid "Producer"
+msgstr "Výrobce"
+
+#: index.php:107 index.php:108
+msgid "Parent "
+msgstr "Nadřazený "
+
+#: index.php:110
+msgid "Update "
+msgstr "Aktualizovat "
 
 #. Plugin Name of the plugin/theme
 msgid "ThemeMakers Cardealer Features"
@@ -189,3 +103,75 @@ msgstr "ThemeMakers"
 #. Author URI of the plugin/theme
 msgid "http://themeforest.net/user/ThemeMakers"
 msgstr "http://themeforest.net/user/ThemeMakers"
+
+#~ msgid "Group"
+#~ msgstr "Skupina"
+
+#~ msgid "Add New Slider Group"
+#~ msgstr "Přidání nové slider skupiny"
+
+#~ msgid "Edit Slider Group"
+#~ msgstr "Edit slider group"
+
+#~ msgid "New Slider Group"
+#~ msgstr "Nová skupina jezdců"
+
+#~ msgid "View Slider Group"
+#~ msgstr "Zobrazit skupinu jezdců"
+
+#~ msgid "Search Slider Groups"
+#~ msgstr "Skupiny jezdců vyhledávání"
+
+#~ msgid "No Slide Groups found"
+#~ msgstr "Nebyly nalezeny žádné skupiny snímků"
+
+#~ msgid "Add New Staff"
+#~ msgstr "Přidání nového zaměstnance"
+
+#~ msgid "Edit Staff"
+#~ msgstr "Upravit zaměstnance"
+
+#~ msgid "New Staff"
+#~ msgstr "Nový personál"
+
+#~ msgid "View Staff"
+#~ msgstr "Zobrazit zaměstnance"
+
+#~ msgid "Search In Staff"
+#~ msgstr "Hledat v zaměstnancích"
+
+#~ msgid "Nothing found"
+#~ msgstr "Nic nebylo nalezeno"
+
+#~ msgid "Nothing found in Trash"
+#~ msgstr "Nic jsme v koši nenašli"
+
+#~ msgid "Add New Cars Producer"
+#~ msgstr "Přidat nové výrobce automobilů"
+
+#~ msgid "Edit Cars Producer"
+#~ msgstr "Upravit výrobce automobilů"
+
+#~ msgid "New Cars Producer"
+#~ msgstr "Nový výrobce automobilů"
+
+#~ msgid "View Cars Producer"
+#~ msgstr "Zobrazit výrobce automobilů"
+
+#~ msgid "Search Cars Producer"
+#~ msgstr "Vyhledat výrobce automobilů"
+
+#~ msgid "No Cars Producers found"
+#~ msgstr "Výrobci automobilů nenalezli"
+
+#~ msgid "Car"
+#~ msgstr "Auto"
+
+#~ msgid "Add New Car"
+#~ msgstr "Přidat auto"
+
+#~ msgid "No Cars found"
+#~ msgstr "Žádná auta nebyla nalezena"
+
+#~ msgid "No Cars found in Trash"
+#~ msgstr "V koši nebyly nalezeny žádné vozy"

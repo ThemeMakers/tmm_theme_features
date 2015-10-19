@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ThemeMakers Cardealer Features\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-13 20:17+0200\n"
-"PO-Revision-Date: 2019-06-13 20:19+0200\n"
+"POT-Creation-Date: 2023-12-08 00:23+0100\n"
+"PO-Revision-Date: 2023-12-08 00:33+0100\n"
 "Last-Translator: ThemeMakers <support@webtemplatemasters.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Poedit 2.2.3\n"
+"X-Generator: Poedit 3.2\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-WPHeader: index.php\n"
 "X-Poedit-SourceCharset: UTF-8\n"
@@ -21,182 +21,69 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: index.php:28
-msgid "Slider Groups"
-msgstr "Slider Groupes"
+#: index.php:51
+msgid "Slider Group"
+msgstr "groupe de curseurs"
 
-#: index.php:29
-msgid "Group"
-msgstr "Ajouter un groupe SEO"
-
-#: index.php:30 index.php:67 index.php:103 index.php:128
-msgid "Add New"
-msgstr "Ajoute un nouvel élément"
-
-#: index.php:31
-msgid "Add New Slider Group"
-msgstr "Ajouter Groupe"
-
-#: index.php:32
-msgid "Edit Slider Group"
-msgstr "Editer Slider Groupe"
-
-#: index.php:33
-msgid "New Slider Group"
-msgstr "Nouveau Slider Groupe"
-
-#: index.php:34
-msgid "View Slider Group"
-msgstr "Voir Slider Group"
-
-#: index.php:35
-msgid "Search Slider Groups"
-msgstr "Recherche Slider Groups"
-
-#: index.php:36
-msgid "No Slide Groups found"
-msgstr "Pas de groupe slide trouvés"
-
-#: index.php:37
-msgid "No Slide Groups found in Trash"
-msgstr ""
-
-#: index.php:65 index.php:66
-#, fuzzy
+#: index.php:52
 msgid "Staff"
-msgstr "Attributs du personnel\n"
+msgstr "Équipe"
 
-#: index.php:68
-#, fuzzy
-msgid "Add New Staff"
-msgstr "Ajouter un nouveau formulaire"
-
-#: index.php:69
-#, fuzzy
-msgid "Edit Staff"
-msgstr "Attributs du personnel"
-
-#: index.php:70
-#, fuzzy
-msgid "New Staff"
-msgstr "Attributs du personnel"
-
-#: index.php:71
-#, fuzzy
-msgid "View Staff"
-msgstr "Attributs du personnel"
-
-#: index.php:72
-#, fuzzy
-msgid "Search In Staff"
-msgstr "Attributs du personnel"
-
-#: index.php:73
-#, fuzzy
-msgid "Nothing found"
-msgstr "Rien n'a été trouvé"
-
-#: index.php:74
-#, fuzzy
-msgid "Nothing found in Trash"
-msgstr "Rien n'a été trouvé"
-
-#: index.php:101
-#, fuzzy
-msgid "Producers"
-msgstr "Producteurs et modèles"
-
-#: index.php:102
-#, fuzzy
-msgid "Producer"
-msgstr "Producteur de voitures"
-
-#: index.php:104
-#, fuzzy
-msgid "Add New Cars Producer"
-msgstr "Ajouter un nouveau formulaire"
-
-#: index.php:105
-#, fuzzy
-msgid "Edit Cars Producer"
-msgstr "Producteur de voitures"
-
-#: index.php:106
-#, fuzzy
-msgid "New Cars Producer"
-msgstr "Producteur de voitures"
-
-#: index.php:107
-#, fuzzy
-msgid "View Cars Producer"
-msgstr "Producteur de voitures"
-
-#: index.php:108
-#, fuzzy
-msgid "Search Cars Producer"
-msgstr "Rechercher"
-
-#: index.php:109
-#, fuzzy
-msgid "No Cars Producers found"
-msgstr "Page de taxonomie des constructeurs automobiles"
-
-#: index.php:110
-msgid "No Cars Producers found in Trash"
-msgstr ""
-
-#: index.php:113
-msgid "carproducer"
-msgstr ""
-
-#: index.php:126
+#: index.php:53
 msgid "Cars"
 msgstr "Voitures"
 
-#: index.php:127
-#, fuzzy
-msgid "Car"
-msgstr "VIN"
+#: index.php:61
+msgid "Add New"
+msgstr "Ajoute un nouvel élément"
 
-#: index.php:129
-#, fuzzy
-msgid "Add New Car"
-msgstr "Ajouter une nouvelle voiture"
+#: index.php:62 index.php:111
+msgid "Add New "
+msgstr "Ajoute un nouvel élément "
 
-#: index.php:130
-#, fuzzy
-msgid "Edit Car"
-msgstr "Modifier la voiture "
+#: index.php:63 index.php:109
+msgid "Edit "
+msgstr "Rédiger"
 
-#: index.php:131
-#, fuzzy
-msgid "New Car"
-msgstr "Ajouter le lien de la nouvelle page de voiture"
+#: index.php:64 index.php:112
+msgid "New "
+msgstr "Nouveau "
 
-#: index.php:132
-#, fuzzy
-msgid "View Car"
-msgstr "Voir la voiture"
+#: index.php:65 index.php:106
+msgid "All "
+msgstr "Tout "
 
-#: index.php:133
-#, fuzzy
-msgid "Search Cars"
-msgstr "Rechercher"
+#: index.php:66
+msgid "View "
+msgstr "Voir "
 
-#: index.php:134
-#, fuzzy
-msgid "No Cars found"
-msgstr "Rien n'a été trouvé"
+#: index.php:67 index.php:105
+msgid "Search "
+msgstr "Recherche"
 
-#: index.php:135
-#, fuzzy
-msgid "No Cars found in Trash"
-msgstr "Page introuvable"
+#: index.php:68 index.php:69
+msgid "No "
+msgstr "Non"
+
+#: index.php:97
+msgid "Producers"
+msgstr "Fabricant"
+
+#: index.php:97
+msgid "Producer"
+msgstr "Producteur"
+
+#: index.php:107 index.php:108
+msgid "Parent "
+msgstr "Parent "
+
+#: index.php:110
+msgid "Update "
+msgstr "Mettre à jour "
 
 #. Plugin Name of the plugin/theme
-#, fuzzy
 msgid "ThemeMakers Cardealer Features"
-msgstr "Auteur du plugin/thème"
+msgstr "ThemeMakers Cardealer Features"
 
 #. Plugin URI of the plugin/theme
 #, fuzzy
@@ -205,7 +92,7 @@ msgstr "http://www.youtube.com, http://vimeo.com"
 
 #. Description of the plugin/theme
 msgid "Advanced Features for Cardealer Theme"
-msgstr ""
+msgstr "Advanced Features for Cardealer Theme"
 
 #. Author of the plugin/theme
 msgid "ThemeMakers"
@@ -214,3 +101,92 @@ msgstr "ThemeMakers"
 #. Author URI of the plugin/theme
 msgid "http://themeforest.net/user/ThemeMakers"
 msgstr "http://themeforest.net/user/ThemeMakers"
+
+#~ msgid "Group"
+#~ msgstr "Ajouter un groupe SEO"
+
+#~ msgid "Add New Slider Group"
+#~ msgstr "Ajouter Groupe"
+
+#~ msgid "Edit Slider Group"
+#~ msgstr "Editer Slider Groupe"
+
+#~ msgid "New Slider Group"
+#~ msgstr "Nouveau Slider Groupe"
+
+#~ msgid "View Slider Group"
+#~ msgstr "Voir Slider Group"
+
+#~ msgid "Search Slider Groups"
+#~ msgstr "Recherche Slider Groups"
+
+#~ msgid "No Slide Groups found"
+#~ msgstr "Pas de groupe slide trouvés"
+
+#, fuzzy
+#~ msgid "Add New Staff"
+#~ msgstr "Ajouter un nouveau formulaire"
+
+#, fuzzy
+#~ msgid "Edit Staff"
+#~ msgstr "Attributs du personnel"
+
+#, fuzzy
+#~ msgid "New Staff"
+#~ msgstr "Attributs du personnel"
+
+#, fuzzy
+#~ msgid "View Staff"
+#~ msgstr "Attributs du personnel"
+
+#, fuzzy
+#~ msgid "Search In Staff"
+#~ msgstr "Attributs du personnel"
+
+#, fuzzy
+#~ msgid "Nothing found"
+#~ msgstr "Rien n'a été trouvé"
+
+#, fuzzy
+#~ msgid "Nothing found in Trash"
+#~ msgstr "Rien n'a été trouvé"
+
+#, fuzzy
+#~ msgid "Add New Cars Producer"
+#~ msgstr "Ajouter un nouveau formulaire"
+
+#, fuzzy
+#~ msgid "Edit Cars Producer"
+#~ msgstr "Producteur de voitures"
+
+#, fuzzy
+#~ msgid "New Cars Producer"
+#~ msgstr "Producteur de voitures"
+
+#, fuzzy
+#~ msgid "View Cars Producer"
+#~ msgstr "Producteur de voitures"
+
+#, fuzzy
+#~ msgid "Search Cars Producer"
+#~ msgstr "Rechercher"
+
+#, fuzzy
+#~ msgid "No Cars Producers found"
+#~ msgstr "Page de taxonomie des constructeurs automobiles"
+
+#, fuzzy
+#~ msgid "Car"
+#~ msgstr "VIN"
+
+#, fuzzy
+#~ msgid "Add New Car"
+#~ msgstr "Ajouter une nouvelle voiture"
+
+#, fuzzy
+#~ msgid "No Cars found"
+#~ msgstr "Rien n'a été trouvé"
+
+#, fuzzy
+#~ msgid "No Cars found in Trash"
+#~ msgstr "Page introuvable"

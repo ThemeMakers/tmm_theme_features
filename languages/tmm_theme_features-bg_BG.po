@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ThemeMakers Cardealer Features\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-13 20:14+0200\n"
-"PO-Revision-Date: 2019-06-13 20:17+0200\n"
+"POT-Creation-Date: 2023-12-08 00:40+0100\n"
+"PO-Revision-Date: 2023-12-08 00:41+0100\n"
 "Last-Translator: ThemeMakers <support@webtemplatemasters.com>\n"
 "Language-Team: \n"
 "Language: bg_BG\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Poedit 2.2.3\n"
+"X-Generator: Poedit 3.2\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-WPHeader: index.php\n"
 "X-Poedit-SourceCharset: UTF-8\n"
@@ -22,157 +22,69 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: index.php:28
-msgid "Slider Groups"
-msgstr "Към списъка с групи"
-
-#: index.php:29
-msgid "Group"
-msgstr "Добави SEO Група"
-
-#: index.php:30 index.php:67 index.php:103 index.php:128
-msgid "Add New"
-msgstr "Добави нова кола"
-
-#: index.php:31
-msgid "Add New Slider Group"
-msgstr "Добави обява"
-
-#: index.php:32
-msgid "Edit Slider Group"
-msgstr "Добави SEO Група"
-
-#: index.php:33
-msgid "New Slider Group"
-msgstr "Нови коли"
-
-#: index.php:34
-msgid "View Slider Group"
+#: index.php:51
+msgid "Slider Group"
 msgstr "Още снимки"
 
-#: index.php:35
-msgid "Search Slider Groups"
-msgstr "Търсене"
-
-#: index.php:36
-msgid "No Slide Groups found"
-msgstr "SEO Групи"
-
-#: index.php:37
-msgid "No Slide Groups found in Trash"
-msgstr "Страницата не съществува"
-
-#: index.php:65 index.php:66
+#: index.php:52
 msgid "Staff"
 msgstr "Персонал"
 
-#: index.php:68
-msgid "Add New Staff"
-msgstr "Добави обява"
-
-#: index.php:69
-msgid "Edit Staff"
-msgstr "Снимки на колата"
-
-#: index.php:70
-msgid "New Staff"
-msgstr "Добави обява"
-
-#: index.php:71
-msgid "View Staff"
-msgstr "Решетка"
-
-#: index.php:72
-msgid "Search In Staff"
-msgstr "Резултати"
-
-#: index.php:73
-msgid "Nothing found"
-msgstr "Страницата не съществува"
-
-#: index.php:74
-msgid "Nothing found in Trash"
-msgstr "Страницата не съществува"
-
-#: index.php:101
-msgid "Producers"
-msgstr "Производители"
-
-#: index.php:102
-msgid "Producer"
-msgstr "Производител"
-
-#: index.php:104
-msgid "Add New Cars Producer"
-msgstr "Добави обява"
-
-#: index.php:105
-msgid "Edit Cars Producer"
-msgstr "Коли"
-
-#: index.php:106
-msgid "New Cars Producer"
-msgstr "Нови коли"
-
-#: index.php:107
-msgid "View Cars Producer"
-msgstr "Още снимки"
-
-#: index.php:108
-msgid "Search Cars Producer"
-msgstr "Резултати"
-
-#: index.php:109
-msgid "No Cars Producers found"
-msgstr "Страницата не съществува"
-
-#: index.php:110
-msgid "No Cars Producers found in Trash"
-msgstr "Няма Открити Автомобилни Производители в Кошчето"
-
-#: index.php:113
-msgid "carproducer"
-msgstr ""
-
-#: index.php:126
+#: index.php:53
 msgid "Cars"
 msgstr "Коли"
 
-#: index.php:127
-msgid "Car"
-msgstr "Мощност (к.с.)"
-
-#: index.php:129
-msgid "Add New Car"
+#: index.php:61
+msgid "Add New"
 msgstr "Добави нова кола"
 
-#: index.php:130
-msgid "Edit Car"
+#: index.php:62 index.php:111
+msgid "Add New "
+msgstr "Добави нова кола"
+
+#: index.php:63 index.php:109
+msgid "Edit "
 msgstr "Промени"
 
-#: index.php:131
-msgid "New Car"
-msgstr "Добави обява"
+#: index.php:64 index.php:112
+msgid "New "
+msgstr "Ново "
 
-#: index.php:132
-msgid "View Car"
-msgstr "Преглед"
+#: index.php:65 index.php:106
+msgid "All "
+msgstr "Всички "
 
-#: index.php:133
-msgid "Search Cars"
-msgstr "Търсене"
+#: index.php:66
+msgid "View "
+msgstr "Изглед "
 
-#: index.php:134
-msgid "No Cars found"
-msgstr "Страницата не съществува"
+#: index.php:67 index.php:105
+msgid "Search "
+msgstr "Търсене "
 
-#: index.php:135
-msgid "No Cars found in Trash"
-msgstr "Страницата не съществува"
+#: index.php:68 index.php:69
+msgid "No "
+msgstr "Не "
+
+#: index.php:97
+msgid "Producers"
+msgstr "Производители"
+
+#: index.php:97
+msgid "Producer"
+msgstr "Производител"
+
+#: index.php:107 index.php:108
+msgid "Parent "
+msgstr "Родител "
+
+#: index.php:110
+msgid "Update "
+msgstr "Обнови"
 
 #. Plugin Name of the plugin/theme
 msgid "ThemeMakers Cardealer Features"
-msgstr "Основна категория"
+msgstr ""
 
 #. Plugin URI of the plugin/theme
 msgid "http://webtemplatemasters.com"
@@ -189,3 +101,81 @@ msgstr "ThemeMakers"
 #. Author URI of the plugin/theme
 msgid "http://themeforest.net/user/ThemeMakers"
 msgstr ""
+
+#~ msgid "Group"
+#~ msgstr "Добави SEO Група"
+
+#~ msgid "Add New Slider Group"
+#~ msgstr "Добави обява"
+
+#~ msgid "Edit Slider Group"
+#~ msgstr "Добави SEO Група"
+
+#~ msgid "New Slider Group"
+#~ msgstr "Нови коли"
+
+#~ msgid "View Slider Group"
+#~ msgstr "Още снимки"
+
+#~ msgid "Search Slider Groups"
+#~ msgstr "Търсене"
+
+#~ msgid "No Slide Groups found"
+#~ msgstr "SEO Групи"
+
+#~ msgid "No Slide Groups found in Trash"
+#~ msgstr "Страницата не съществува"
+
+#~ msgid "Add New Staff"
+#~ msgstr "Добави обява"
+
+#~ msgid "Edit Staff"
+#~ msgstr "Снимки на колата"
+
+#~ msgid "New Staff"
+#~ msgstr "Добави обява"
+
+#~ msgid "View Staff"
+#~ msgstr "Решетка"
+
+#~ msgid "Search In Staff"
+#~ msgstr "Резултати"
+
+#~ msgid "Nothing found"
+#~ msgstr "Страницата не съществува"
+
+#~ msgid "Nothing found in Trash"
+#~ msgstr "Страницата не съществува"
+
+#~ msgid "Add New Cars Producer"
+#~ msgstr "Добави обява"
+
+#~ msgid "Edit Cars Producer"
+#~ msgstr "Коли"
+
+#~ msgid "New Cars Producer"
+#~ msgstr "Нови коли"
+
+#~ msgid "View Cars Producer"
+#~ msgstr "Още снимки"
+
+#~ msgid "Search Cars Producer"
+#~ msgstr "Резултати"
+
+#~ msgid "No Cars Producers found"
+#~ msgstr "Страницата не съществува"
+
+#~ msgid "No Cars Producers found in Trash"
+#~ msgstr "Няма Открити Автомобилни Производители в Кошчето"
+
+#~ msgid "Car"
+#~ msgstr "Мощност (к.с.)"
+
+#~ msgid "Add New Car"
+#~ msgstr "Добави нова кола"
+
+#~ msgid "No Cars found"
+#~ msgstr "Страницата не съществува"
+
+#~ msgid "No Cars found in Trash"
+#~ msgstr "Страницата не съществува"

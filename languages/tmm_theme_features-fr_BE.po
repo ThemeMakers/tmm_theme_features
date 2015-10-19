@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ThemeMakers Cardealer Features\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-13 22:52+0200\n"
-"PO-Revision-Date: 2019-06-13 22:54+0200\n"
+"POT-Creation-Date: 2023-12-08 00:35+0100\n"
+"PO-Revision-Date: 2023-12-08 00:36+0100\n"
 "Last-Translator: ThemeMakers <support@webtemplatemasters.com>\n"
 "Language-Team: French (Belgium)\n"
 "Language: fr_BE\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Poedit 2.2.3\n"
+"X-Generator: Poedit 3.2\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-WPHeader: index.php\n"
 "X-Poedit-SourceCharset: UTF-8\n"
@@ -21,153 +21,65 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: index.php:28
-msgid "Slider Groups"
-msgstr "Groupes de curseurs"
+#: index.php:51
+msgid "Slider Group"
+msgstr "groupe de curseurs"
 
-#: index.php:29
-msgid "Group"
-msgstr "Groupe"
-
-#: index.php:30 index.php:67 index.php:103 index.php:128
-msgid "Add New"
-msgstr "Ajouter"
-
-#: index.php:31
-msgid "Add New Slider Group"
-msgstr "Ajouter un nouveau groupe de curseurs"
-
-#: index.php:32
-msgid "Edit Slider Group"
-msgstr "Modifier le groupe de curseurs"
-
-#: index.php:33
-msgid "New Slider Group"
-msgstr "Nouveau groupe Slider"
-
-#: index.php:34
-msgid "View Slider Group"
-msgstr "Voir le groupe Slider"
-
-#: index.php:35
-msgid "Search Slider Groups"
-msgstr "Rechercher des groupes de curseurs"
-
-#: index.php:36
-msgid "No Slide Groups found"
-msgstr "Aucun groupe de diapositives trouvé"
-
-#: index.php:37
-msgid "No Slide Groups found in Trash"
-msgstr "Aucun groupe de diapositives trouvé dans la corbeille"
-
-#: index.php:65 index.php:66
+#: index.php:52
 msgid "Staff"
 msgstr "Personnel"
 
-#: index.php:68
-msgid "Add New Staff"
-msgstr "Ajouter un nouveau personnel"
-
-#: index.php:69
-msgid "Edit Staff"
-msgstr "Modifier le personnel"
-
-#: index.php:70
-msgid "New Staff"
-msgstr "Nouveau personnel"
-
-#: index.php:71
-msgid "View Staff"
-msgstr "Voir Membre"
-
-#: index.php:72
-msgid "Search In Staff"
-msgstr "Recherche dans le personnel"
-
-#: index.php:73
-msgid "Nothing found"
-msgstr "Rien n'a été trouvé"
-
-#: index.php:74
-msgid "Nothing found in Trash"
-msgstr "Rien trouvé dans Trash"
-
-#: index.php:101
-msgid "Producers"
-msgstr "Producteurs"
-
-#: index.php:102
-msgid "Producer"
-msgstr "Producteur de voitures"
-
-#: index.php:104
-msgid "Add New Cars Producer"
-msgstr "Ajouter un nouveau producteur de voitures"
-
-#: index.php:105
-msgid "Edit Cars Producer"
-msgstr "Modifier le producteur de voitures"
-
-#: index.php:106
-msgid "New Cars Producer"
-msgstr "Nouveau producteur de voitures"
-
-#: index.php:107
-msgid "View Cars Producer"
-msgstr "Voir le producteur de voitures"
-
-#: index.php:108
-msgid "Search Cars Producer"
-msgstr "Producteur de voitures"
-
-#: index.php:109
-msgid "No Cars Producers found"
-msgstr "Aucun producteur de voitures n’a trouvé"
-
-#: index.php:110
-msgid "No Cars Producers found in Trash"
-msgstr "Aucun producteur de voitures trouvé dans Trash"
-
-#: index.php:113
-msgid "carproducer"
-msgstr "le carproducteur"
-
-#: index.php:126
+#: index.php:53
 msgid "Cars"
 msgstr "Voitures"
 
-#: index.php:127
-msgid "Car"
-msgstr "Voiture"
+#: index.php:61
+msgid "Add New"
+msgstr "Ajouter"
 
-#: index.php:129
-msgid "Add New Car"
-msgstr "Ajouter une nouvelle voiture"
+#: index.php:62 index.php:111
+msgid "Add New "
+msgstr "Ajouter"
 
-#: index.php:130
-msgid "Edit Car"
-msgstr "Modifier "
+#: index.php:63 index.php:109
+msgid "Edit "
+msgstr "Rédiger"
 
-#: index.php:131
-msgid "New Car"
-msgstr "Nouvelle voiture"
+#: index.php:64 index.php:112
+msgid "New "
+msgstr "Nouveau"
 
-#: index.php:132
-msgid "View Car"
-msgstr "Voir"
+#: index.php:65 index.php:106
+msgid "All "
+msgstr "Tout "
 
-#: index.php:133
-msgid "Search Cars"
-msgstr "Recherche"
+#: index.php:66
+msgid "View "
+msgstr "Vue "
 
-#: index.php:134
-msgid "No Cars found"
-msgstr "Aucune voiture trouvée "
+#: index.php:67 index.php:105
+msgid "Search "
+msgstr "Rechercher"
 
-#: index.php:135
-msgid "No Cars found in Trash"
-msgstr "Pas de voitures trouvées dans Trash"
+#: index.php:68 index.php:69
+msgid "No "
+msgstr ""
+
+#: index.php:97
+msgid "Producers"
+msgstr "Producteurs"
+
+#: index.php:97
+msgid "Producer"
+msgstr "Producteur de voitures"
+
+#: index.php:107 index.php:108
+msgid "Parent "
+msgstr ""
+
+#: index.php:110
+msgid "Update "
+msgstr "Mettre à jour"
 
 #. Plugin Name of the plugin/theme
 msgid "ThemeMakers Cardealer Features"
@@ -188,3 +100,84 @@ msgstr "ThemeMakers"
 #. Author URI of the plugin/theme
 msgid "http://themeforest.net/user/ThemeMakers"
 msgstr "http://themeforest.net/user/ThemeMakers"
+
+#~ msgid "Group"
+#~ msgstr "Groupe"
+
+#~ msgid "Add New Slider Group"
+#~ msgstr "Ajouter un nouveau groupe de curseurs"
+
+#~ msgid "Edit Slider Group"
+#~ msgstr "Modifier le groupe de curseurs"
+
+#~ msgid "New Slider Group"
+#~ msgstr "Nouveau groupe Slider"
+
+#~ msgid "View Slider Group"
+#~ msgstr "Voir le groupe Slider"
+
+#~ msgid "Search Slider Groups"
+#~ msgstr "Rechercher des groupes de curseurs"
+
+#~ msgid "No Slide Groups found"
+#~ msgstr "Aucun groupe de diapositives trouvé"
+
+#~ msgid "No Slide Groups found in Trash"
+#~ msgstr "Aucun groupe de diapositives trouvé dans la corbeille"
+
+#~ msgid "Add New Staff"
+#~ msgstr "Ajouter un nouveau personnel"
+
+#~ msgid "Edit Staff"
+#~ msgstr "Modifier le personnel"
+
+#~ msgid "New Staff"
+#~ msgstr "Nouveau personnel"
+
+#~ msgid "View Staff"
+#~ msgstr "Voir Membre"
+
+#~ msgid "Search In Staff"
+#~ msgstr "Recherche dans le personnel"
+
+#~ msgid "Nothing found"
+#~ msgstr "Rien n'a été trouvé"
+
+#~ msgid "Nothing found in Trash"
+#~ msgstr "Rien trouvé dans Trash"
+
+#~ msgid "Add New Cars Producer"
+#~ msgstr "Ajouter un nouveau producteur de voitures"
+
+#~ msgid "Edit Cars Producer"
+#~ msgstr "Modifier le producteur de voitures"
+
+#~ msgid "New Cars Producer"
+#~ msgstr "Nouveau producteur de voitures"
+
+#~ msgid "View Cars Producer"
+#~ msgstr "Voir le producteur de voitures"
+
+#~ msgid "Search Cars Producer"
+#~ msgstr "Producteur de voitures"
+
+#~ msgid "No Cars Producers found"
+#~ msgstr "Aucun producteur de voitures n’a trouvé"
+
+#~ msgid "No Cars Producers found in Trash"
+#~ msgstr "Aucun producteur de voitures trouvé dans Trash"
+
+#~ msgid "carproducer"
+#~ msgstr "le carproducteur"
+
+#~ msgid "Car"
+#~ msgstr "Voiture"
+
+#~ msgid "Add New Car"
+#~ msgstr "Ajouter une nouvelle voiture"
+
+#~ msgid "No Cars found"
+#~ msgstr "Aucune voiture trouvée "
+
+#~ msgid "No Cars found in Trash"
+#~ msgstr "Pas de voitures trouvées dans Trash"

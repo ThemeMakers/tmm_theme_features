@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ThemeMakers Cardealer Features\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-13 22:55+0200\n"
-"PO-Revision-Date: 2019-06-13 22:58+0200\n"
+"POT-Creation-Date: 2023-12-08 00:16+0100\n"
+"PO-Revision-Date: 2023-12-08 00:17+0100\n"
 "Last-Translator: ThemeMakers <support@webtemplatemasters.com>\n"
 "Language-Team: Slovak\n"
 "Language: sk_SK\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=( n == 1 ) ? 0 : ( n >= 2 && n <= 4 ) ? 1 : "
 "2;\n"
-"X-Generator: Poedit 2.2.3\n"
+"X-Generator: Poedit 3.2\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-WPHeader: index.php\n"
 "X-Poedit-SourceCharset: UTF-8\n"
@@ -22,153 +22,77 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: index.php:28
-msgid "Slider Groups"
+#: index.php:51
+#, fuzzy
+#| msgid "Slider Groups"
+msgid "Slider Group"
 msgstr "Jazdca skupiny"
 
-#: index.php:29
-msgid "Group"
-msgstr "Skupina"
-
-#: index.php:30 index.php:67 index.php:103 index.php:128
-msgid "Add New"
-msgstr "Pridať nové"
-
-#: index.php:31
-msgid "Add New Slider Group"
-msgstr "Pridať novú skupinu jazdca"
-
-#: index.php:32
-msgid "Edit Slider Group"
-msgstr "Upraviť jazdec skupiny"
-
-#: index.php:33
-msgid "New Slider Group"
-msgstr "Nový jazdec skupiny"
-
-#: index.php:34
-msgid "View Slider Group"
-msgstr "Zobraziť jazdec skupiny"
-
-#: index.php:35
-msgid "Search Slider Groups"
-msgstr "Vyhľadávanie jazdca skupiny"
-
-#: index.php:36
-msgid "No Slide Groups found"
-msgstr "Nenašli sa žiadne skupiny snímok"
-
-#: index.php:37
-msgid "No Slide Groups found in Trash"
-msgstr "V koši nie sú nájdené žiadne skupiny snímok"
-
-#: index.php:65 index.php:66
+#: index.php:52
 msgid "Staff"
 msgstr "Zamestnanci"
 
-#: index.php:68
-msgid "Add New Staff"
-msgstr "Pridať nových zamestnancov"
-
-#: index.php:69
-msgid "Edit Staff"
-msgstr "Upraviť zamestnanca"
-
-#: index.php:70
-msgid "New Staff"
-msgstr "Noví zamestnanci"
-
-#: index.php:71
-msgid "View Staff"
-msgstr "Zobraziť zamestnanca"
-
-#: index.php:72
-msgid "Search In Staff"
-msgstr "Hľadať v zamestnanci"
-
-#: index.php:73
-msgid "Nothing found"
-msgstr "Nič nebolo nájdené"
-
-#: index.php:74
-msgid "Nothing found in Trash"
-msgstr "Nič nie je  v koši"
-
-#: index.php:101
-msgid "Producers"
-msgstr "Výrobcov"
-
-#: index.php:102
-msgid "Producer"
-msgstr "Výrobca"
-
-#: index.php:104
-msgid "Add New Cars Producer"
-msgstr "Pridať nový výrobca automobilov"
-
-#: index.php:105
-msgid "Edit Cars Producer"
-msgstr "Edit Cars výrobca"
-
-#: index.php:106
-msgid "New Cars Producer"
-msgstr "Nový výrobca automobilov"
-
-#: index.php:107
-msgid "View Cars Producer"
-msgstr "Zobraziť autá výrobca"
-
-#: index.php:108
-msgid "Search Cars Producer"
-msgstr "Hľadať autá výrobca"
-
-#: index.php:109
-msgid "No Cars Producers found"
-msgstr "Nenašli sa žiadne výrobcovia áut"
-
-#: index.php:110
-msgid "No Cars Producers found in Trash"
-msgstr "Žiadne autá výrobcovia nájdené v koši"
-
-#: index.php:113
-msgid "carproducer"
-msgstr "výrobca carproducer"
-
-#: index.php:126
+#: index.php:53
 msgid "Cars"
 msgstr "Autá"
 
-#: index.php:127
-msgid "Car"
-msgstr "Auto"
+#: index.php:61
+msgid "Add New"
+msgstr "Pridať nové"
 
-#: index.php:129
-msgid "Add New Car"
-msgstr "Pridať nové auto"
+#: index.php:62 index.php:111
+#, fuzzy
+#| msgid "Add New"
+msgid "Add New "
+msgstr "Pridať nové"
 
-#: index.php:130
-msgid "Edit Car"
+#: index.php:63 index.php:109
+#, fuzzy
+#| msgid "Edit Car"
+msgid "Edit "
 msgstr "Upraviť auto"
 
-#: index.php:131
-msgid "New Car"
+#: index.php:64 index.php:112
+#, fuzzy
+#| msgid "New Car"
+msgid "New "
 msgstr "Nové auto"
 
-#: index.php:132
-msgid "View Car"
+#: index.php:65 index.php:106
+msgid "All "
+msgstr ""
+
+#: index.php:66
+#, fuzzy
+#| msgid "View Car"
+msgid "View "
 msgstr "Pozrieť auto"
 
-#: index.php:133
-msgid "Search Cars"
+#: index.php:67 index.php:105
+#, fuzzy
+#| msgid "Search Cars"
+msgid "Search "
 msgstr "Hľadať autá"
 
-#: index.php:134
-msgid "No Cars found"
-msgstr "Nenašli sa žiadne autá"
+#: index.php:68 index.php:69
+msgid "No "
+msgstr ""
 
-#: index.php:135
-msgid "No Cars found in Trash"
-msgstr "V koši nie sú nájdené žiadne autá"
+#: index.php:97
+msgid "Producers"
+msgstr "Výrobcov"
+
+#: index.php:97
+msgid "Producer"
+msgstr "Výrobca"
+
+#: index.php:107 index.php:108
+msgid "Parent "
+msgstr ""
+
+#: index.php:110
+msgid "Update "
+msgstr ""
 
 #. Plugin Name of the plugin/theme
 msgid "ThemeMakers Cardealer Features"
@@ -189,3 +113,84 @@ msgstr "ThemeMakers"
 #. Author URI of the plugin/theme
 msgid "http://themeforest.net/user/ThemeMakers"
 msgstr "http://themeforest.net/user/ThemeMakers"
+
+#~ msgid "Group"
+#~ msgstr "Skupina"
+
+#~ msgid "Add New Slider Group"
+#~ msgstr "Pridať novú skupinu jazdca"
+
+#~ msgid "Edit Slider Group"
+#~ msgstr "Upraviť jazdec skupiny"
+
+#~ msgid "New Slider Group"
+#~ msgstr "Nový jazdec skupiny"
+
+#~ msgid "View Slider Group"
+#~ msgstr "Zobraziť jazdec skupiny"
+
+#~ msgid "Search Slider Groups"
+#~ msgstr "Vyhľadávanie jazdca skupiny"
+
+#~ msgid "No Slide Groups found"
+#~ msgstr "Nenašli sa žiadne skupiny snímok"
+
+#~ msgid "No Slide Groups found in Trash"
+#~ msgstr "V koši nie sú nájdené žiadne skupiny snímok"
+
+#~ msgid "Add New Staff"
+#~ msgstr "Pridať nových zamestnancov"
+
+#~ msgid "Edit Staff"
+#~ msgstr "Upraviť zamestnanca"
+
+#~ msgid "New Staff"
+#~ msgstr "Noví zamestnanci"
+
+#~ msgid "View Staff"
+#~ msgstr "Zobraziť zamestnanca"
+
+#~ msgid "Search In Staff"
+#~ msgstr "Hľadať v zamestnanci"
+
+#~ msgid "Nothing found"
+#~ msgstr "Nič nebolo nájdené"
+
+#~ msgid "Nothing found in Trash"
+#~ msgstr "Nič nie je  v koši"
+
+#~ msgid "Add New Cars Producer"
+#~ msgstr "Pridať nový výrobca automobilov"
+
+#~ msgid "Edit Cars Producer"
+#~ msgstr "Edit Cars výrobca"
+
+#~ msgid "New Cars Producer"
+#~ msgstr "Nový výrobca automobilov"
+
+#~ msgid "View Cars Producer"
+#~ msgstr "Zobraziť autá výrobca"
+
+#~ msgid "Search Cars Producer"
+#~ msgstr "Hľadať autá výrobca"
+
+#~ msgid "No Cars Producers found"
+#~ msgstr "Nenašli sa žiadne výrobcovia áut"
+
+#~ msgid "No Cars Producers found in Trash"
+#~ msgstr "Žiadne autá výrobcovia nájdené v koši"
+
+#~ msgid "carproducer"
+#~ msgstr "výrobca carproducer"
+
+#~ msgid "Car"
+#~ msgstr "Auto"
+
+#~ msgid "Add New Car"
+#~ msgstr "Pridať nové auto"
+
+#~ msgid "No Cars found"
+#~ msgstr "Nenašli sa žiadne autá"
+
+#~ msgid "No Cars found in Trash"
+#~ msgstr "V koši nie sú nájdené žiadne autá"

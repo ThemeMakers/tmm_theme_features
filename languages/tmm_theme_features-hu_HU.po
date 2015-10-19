@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ThemeMakers Cardealer Features\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-13 22:54+0200\n"
-"PO-Revision-Date: 2019-06-13 22:55+0200\n"
+"POT-Creation-Date: 2023-12-08 00:18+0100\n"
+"PO-Revision-Date: 2023-12-08 00:23+0100\n"
 "Last-Translator: ThemeMakers <support@webtemplatemasters.com>\n"
 "Language-Team: Hungarian\n"
 "Language: hu_HU\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Poedit 2.2.3\n"
+"X-Generator: Poedit 3.2\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-WPHeader: index.php\n"
 "X-Poedit-SourceCharset: UTF-8\n"
@@ -21,153 +21,65 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: index.php:28
-msgid "Slider Groups"
-msgstr "Csúszka csoportok"
-
-#: index.php:29
-msgid "Group"
-msgstr "Csoport"
-
-#: index.php:30 index.php:67 index.php:103 index.php:128
-msgid "Add New"
-msgstr "Új hozzáadása"
-
-#: index.php:31
-msgid "Add New Slider Group"
-msgstr "Új Csúszkacsoport hozzáadása"
-
-#: index.php:32
-msgid "Edit Slider Group"
+#: index.php:51
+msgid "Slider Group"
 msgstr "Csúszkák szerkesztése"
 
-#: index.php:33
-msgid "New Slider Group"
-msgstr "Új csúszka-csoport"
-
-#: index.php:34
-msgid "View Slider Group"
-msgstr "Csúszkák megtekintése"
-
-#: index.php:35
-msgid "Search Slider Groups"
-msgstr "Keresés csúszka csoportok"
-
-#: index.php:36
-msgid "No Slide Groups found"
-msgstr "Nem található Diacsoportok"
-
-#: index.php:37
-msgid "No Slide Groups found in Trash"
-msgstr "A kukában nem található Diacsoportok"
-
-#: index.php:65 index.php:66
+#: index.php:52
 msgid "Staff"
 msgstr "Értékesítő"
 
-#: index.php:68
-msgid "Add New Staff"
-msgstr "Új értékesítő hozzáadása"
-
-#: index.php:69
-msgid "Edit Staff"
-msgstr "Értékesítő szerkesztése"
-
-#: index.php:70
-msgid "New Staff"
-msgstr "Új értékesítő"
-
-#: index.php:71
-msgid "View Staff"
-msgstr "Értékesítő megtekintése"
-
-#: index.php:72
-msgid "Search In Staff"
-msgstr "Értékesítő keresése"
-
-#: index.php:73
-msgid "Nothing found"
-msgstr "Nincs találat"
-
-#: index.php:74
-msgid "Nothing found in Trash"
-msgstr "Semmi sem található a Lomtárban"
-
-#: index.php:101
-msgid "Producers"
-msgstr "Márkák"
-
-#: index.php:102
-msgid "Producer"
-msgstr "Márka"
-
-#: index.php:104
-msgid "Add New Cars Producer"
-msgstr "Új márka hozzáadása"
-
-#: index.php:105
-msgid "Edit Cars Producer"
-msgstr "Márka szerkesztése"
-
-#: index.php:106
-msgid "New Cars Producer"
-msgstr "Új gyártó"
-
-#: index.php:107
-msgid "View Cars Producer"
-msgstr "Márka megtekintése"
-
-#: index.php:108
-msgid "Search Cars Producer"
-msgstr "Márka keresése"
-
-#: index.php:109
-msgid "No Cars Producers found"
-msgstr "Nincs találat"
-
-#: index.php:110
-msgid "No Cars Producers found in Trash"
-msgstr "Nem található a jármű gyártó a kukában"
-
-#: index.php:113
-msgid "carproducer"
-msgstr "márka"
-
-#: index.php:126
+#: index.php:53
 msgid "Cars"
 msgstr "Autók"
 
-#: index.php:127
-msgid "Car"
-msgstr "Autó"
+#: index.php:61
+msgid "Add New"
+msgstr "Új hozzáadása"
 
-#: index.php:129
-msgid "Add New Car"
-msgstr "Új autó hozzáadása"
+#: index.php:62 index.php:111
+msgid "Add New "
+msgstr "Új hozzáadása "
 
-#: index.php:130
-msgid "Edit Car"
-msgstr "Autó szerkesztése"
+#: index.php:63 index.php:109
+msgid "Edit "
+msgstr "Szerkesztés "
 
-#: index.php:131
-msgid "New Car"
-msgstr "Új autó"
+#: index.php:64 index.php:112
+msgid "New "
+msgstr "Űj "
 
-#: index.php:132
-msgid "View Car"
-msgstr "Autó megtekintése"
+#: index.php:65 index.php:106
+msgid "All "
+msgstr ""
 
-#: index.php:133
-msgid "Search Cars"
-msgstr "Autó keresése"
+#: index.php:66
+msgid "View "
+msgstr "Megtekintés "
 
-#: index.php:134
-msgid "No Cars found"
-msgstr "Nincs találat"
+#: index.php:67 index.php:105
+msgid "Search "
+msgstr "Keresés "
 
-#: index.php:135
-msgid "No Cars found in Trash"
-msgstr "Nem található jármű a kukában"
+#: index.php:68 index.php:69
+msgid "No "
+msgstr ""
+
+#: index.php:97
+msgid "Producers"
+msgstr "Márkák"
+
+#: index.php:97
+msgid "Producer"
+msgstr "Márka"
+
+#: index.php:107 index.php:108
+msgid "Parent "
+msgstr ""
+
+#: index.php:110
+msgid "Update "
+msgstr ""
 
 #. Plugin Name of the plugin/theme
 msgid "ThemeMakers Cardealer Features"
@@ -188,3 +100,84 @@ msgstr "ThemeMakers"
 #. Author URI of the plugin/theme
 msgid "http://themeforest.net/user/ThemeMakers"
 msgstr "http://themeforest.net/user/ThemeMakers"
+
+#~ msgid "Group"
+#~ msgstr "Csoport"
+
+#~ msgid "Add New Slider Group"
+#~ msgstr "Új Csúszkacsoport hozzáadása"
+
+#~ msgid "Edit Slider Group"
+#~ msgstr "Csúszkák szerkesztése"
+
+#~ msgid "New Slider Group"
+#~ msgstr "Új csúszka-csoport"
+
+#~ msgid "View Slider Group"
+#~ msgstr "Csúszkák megtekintése"
+
+#~ msgid "Search Slider Groups"
+#~ msgstr "Keresés csúszka csoportok"
+
+#~ msgid "No Slide Groups found"
+#~ msgstr "Nem található Diacsoportok"
+
+#~ msgid "No Slide Groups found in Trash"
+#~ msgstr "A kukában nem található Diacsoportok"
+
+#~ msgid "Add New Staff"
+#~ msgstr "Új értékesítő hozzáadása"
+
+#~ msgid "Edit Staff"
+#~ msgstr "Értékesítő szerkesztése"
+
+#~ msgid "New Staff"
+#~ msgstr "Új értékesítő"
+
+#~ msgid "View Staff"
+#~ msgstr "Értékesítő megtekintése"
+
+#~ msgid "Search In Staff"
+#~ msgstr "Értékesítő keresése"
+
+#~ msgid "Nothing found"
+#~ msgstr "Nincs találat"
+
+#~ msgid "Nothing found in Trash"
+#~ msgstr "Semmi sem található a Lomtárban"
+
+#~ msgid "Add New Cars Producer"
+#~ msgstr "Új márka hozzáadása"
+
+#~ msgid "Edit Cars Producer"
+#~ msgstr "Márka szerkesztése"
+
+#~ msgid "New Cars Producer"
+#~ msgstr "Új gyártó"
+
+#~ msgid "View Cars Producer"
+#~ msgstr "Márka megtekintése"
+
+#~ msgid "Search Cars Producer"
+#~ msgstr "Márka keresése"
+
+#~ msgid "No Cars Producers found"
+#~ msgstr "Nincs találat"
+
+#~ msgid "No Cars Producers found in Trash"
+#~ msgstr "Nem található a jármű gyártó a kukában"
+
+#~ msgid "carproducer"
+#~ msgstr "márka"
+
+#~ msgid "Car"
+#~ msgstr "Autó"
+
+#~ msgid "Add New Car"
+#~ msgstr "Új autó hozzáadása"
+
+#~ msgid "No Cars found"
+#~ msgstr "Nincs találat"
+
+#~ msgid "No Cars found in Trash"
+#~ msgstr "Nem található jármű a kukában"
