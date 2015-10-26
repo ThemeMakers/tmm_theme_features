@@ -19,8 +19,6 @@ class TMM_Theme_Features {
 
 	private function __construct() {
 
-		$this->load_plugin_textdomain();
-
 		/* Register custom post types and taxonomies */
 		$this->register_post_types();
 
@@ -432,11 +430,13 @@ class TMM_Theme_Features {
 		return self::$instance;
 	}
 
-	public function load_plugin_textdomain() {
+	public static function load_plugin_textdomain() {
 
-		load_plugin_textdomain( self::$slug, false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
+		load_plugin_textdomain( 'tmm_theme_features', false, plugin_basename( dirname( __FILE__ ) ) . '/languages' );
 	}
 }
+
+add_action( 'plugins_loaded', array('TMM_Theme_Features', 'load_plugin_textdomain') );
 
 add_action( 'init', array('TMM_Theme_Features', 'get_instance') );
 
