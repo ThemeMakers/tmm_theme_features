@@ -99,7 +99,7 @@ class TMM_Theme_Features {
 		register_taxonomy("carproducer", array($cpt_name), array(
             "labels" => array(
                 'name' => __('Producers', $this->slug),
-                'singular_name' => __('Producers', $this->slug),
+                'singular_name' => __('Producer', $this->slug),
                 'add_new' => __('Add New', $this->slug),
                 'add_new_item' => __('Add New Cars Producer', $this->slug),
                 'edit_item' => __('Edit Cars Producer', $this->slug),
