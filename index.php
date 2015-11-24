@@ -1,11 +1,11 @@
 <?php
 
 /*
- * Plugin Name: ThemeMakers Diplomat Features
+ * Plugin Name: ThemeMakers InterPress Features
  * Plugin URI: http://webtemplatemasters.com
- * Description: Advanced Features for Diplomat Theme
+ * Description: Advanced Features for InterPress Theme
  * Author: ThemeMakers
- * Version: 1.0.1
+ * Version: 1.0.0
  * Author URI: http://themeforest.net/user/ThemeMakers
  * Text Domain: tmm_theme_features
 */
