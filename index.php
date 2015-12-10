@@ -113,7 +113,7 @@ class TMM_Theme_Features {
             "singular_label" => __("carproducer", $this->slug),
             'show_in_nav_menus' => true,
             'capabilities' => array('manage_terms'),
-            'show_ui' => false,
+            'show_ui' => true,
             'term_group' => true,
             'hierarchical' => true,
             'query_var' => true,
