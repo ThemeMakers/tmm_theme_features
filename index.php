@@ -5,7 +5,7 @@
  * Plugin URI: http://webtemplatemasters.com
  * Description: Advanced Features for Cardealer Theme
  * Author: ThemeMakers
- * Version: 1.0.4
+ * Version: 1.0.5
  * Author URI: http://themeforest.net/user/ThemeMakers
  * Text Domain: tmm_theme_features
  */
