@@ -143,7 +143,7 @@ class TMM_Theme_Features {
             'query_var' => true,
             'capability_type' => 'post',
             'has_archive' => true,
-            'hierarchical' => true,
+            'hierarchical' => false,
             'menu_position' => null,
             'supports' => array('title', 'excerpt', 'tags', 'comments'),
             'rewrite' => array('slug' => $cpt_name),
