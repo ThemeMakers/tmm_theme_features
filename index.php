@@ -30,7 +30,7 @@ class TMM_Theme_Features {
 
 		if (class_exists('TMM')) {
 			add_action('wp_head', array(__CLASS__, 'add_tracking_code'), PHP_INT_MAX);
-			add_filter('tmm_add_general_theme_option', array(__CLASS__, 'add_tracking_code_option'));
+			add_filter('tmm_add_api_theme_option', array(__CLASS__, 'add_tracking_code_option'));
 		}
 
 	}
