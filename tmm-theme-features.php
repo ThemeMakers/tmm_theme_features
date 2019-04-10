@@ -16,3 +16,4 @@ define( 'TMM_THEME_FEATURES_PATH', trailingslashit( plugin_dir_path( __FILE__ ) 
 /* Include Classes */
 require_once TMM_THEME_FEATURES_PATH . 'classes/theme-features.php';
 require_once TMM_THEME_FEATURES_PATH . 'classes/portfolio.php';
+require_once TMM_THEME_FEATURES_PATH . 'classes/staff.php';
