@@ -19,3 +19,4 @@ require_once TMM_THEME_FEATURES_PATH . 'classes/portfolio.php';
 require_once TMM_THEME_FEATURES_PATH . 'classes/staff.php';
 require_once TMM_THEME_FEATURES_PATH . 'classes/testimonials.php';
 require_once TMM_THEME_FEATURES_PATH . 'classes/page.php';
+require_once TMM_THEME_FEATURES_PATH . 'classes/onepage.php';
