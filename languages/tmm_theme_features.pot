@@ -1,0 +1,517 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: ThemeMakers Accio Features\n"
+"POT-Creation-Date: 2019-04-22 23:21+0200\n"
+"PO-Revision-Date: 2019-04-22 23:21+0200\n"
+"Last-Translator: Alex TM <support@webtemplatemasters.com>\n"
+"Language-Team: Alex TM <support@webtemplatemasters.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: tmm-theme-features.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: classes/onepage.php:11 classes/onepage.php:12 classes/onepage.php:81
+msgid "OnePage"
+msgstr ""
+
+#: classes/onepage.php:13 classes/onepage.php:48 classes/portfolio.php:13
+#: classes/portfolio.php:48 classes/portfolio.php:70 classes/portfolio.php:94
+#: classes/staff.php:13 classes/staff.php:48 classes/testimonials.php:14
+msgid "Add New"
+msgstr ""
+
+#: classes/onepage.php:14
+msgid "Add New OnePage"
+msgstr ""
+
+#: classes/onepage.php:15
+msgid "Edit OnePage"
+msgstr ""
+
+#: classes/onepage.php:16
+msgid "New OnePage"
+msgstr ""
+
+#: classes/onepage.php:17
+msgid "View OnePage"
+msgstr ""
+
+#: classes/onepage.php:18
+msgid "Search OnePages"
+msgstr ""
+
+#: classes/onepage.php:19
+msgid "No OnePages found"
+msgstr ""
+
+#: classes/onepage.php:20
+msgid "No OnePages found in Trash"
+msgstr ""
+
+#: classes/onepage.php:46 classes/onepage.php:187
+msgid "Types"
+msgstr ""
+
+#: classes/onepage.php:47
+msgid "Type"
+msgstr ""
+
+#: classes/onepage.php:49
+msgid "Add New Type"
+msgstr ""
+
+#: classes/onepage.php:50
+msgid "Edit Type"
+msgstr ""
+
+#: classes/onepage.php:51
+msgid "New Type"
+msgstr ""
+
+#: classes/onepage.php:52
+msgid "View Type"
+msgstr ""
+
+#: classes/onepage.php:53
+msgid "Search Types"
+msgstr ""
+
+#: classes/onepage.php:54
+msgid "No Typea found"
+msgstr ""
+
+#: classes/onepage.php:55
+msgid "No Types found in Trash"
+msgstr ""
+
+#: classes/onepage.php:58
+msgid "op_type"
+msgstr ""
+
+#: classes/onepage.php:82
+msgid "Pages"
+msgstr ""
+
+#: classes/onepage.php:83
+msgid "OnePage Attributes"
+msgstr ""
+
+#: classes/onepage.php:185 classes/page.php:70 classes/portfolio.php:250
+msgid "Title"
+msgstr ""
+
+#: classes/onepage.php:186 classes/portfolio.php:252
+msgid "Description"
+msgstr ""
+
+#: classes/page.php:10 classes/portfolio.php:199
+msgid "Default"
+msgstr ""
+
+#: classes/page.php:11
+msgid "Video"
+msgstr ""
+
+#: classes/page.php:12
+msgid "Quote"
+msgstr ""
+
+#: classes/page.php:13
+msgid "Gallery"
+msgstr ""
+
+#: classes/page.php:71
+msgid "Onepage"
+msgstr ""
+
+#: classes/page.php:72
+msgid "Date"
+msgstr ""
+
+#: classes/page.php:73
+msgid "Author"
+msgstr ""
+
+#: classes/page.php:81 classes/page.php:82 classes/portfolio.php:172
+msgid "Seo options"
+msgstr ""
+
+#: classes/page.php:84
+msgid "Post Type"
+msgstr ""
+
+#: classes/page.php:85
+msgid "Post Type Data"
+msgstr ""
+
+#: classes/page.php:87 classes/page.php:88
+msgid "Custom Page Options"
+msgstr ""
+
+#: classes/portfolio.php:11
+msgid "Portfolios"
+msgstr ""
+
+#: classes/portfolio.php:12
+msgid "Portfolio"
+msgstr ""
+
+#: classes/portfolio.php:14
+msgid "Add New Portfolio"
+msgstr ""
+
+#: classes/portfolio.php:15
+msgid "Edit Portfolio"
+msgstr ""
+
+#: classes/portfolio.php:16
+msgid "New Portfolio"
+msgstr ""
+
+#: classes/portfolio.php:17
+msgid "View Portfolio"
+msgstr ""
+
+#: classes/portfolio.php:18
+msgid "Search Portfolios"
+msgstr ""
+
+#: classes/portfolio.php:19
+msgid "No Portfolios found"
+msgstr ""
+
+#: classes/portfolio.php:20
+msgid "No Portfolios found in Trash"
+msgstr ""
+
+#: classes/portfolio.php:46 classes/portfolio.php:254
+msgid "Clients"
+msgstr ""
+
+#: classes/portfolio.php:47
+msgid "Client"
+msgstr ""
+
+#: classes/portfolio.php:49
+msgid "Add New Client"
+msgstr ""
+
+#: classes/portfolio.php:50
+msgid "Edit Client"
+msgstr ""
+
+#: classes/portfolio.php:51
+msgid "New Client"
+msgstr ""
+
+#: classes/portfolio.php:52
+msgid "View Client"
+msgstr ""
+
+#: classes/portfolio.php:53
+msgid "Search Clients"
+msgstr ""
+
+#: classes/portfolio.php:54
+msgid "No Clients found"
+msgstr ""
+
+#: classes/portfolio.php:55
+msgid "No Clients found in Trash"
+msgstr ""
+
+#: classes/portfolio.php:58
+msgid "client"
+msgstr ""
+
+#: classes/portfolio.php:68 classes/portfolio.php:255
+msgid "Skills"
+msgstr ""
+
+#: classes/portfolio.php:69
+msgid "Skill"
+msgstr ""
+
+#: classes/portfolio.php:71
+msgid "Add New Skill"
+msgstr ""
+
+#: classes/portfolio.php:72
+msgid "Edit Skill"
+msgstr ""
+
+#: classes/portfolio.php:73
+msgid "New Skill"
+msgstr ""
+
+#: classes/portfolio.php:74
+msgid "View Skill"
+msgstr ""
+
+#: classes/portfolio.php:75
+msgid "Search Skills"
+msgstr ""
+
+#: classes/portfolio.php:76
+msgid "No Skills found"
+msgstr ""
+
+#: classes/portfolio.php:77
+msgid "No Skills found in Trash"
+msgstr ""
+
+#: classes/portfolio.php:80
+msgid "skill"
+msgstr ""
+
+#: classes/portfolio.php:92
+msgid "Categories"
+msgstr ""
+
+#: classes/portfolio.php:93
+msgid "Category"
+msgstr ""
+
+#: classes/portfolio.php:95
+msgid "Add New Category"
+msgstr ""
+
+#: classes/portfolio.php:96
+msgid "Edit Category"
+msgstr ""
+
+#: classes/portfolio.php:97
+msgid "New Category"
+msgstr ""
+
+#: classes/portfolio.php:98
+msgid "View Category"
+msgstr ""
+
+#: classes/portfolio.php:99
+msgid "Search Categories"
+msgstr ""
+
+#: classes/portfolio.php:100
+msgid "No Categories found"
+msgstr ""
+
+#: classes/portfolio.php:101
+msgid "No Categories found in Trash"
+msgstr ""
+
+#: classes/portfolio.php:104
+msgid "category"
+msgstr ""
+
+#: classes/portfolio.php:168
+msgid "Portfolio attributes"
+msgstr ""
+
+#: classes/portfolio.php:169
+msgid "Folio images"
+msgstr ""
+
+#: classes/portfolio.php:170
+msgid "Single page layout"
+msgstr ""
+
+#: classes/portfolio.php:171
+msgid "Featured Video"
+msgstr ""
+
+#: classes/portfolio.php:200
+msgid "Full Width"
+msgstr ""
+
+#: classes/portfolio.php:201
+msgid "Alternate"
+msgstr ""
+
+#: classes/portfolio.php:212
+msgid "YouTube and Vimeo are supported."
+msgstr ""
+
+#: classes/portfolio.php:213
+msgid ""
+"When url is given, video will appear in lightbox only. Button to detailed "
+"page will be hidden."
+msgstr ""
+
+#: classes/portfolio.php:251
+msgid "Cover"
+msgstr ""
+
+#: classes/portfolio.php:253
+msgid "Tags"
+msgstr ""
+
+#: classes/staff.php:11 classes/staff.php:12
+msgid "Staff"
+msgstr ""
+
+#: classes/staff.php:14
+msgid "Add New Staff"
+msgstr ""
+
+#: classes/staff.php:15
+msgid "Edit Staff"
+msgstr ""
+
+#: classes/staff.php:16
+msgid "New Staff"
+msgstr ""
+
+#: classes/staff.php:17
+msgid "View Staff"
+msgstr ""
+
+#: classes/staff.php:18
+msgid "Search In Staff"
+msgstr ""
+
+#: classes/staff.php:19
+msgid "Nothing found"
+msgstr ""
+
+#: classes/staff.php:20
+msgid "Nothing found in Trash"
+msgstr ""
+
+#: classes/staff.php:46 classes/staff.php:47 classes/staff.php:58
+#: classes/testimonials.php:56
+msgid "Position"
+msgstr ""
+
+#: classes/staff.php:49
+msgid "Add New Position"
+msgstr ""
+
+#: classes/staff.php:50
+msgid "Edit Position"
+msgstr ""
+
+#: classes/staff.php:51
+msgid "New Position"
+msgstr ""
+
+#: classes/staff.php:52
+msgid "View Position"
+msgstr ""
+
+#: classes/staff.php:53
+msgid "Search GPosition"
+msgstr ""
+
+#: classes/staff.php:54
+msgid "No Position found"
+msgstr ""
+
+#: classes/staff.php:55
+msgid "No Position found in Trash"
+msgstr ""
+
+#: classes/staff.php:109
+msgid "Staff attributes"
+msgstr ""
+
+#: classes/staff.php:144
+msgid "Name"
+msgstr ""
+
+#: classes/staff.php:145
+msgid "Photo"
+msgstr ""
+
+#: classes/staff.php:146
+msgid "Twitter"
+msgstr ""
+
+#: classes/staff.php:147
+msgid "Facebook"
+msgstr ""
+
+#: classes/staff.php:148
+msgid "LilkedIn"
+msgstr ""
+
+#: classes/staff.php:149
+msgid "Dribbble"
+msgstr ""
+
+#: classes/staff.php:150
+msgid "Instagram"
+msgstr ""
+
+#: classes/testimonials.php:12 classes/testimonials.php:13
+msgid "Testimonials"
+msgstr ""
+
+#: classes/testimonials.php:15
+msgid "Add New Testimonial"
+msgstr ""
+
+#: classes/testimonials.php:16
+msgid "Edit Testimonial"
+msgstr ""
+
+#: classes/testimonials.php:17
+msgid "New Testimonial"
+msgstr ""
+
+#: classes/testimonials.php:18
+msgid "View Testimonial"
+msgstr ""
+
+#: classes/testimonials.php:19
+msgid "Search Testimonials"
+msgstr ""
+
+#: classes/testimonials.php:20
+msgid "No Testimonials found"
+msgstr ""
+
+#: classes/testimonials.php:21
+msgid "No Testimonials found in Trash"
+msgstr ""
+
+#: classes/theme-features.php:31
+msgid "Tracking Code"
+msgstr ""
+
+#: classes/theme-features.php:34
+msgid ""
+"Place here your Google Analytics (or other) tracking code. It will be "
+"inserted before closing head tag in your theme."
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "ThemeMakers Accio Features"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "http://webtemplatemasters.com"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Advanced Features for Accio Theme"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "ThemeMakers"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://themeforest.net/user/ThemeMakers"
+msgstr ""
