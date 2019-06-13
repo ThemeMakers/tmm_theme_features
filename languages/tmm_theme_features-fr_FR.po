@@ -82,6 +82,7 @@ msgid "Update "
 msgstr "Mettre à jour "
 
 #. Plugin Name of the plugin/theme
+#, fuzzy
 msgid "ThemeMakers Cardealer Features"
 msgstr "ThemeMakers Cardealer Features"
 

@@ -84,7 +84,7 @@ msgstr "Обнови"
 
 #. Plugin Name of the plugin/theme
 msgid "ThemeMakers Cardealer Features"
-msgstr ""
+msgstr "Основна категория"
 
 #. Plugin URI of the plugin/theme
 msgid "http://webtemplatemasters.com"
