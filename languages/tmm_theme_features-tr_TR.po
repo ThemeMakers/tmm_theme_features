@@ -1,57 +1,25 @@
 msgid ""
 msgstr ""
-"Plural-Forms: nplurals=2; plural=n != 1\n"
 "Project-Id-Version: ThemeMakers Cardealer Features\n"
-"POT-Creation-Date: 2017-05-19 09:23+0000\n"
-"PO-Revision-Date: 2017-05-19 09:24+0000\n"
-"Last-Translator: Alex TM <support@webtemplatemasters.com>\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-06-13 22:58+0200\n"
+"PO-Revision-Date: 2019-06-13 22:59+0200\n"
+"Last-Translator: ThemeMakers <support@webtemplatemasters.com>\n"
 "Language-Team: Turkish\n"
+"Language: tr_TR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Loco - https://localise.biz/\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 2.2.3\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-WPHeader: index.php\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
-"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
-"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
-"Report-Msgid-Bugs-To: \n"
-"Language: tr-TR"
-
-#: index.php:106
-msgid "New Cars Producer"
-msgstr "Yeni Araç Üreticisi"
-
-#: index.php:107
-msgid "View Cars Producer"
-msgstr "Araç Üreticilerini Görüntüle"
-
-#: index.php:108
-msgid "Search Cars Producer"
-msgstr ""
-
-#: index.php:109
-msgid "No Cars Producers found"
-msgstr ""
-
-#: index.php:110
-msgid "No Cars Producers found in Trash"
-msgstr ""
-
-#: index.php:134
-msgid "No Cars found"
-msgstr ""
-
-#: index.php:135
-msgid "No Cars found in Trash"
-msgstr ""
-
-#. Description of the plugin/theme
-msgid "Advanced Features for Cardealer Theme"
-msgstr ""
 
 #: index.php:28
 msgid "Slider Groups"
@@ -141,6 +109,26 @@ msgstr "Yeni Araç Üreticisi Ekle"
 msgid "Edit Cars Producer"
 msgstr "Araç Üreticilerini Düzenle"
 
+#: index.php:106
+msgid "New Cars Producer"
+msgstr "Yeni Araç Üreticisi"
+
+#: index.php:107
+msgid "View Cars Producer"
+msgstr "Araç Üreticilerini Görüntüle"
+
+#: index.php:108
+msgid "Search Cars Producer"
+msgstr "İlan Markası Ara"
+
+#: index.php:109
+msgid "No Cars Producers found"
+msgstr "İlan Markası Bulunamadı"
+
+#: index.php:110
+msgid "No Cars Producers found in Trash"
+msgstr "Çöp kutusunda Marka bulunmadı"
+
 #: index.php:113
 msgid "carproducer"
 msgstr "araç üreticisi"
@@ -173,6 +161,14 @@ msgstr "Araç Görüntüle"
 msgid "Search Cars"
 msgstr "Araç Araştır"
 
+#: index.php:134
+msgid "No Cars found"
+msgstr "İlan Bulunamadı"
+
+#: index.php:135
+msgid "No Cars found in Trash"
+msgstr "Çöpte İlan Bulunamadı"
+
 #. Plugin Name of the plugin/theme
 msgid "ThemeMakers Cardealer Features"
 msgstr "ThemeMakers Cardealer Features"
@@ -180,6 +176,10 @@ msgstr "ThemeMakers Cardealer Features"
 #. Plugin URI of the plugin/theme
 msgid "http://webtemplatemasters.com"
 msgstr "http://webtemplatemasters.com"
+
+#. Description of the plugin/theme
+msgid "Advanced Features for Cardealer Theme"
+msgstr "Gelişmiş İlan Teması"
 
 #. Author of the plugin/theme
 msgid "ThemeMakers"

@@ -1,16 +1,18 @@
 msgid ""
 msgstr ""
-"Plural-Forms: nplurals=3; plural=( n == 1 ) ? 0 : ( n >= 2 && n <= 4 ) ? 1 : "
-"2\n"
 "Project-Id-Version: ThemeMakers Cardealer Features\n"
-"POT-Creation-Date: 2016-11-22 14:14+0100\n"
-"PO-Revision-Date: 2017-03-06 11:19+0000\n"
-"Last-Translator: Alex TM <support@webtemplatemasters.com>\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-06-13 22:55+0200\n"
+"PO-Revision-Date: 2019-06-13 22:58+0200\n"
+"Last-Translator: ThemeMakers <support@webtemplatemasters.com>\n"
 "Language-Team: Slovak\n"
+"Language: sk_SK\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Loco - https://localise.biz/\n"
+"Plural-Forms: nplurals=3; plural=( n == 1 ) ? 0 : ( n >= 2 && n <= 4 ) ? 1 : "
+"2;\n"
+"X-Generator: Poedit 2.2.3\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-WPHeader: index.php\n"
 "X-Poedit-SourceCharset: UTF-8\n"
@@ -19,116 +21,122 @@ msgstr ""
 "_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
-"Report-Msgid-Bugs-To: \n"
-"Language: sk-SK"
 
 #: index.php:28
 msgid "Slider Groups"
-msgstr ""
+msgstr "Jazdca skupiny"
 
 #: index.php:29
 msgid "Group"
-msgstr ""
+msgstr "Skupina"
 
 #: index.php:30 index.php:67 index.php:103 index.php:128
 msgid "Add New"
-msgstr ""
+msgstr "Pridať nové"
 
 #: index.php:31
 msgid "Add New Slider Group"
-msgstr ""
+msgstr "Pridať novú skupinu jazdca"
 
 #: index.php:32
 msgid "Edit Slider Group"
-msgstr ""
+msgstr "Upraviť jazdec skupiny"
 
 #: index.php:33
 msgid "New Slider Group"
-msgstr ""
+msgstr "Nový jazdec skupiny"
 
 #: index.php:34
 msgid "View Slider Group"
-msgstr ""
+msgstr "Zobraziť jazdec skupiny"
 
 #: index.php:35
 msgid "Search Slider Groups"
-msgstr ""
+msgstr "Vyhľadávanie jazdca skupiny"
 
 #: index.php:36
 msgid "No Slide Groups found"
-msgstr ""
+msgstr "Nenašli sa žiadne skupiny snímok"
 
 #: index.php:37
 msgid "No Slide Groups found in Trash"
-msgstr ""
+msgstr "V koši nie sú nájdené žiadne skupiny snímok"
+
+#: index.php:65 index.php:66
+msgid "Staff"
+msgstr "Zamestnanci"
 
 #: index.php:68
 msgid "Add New Staff"
-msgstr ""
+msgstr "Pridať nových zamestnancov"
 
 #: index.php:69
 msgid "Edit Staff"
-msgstr ""
+msgstr "Upraviť zamestnanca"
 
 #: index.php:70
 msgid "New Staff"
-msgstr ""
+msgstr "Noví zamestnanci"
 
 #: index.php:71
 msgid "View Staff"
-msgstr ""
+msgstr "Zobraziť zamestnanca"
 
 #: index.php:72
 msgid "Search In Staff"
-msgstr ""
+msgstr "Hľadať v zamestnanci"
 
 #: index.php:73
 msgid "Nothing found"
-msgstr ""
+msgstr "Nič nebolo nájdené"
 
 #: index.php:74
 msgid "Nothing found in Trash"
-msgstr ""
+msgstr "Nič nie je  v koši"
 
 #: index.php:101
 msgid "Producers"
-msgstr ""
+msgstr "Výrobcov"
 
 #: index.php:102
 msgid "Producer"
-msgstr ""
+msgstr "Výrobca"
 
 #: index.php:104
 msgid "Add New Cars Producer"
-msgstr ""
+msgstr "Pridať nový výrobca automobilov"
 
 #: index.php:105
 msgid "Edit Cars Producer"
-msgstr ""
+msgstr "Edit Cars výrobca"
 
 #: index.php:106
 msgid "New Cars Producer"
-msgstr ""
+msgstr "Nový výrobca automobilov"
 
 #: index.php:107
 msgid "View Cars Producer"
-msgstr ""
+msgstr "Zobraziť autá výrobca"
 
 #: index.php:108
 msgid "Search Cars Producer"
-msgstr ""
+msgstr "Hľadať autá výrobca"
 
 #: index.php:109
 msgid "No Cars Producers found"
-msgstr ""
+msgstr "Nenašli sa žiadne výrobcovia áut"
 
 #: index.php:110
 msgid "No Cars Producers found in Trash"
-msgstr ""
+msgstr "Žiadne autá výrobcovia nájdené v koši"
 
 #: index.php:113
 msgid "carproducer"
-msgstr ""
+msgstr "výrobca carproducer"
+
+#: index.php:126
+msgid "Cars"
+msgstr "Autá"
 
 #: index.php:127
 msgid "Car"
@@ -152,40 +160,32 @@ msgstr "Pozrieť auto"
 
 #: index.php:133
 msgid "Search Cars"
-msgstr ""
+msgstr "Hľadať autá"
 
 #: index.php:134
 msgid "No Cars found"
-msgstr ""
+msgstr "Nenašli sa žiadne autá"
 
 #: index.php:135
 msgid "No Cars found in Trash"
-msgstr ""
+msgstr "V koši nie sú nájdené žiadne autá"
 
 #. Plugin Name of the plugin/theme
 msgid "ThemeMakers Cardealer Features"
-msgstr ""
+msgstr "ThemeMakers Cardealer funkcie"
 
 #. Plugin URI of the plugin/theme
 msgid "http://webtemplatemasters.com"
-msgstr ""
+msgstr "http://webtemplatemasters.com"
 
 #. Description of the plugin/theme
 msgid "Advanced Features for Cardealer Theme"
-msgstr ""
+msgstr "Pokročilé funkcie pre Cardealer tému"
 
 #. Author of the plugin/theme
 msgid "ThemeMakers"
-msgstr ""
+msgstr "ThemeMakers"
 
 #. Author URI of the plugin/theme
 msgid "http://themeforest.net/user/ThemeMakers"
-msgstr ""
-
-#: index.php:65 index.php:66
-msgid "Staff"
-msgstr "Zamestnanci"
-
-#: index.php:126
-msgid "Cars"
-msgstr "Autá"
+msgstr "http://themeforest.net/user/ThemeMakers"
