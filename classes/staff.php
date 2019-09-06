@@ -78,6 +78,8 @@ class TMM_Staff {
 	public static function get_meta_data($post_id) {
 		$data = array();
 		$custom = get_post_custom($post_id);
+		$data['mail'] = @$custom["mail"][0];
+		$data['phone'] = @$custom["phone"][0];
 		$data['twitter'] = @$custom["twitter"][0];
 		$data['facebook'] = @$custom["facebook"][0];
 		$data['linkedin'] = @$custom["linkedin"][0];
@@ -96,6 +98,8 @@ class TMM_Staff {
 		global $post;
 		if (is_object($post)) {
 			if (isset($_POST) AND !empty($_POST) AND $post->post_type == self::$slug) {
+				update_post_meta($post->ID, "mail", @$_POST["mail"]);
+				update_post_meta($post->ID, "phone", @$_POST["phone"]);
 				update_post_meta($post->ID, "twitter", @$_POST["twitter"]);
 				update_post_meta($post->ID, "facebook", @$_POST["facebook"]);
 				update_post_meta($post->ID, "linkedin", @$_POST["linkedin"]);
@@ -120,6 +124,12 @@ class TMM_Staff {
 					echo '<img width="160" alt="" src="' . TMM_THEME_URI . '/admin/images/no_staff.png" />';
 				}
 				break;
+			case "mail":
+				echo get_post_meta($post->ID, 'mail', true);
+				break;
+			case "phone":
+				echo get_post_meta($post->ID, 'phone', true);
+				break;
 			case "twitter":
 				echo get_post_meta($post->ID, 'twitter', true);
 				break;
@@ -143,6 +153,8 @@ class TMM_Staff {
 			'cb'    => '<input type="checkbox" />',
 			"title" => esc_html__("Name", 'accio'),
 			"image" => esc_html__("Photo", 'accio'),
+			"mail" => esc_html__("E-Mail", 'accio'),
+			"phone" => esc_html__("Phone", 'accio'),
 			"twitter" => esc_html__("Twitter", 'accio'),
 			"facebook" => esc_html__("Facebook", 'accio'),
 			"linkedin" => esc_html__("LilkedIn", 'accio'),
