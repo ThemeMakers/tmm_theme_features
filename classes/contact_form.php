@@ -11,14 +11,6 @@ if (! class_exists('TMM_Contact_Form')) {
 			'select'      => 'Select'
 		);
 
-		public static function init() {
-
-		}
-
-		public static function admin_init() {
-
-		}
-
 		public $options_description = array(), $contacts_form_titles = array(), $forms_count = 1;
 
 		public static function save( $data ) {
