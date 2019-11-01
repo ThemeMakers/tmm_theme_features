@@ -22,3 +22,4 @@ require_once TMM_THEME_FEATURES_PATH . 'classes/page.php';
 require_once TMM_THEME_FEATURES_PATH . 'classes/onepage.php';
 require_once TMM_THEME_FEATURES_PATH . 'classes/contact_form.php';
 require_once TMM_THEME_FEATURES_PATH . 'classes/custom_sidebars.php';
+require_once TMM_THEME_FEATURES_PATH . 'classes/seo_group.php';
