@@ -12,6 +12,7 @@
 
 /* Set constant path to the plugin directory. */
 define( 'TMM_THEME_FEATURES_PATH', trailingslashit( plugin_dir_path( __FILE__ ) ) );
+define( 'TMM_THEME_FEATURES_URI', trailingslashit( plugin_dir_url( __FILE__ ) ) );
 
 /* Include Classes */
 require_once TMM_THEME_FEATURES_PATH . 'classes/theme-features.php';
@@ -22,5 +23,6 @@ require_once TMM_THEME_FEATURES_PATH . 'classes/page.php';
 require_once TMM_THEME_FEATURES_PATH . 'classes/onepage.php';
 require_once TMM_THEME_FEATURES_PATH . 'classes/contact_form.php';
 require_once TMM_THEME_FEATURES_PATH . 'classes/custom_sidebars.php';
-require_once TMM_THEME_FEATURES_PATH . 'classes/seo_group.php';
 require_once TMM_THEME_FEATURES_PATH . 'classes/walker.php';
+require_once TMM_THEME_FEATURES_PATH . 'classes/demo/index.php';
+require_once TMM_THEME_FEATURES_PATH . 'classes/sliders/index.php';
