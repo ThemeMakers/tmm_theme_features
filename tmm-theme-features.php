@@ -14,6 +14,8 @@
 define( 'TMM_THEME_FEATURES_PATH', trailingslashit( plugin_dir_path( __FILE__ ) ) );
 define( 'TMM_THEME_FEATURES_URI', trailingslashit( plugin_dir_url( __FILE__ ) ) );
 
+include_once ABSPATH . 'wp-includes/widgets/class-wp-widget-text.php';
+
 /* Include Classes */
 require_once TMM_THEME_FEATURES_PATH . 'classes/theme-features.php';
 require_once TMM_THEME_FEATURES_PATH . 'classes/portfolio.php';
@@ -26,3 +28,5 @@ require_once TMM_THEME_FEATURES_PATH . 'classes/custom_sidebars.php';
 require_once TMM_THEME_FEATURES_PATH . 'classes/walker.php';
 require_once TMM_THEME_FEATURES_PATH . 'classes/demo/index.php';
 require_once TMM_THEME_FEATURES_PATH . 'classes/sliders/index.php';
+require_once TMM_THEME_FEATURES_PATH . 'classes/thememakers.php';
+require_once TMM_THEME_FEATURES_PATH . 'classes/theme_widgets.php';
