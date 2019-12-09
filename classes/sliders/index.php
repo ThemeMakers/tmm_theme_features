@@ -180,7 +180,12 @@ class TMM_Ext_Sliders {
 
 	public static function get_page_slides_count($post_id) {
 		$slides = self::get_page_slides($post_id);
-		return count($slides);
+
+		if(is_array($slides)){
+			return count($slides);
+		} else {
+			return 0;
+		}
 	}
 
 	public static function get_page_slides($post_id) {

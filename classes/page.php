@@ -78,9 +78,6 @@ class TMM_Page {
 
 
 	public static function init_meta_boxes() {
-		add_meta_box("seo_options", esc_html__("Seo options", 'accio'), array(__CLASS__, 'page_seo_options'), "page", "normal", "low");
-		add_meta_box("seo_options", esc_html__("Seo options", 'accio'), array(__CLASS__, 'page_seo_options'), "post", "normal", "low");
-
 		add_meta_box("post_types", esc_html__("Post Type", 'accio'), array(__CLASS__, 'post_type_meta_box'), "post", "side", "low");
 		add_meta_box("post_types_data", esc_html__("Post Type Data", 'accio'), array(__CLASS__, 'post_type_meta_panel'), "post", "normal");
 

@@ -11,8 +11,7 @@ var TMM_ADMIN_SLIDES = function() {
 
 			self.html_buffer = jQuery("#html_buffer");
 
-			jQuery('.js_add_slide').life('click', function()
-			{
+			jQuery(document).on('click', '.js_add_slide', function() {
                 var frame = wp.media({
                     title: wp.media.view.l10n.chooseImage,
                     multiple: true,
@@ -34,8 +33,7 @@ var TMM_ADMIN_SLIDES = function() {
 			});
 
 
-			jQuery('.js_edit_slide').life('click', function()
-			{
+			jQuery(document).on('click', '.js_edit_slide', function() {
                 var slide_id = jQuery(this).data('slide-id');
                 var frame = wp.media({
                     title: wp.media.view.l10n.chooseImage,
@@ -67,7 +65,7 @@ var TMM_ADMIN_SLIDES = function() {
                 return false;
 			});
 
-			jQuery(".js_delete_slide").life('click', function() {
+			jQuery(document).on('click', '.js_delete_slide', function() {
 				var self_button = this;
 				jQuery(self_button).parents('div.slide-item').eq(0).hide(333, function() {
 					jQuery(self_button).parents('div.slide-item').eq(0).remove();
@@ -75,7 +73,7 @@ var TMM_ADMIN_SLIDES = function() {
 				return false;
 			});
 
-			jQuery("[name=selected_slider]").life('change', function() {
+			jQuery(document).on('change', '[name=selected_slider]', function() {
 				var value = jQuery(this).val();
 				if (value == "0") {
 					jQuery("[name=slider_group]").hide();
@@ -86,18 +84,20 @@ var TMM_ADMIN_SLIDES = function() {
 				return false;
 			});
 
-			jQuery('.attr_title').on('click', function (e) {
+			jQuery(document).on('click', '.attr_title', function (e) {
+				e.preventDefault();
 				
 				var $this = jQuery(this);
-					e.preventDefault();
 				
 				if ($this.hasClass('active') && $this.next().is(':visible')) {
 					$this.removeClass('active');
-					$this.next().stop(true, true).slideUp('300');		
+					$this.next().stop(true, true).slideUp('300');
 				} else if ($this.next().is(':hidden')) {
 					$this.addClass('active');
 					$this.next().stop(true, true).slideDown('300');		
 				}
+
+				console.log('ddd');
 
 			});
 			
@@ -127,10 +127,10 @@ var TMM_ADMIN_SLIDES = function() {
 		get_html_from_buffer: function() {
 			return jQuery(self.html_buffer).html();
 		}
-	}
+	};
 
 	return self;
-}
+};
 
 
 var tmm_admin_slides = new TMM_ADMIN_SLIDES();

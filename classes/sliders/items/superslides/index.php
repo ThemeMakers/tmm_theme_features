@@ -1,5 +1,4 @@
-<?php if (!defined('ABSPATH')) die('No direct access allowed'); ?>
-<?php
+<?php if (!defined('ABSPATH')) die('No direct access allowed');
 
 class TMM_Ext_Slider_Super extends TMM_Ext_Sliders {
 
@@ -14,7 +13,7 @@ class TMM_Ext_Slider_Super extends TMM_Ext_Sliders {
 			'name' => "Superslides",
 			'fields' => array(
 				'description' => array(
-					'name' => esc_html__('Slide Description', 'accio'),
+					'name' => esc_html__('Slide Content', 'accio'),
 					'type' => 'textarea'
 				)
 			),

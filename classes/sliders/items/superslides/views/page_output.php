@@ -40,7 +40,7 @@ wp_enqueue_script('tmm_superslides', TMM_Ext_Sliders::get_application_uri() . '/
 						<?php if (!empty($slide['superslides']['description'])): ?>
 							<div class="header-text-entry">
 								<div class="header-text">
-									<h1><?php echo wp_kses($slide['superslides']['description'], 'post'); ?></h1>
+									<?php echo wp_kses($slide['superslides']['description'], 'post'); ?>
 								</div>	
 							</div><!--/ .header-text-entry-->
 						<?php endif; ?>

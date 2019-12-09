@@ -1,10 +1,9 @@
 <?php if (!defined('ABSPATH')) die('No direct access allowed');
 
 $unique_id = isset($index) ? $index : uniqid();
-$google_fonts = TMM_HelperFonts::get_google_fonts();
-$content_fonts = TMM_HelperFonts::get_content_fonts();
+$google_fonts = TMM_HelperFonts::get_google_fonts_list();
+$content_fonts = TMM_HelperFonts::get_default_fonts_list();
 $fonts = array_merge($content_fonts, $google_fonts);
-$fonts = array_merge(array("" => ""), $fonts);
 ?>
 <div class="slide-item" id="slide_item_<?php echo esc_attr( $unique_id ) ?>">
 
