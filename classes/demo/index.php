@@ -121,7 +121,7 @@ class TMM_Ext_Demo {
 		}
 
 		//copy file custom1.css and rename it to $name.css
-		copy(TMM_THEME_PATH . '/css/custom1.css', $upload_folder . '/' . $name . '.css');
+		copy(TMM_THEME_FEATURES_PATH . '/css/custom1.css', $upload_folder . '/' . $name . '.css');
 		//create file with js presets
 		file_put_contents($upload_folder . '/' . $name . '.js', serialize($_REQUEST['js_data']));
 		//scheme data
@@ -139,7 +139,7 @@ class TMM_Ext_Demo {
 
 	public static function edit_theme_scheme() {
 		$upload_folder = self::get_upload_folder();
-		copy(TMM_THEME_PATH . '/css/custom1.css', $upload_folder . $_REQUEST['key'] . '.css');
+		copy(TMM_THEME_FEATURES_PATH . '/css/custom1.css', $upload_folder . $_REQUEST['key'] . '.css');
 		file_put_contents($upload_folder . '/' . $_REQUEST['key'] . '.js', serialize($_REQUEST['js_data']));
 		//scheme data
 		if (!empty($_REQUEST['color'])) {

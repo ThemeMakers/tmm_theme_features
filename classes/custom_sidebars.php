@@ -43,7 +43,7 @@ if (! class_exists('TMM_Custom_Sidebars')) {
 			$sidebar['cat']        = array();
 
 			$responce         = array();
-			$pagepath         = TMM_THEME_PATH . '/admin/theme_options/sections/tab_custom_sidebars/custom_html/';
+			$pagepath         = TMM_THEME_FEATURES_PATH . '/admin/theme_options/sections/tab_custom_sidebars/custom_html/';
 			$responce['html'] = TMM::draw_free_page( $pagepath . 'sidebar.php', array( 'sidebar'    => $sidebar,
 			                                                                           'sidebar_id' => $sidebar['sidebar_id']
 			) );
@@ -55,7 +55,7 @@ if (! class_exists('TMM_Custom_Sidebars')) {
 			$page_id        = $_REQUEST['page_id'];
 			$data           = array();
 			$data['select'] = self::get_pages_select( '', "sidebars[" . $sidebar_id . "][page][" . $page_id . "]", "sidebars_page_" . $sidebar_id );
-			$pagepath       = TMM_THEME_PATH . '/admin/theme_options/sections/tab_custom_sidebars/custom_html/';
+			$pagepath       = TMM_THEME_FEATURES_PATH . '/admin/theme_options/sections/tab_custom_sidebars/custom_html/';
 			wp_die( TMM::draw_free_page( $pagepath . 'add_sidebar_page.php', $data ) );
 		}
 
@@ -64,7 +64,7 @@ if (! class_exists('TMM_Custom_Sidebars')) {
 			$cat_id         = $_REQUEST['cat_id'];
 			$data           = array();
 			$data['select'] = self::get_categories_select( '', "sidebars[" . $sidebar_id . "][cat][" . $cat_id . "]", "sidebars_cat_" . $sidebar_id );
-			$pagepath       = TMM_THEME_PATH . '/admin/theme_options/sections/tab_custom_sidebars/custom_html/';
+			$pagepath       = TMM_THEME_FEATURES_PATH . '/admin/theme_options/sections/tab_custom_sidebars/custom_html/';
 			wp_die( TMM::draw_free_page( $pagepath . 'add_sidebar_page.php', $data ) );
 		}
 

@@ -30,3 +30,6 @@ require_once TMM_THEME_FEATURES_PATH . 'classes/demo/index.php';
 require_once TMM_THEME_FEATURES_PATH . 'classes/sliders/index.php';
 require_once TMM_THEME_FEATURES_PATH . 'classes/thememakers.php';
 require_once TMM_THEME_FEATURES_PATH . 'classes/theme_widgets.php';
+
+/* Include plugin helper */
+//require_once TMM_THEME_FEATURES_PATH . '/theme_options/sections/tab_styling/tab_styling.php';

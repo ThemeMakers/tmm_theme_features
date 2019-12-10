@@ -107,12 +107,12 @@ class TMM {
 
 
 		//**** CSS REGENERATION
-		$custom_css1 = self::draw_free_page(TMM_THEME_PATH . '/admin/theme_options/custom_css1.php');
-		$custom_css2 = self::draw_free_page(TMM_THEME_PATH . '/admin/theme_options/custom_css2.php');
-		$handle = fopen(TMM_THEME_PATH . '/css/custom1.css', 'w');
+		$custom_css1 = self::draw_free_page(TMM_THEME_FEATURES_PATH . '/admin/theme_options/custom_css1.php');
+		$custom_css2 = self::draw_free_page(TMM_THEME_FEATURES_PATH . '/admin/theme_options/custom_css2.php');
+		$handle = fopen(TMM_THEME_FEATURES_PATH . '/css/custom1.css', 'w');
 		fwrite($handle, $custom_css1);
 		fclose($handle);
-		$handle = fopen(TMM_THEME_PATH . '/css/custom2.css', 'w');
+		$handle = fopen(TMM_THEME_FEATURES_PATH . '/css/custom2.css', 'w');
 		fwrite($handle, $custom_css2);
 		fclose($handle);
 		exit;
@@ -163,7 +163,7 @@ class TMM {
 	public static function draw_html($view, $data = array()) {
 		@extract($data);
 		ob_start();
-		include(TMM_THEME_PATH . '/admin/views/' . $view . '.php' );
+		include(TMM_THEME_FEATURES_PATH . '/admin/views/' . $view . '.php' );
 		return ob_get_clean();
 	}
 
