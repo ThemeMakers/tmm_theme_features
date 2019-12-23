@@ -21,9 +21,7 @@
 					
 					<br />
 					
-					<label class="sel">
-						<?php echo TMM_Custom_Sidebars::get_pages_select($page_value, 'sidebars[' . $sidebar_id . '][page][' . $page_key . ']'); ?>
-					</label>
+					<?php echo TMM_Custom_Sidebars::get_pages_select($page_value, 'sidebars[' . $sidebar_id . '][page][' . $page_key . ']'); ?>
 					<?php if ($page_key > 0): ?>
 						<a class="remove-button remove_page" href="#"></a>
 					<?php endif; ?>
@@ -39,9 +37,7 @@
 
 				<br />
 
-				<label class="sel">
-					<?php echo TMM_Custom_Sidebars::get_pages_select('', 'sidebars[' . $sidebar_id . '][page][0]'); ?>
-				</label>
+				<?php echo TMM_Custom_Sidebars::get_pages_select('', 'sidebars[' . $sidebar_id . '][page][0]'); ?>
 
 			</div>
 		
@@ -62,10 +58,8 @@
 				<div class="tmk_row">
 					<br />
 					
-					<label class="sel">
-						<?php echo TMM_Custom_Sidebars::get_categories_select($cat_value, 'sidebars[' . $sidebar_id . '][cat][' . $cat_key . ']'); ?>
-					</label>
-					
+					<?php echo TMM_Custom_Sidebars::get_categories_select($cat_value, 'sidebars[' . $sidebar_id . '][cat][' . $cat_key . ']'); ?>
+
 					<?php if ($cat_key > 0): ?>
 						<a class="remove-button remove_page" href="#"></a>
 					<?php endif; ?>
@@ -81,9 +75,7 @@
 
 				<br />
 
-				<label class="sel">
-					<?php echo TMM_Custom_Sidebars::get_categories_select('', 'sidebars[' . $sidebar_id . '][cat][0]'); ?>
-				</label>
+				<?php echo TMM_Custom_Sidebars::get_categories_select('', 'sidebars[' . $sidebar_id . '][cat][0]'); ?>
 
 			</div>
 		

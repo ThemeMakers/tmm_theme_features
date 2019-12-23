@@ -24,17 +24,15 @@
 		
 		<?php $theme_schemes = TMM_Ext_Demo::get_theme_schemes(); ?>
 		
-		<label class="sel">
-			<select id="color_schemes_select">
-				<option value=""></option>
-				<?php if (!empty($theme_schemes)): ?>
-					<?php foreach ($theme_schemes as $value) : ?>
-						<option style="color: <?php echo esc_attr( $value['color'] ) ?>;" value="<?php echo esc_attr( $value['key'] ) ?>" data-color="<?php echo esc_attr( $value['color'] ) ?>"><?php echo esc_html( $value['name'] ) ?></option>
-					<?php endforeach; ?>
-				<?php endif; ?>
-			</select>
-		</label>
-		
+		<select id="color_schemes_select">
+			<option value=""></option>
+			<?php if (!empty($theme_schemes)): ?>
+				<?php foreach ($theme_schemes as $value) : ?>
+					<option style="color: <?php echo esc_attr( $value['color'] ) ?>;" value="<?php echo esc_attr( $value['key'] ) ?>" data-color="<?php echo esc_attr( $value['color'] ) ?>"><?php echo esc_html( $value['name'] ) ?></option>
+				<?php endforeach; ?>
+			<?php endif; ?>
+		</select>
+
 	</div>
 	
 	<div class="explain"></div>

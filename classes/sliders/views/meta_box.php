@@ -1,42 +1,39 @@
 <?php if (!defined('ABSPATH')) die('No direct access allowed'); ?>
 <div class="slider">
 	<p><?php esc_html_e("Slider type", 'accio') ?>:</p>
-	<div class="sel">
-		<select name="page_slider_type">
-			<?php foreach ($slider_types as $key => $type) : ?>
-				<option <?php echo esc_attr( ($page_slider_type == $key ? "selected" : "") ) ?> value="<?php echo esc_attr($key) ?>"><?php echo esc_html($type) ?></option>
-			<?php endforeach; ?>
-		</select>
-	</div><div class="sel">
-		<?php
-		$page_slider_widths = array(
-			'wide' => esc_html__("wide", 'accio'),
-			'fixed' => esc_html__("fixed", 'accio'),
-		);
-		if (!isset($page_slider_width)) {
-			$page_slider_width = 'wide';
-		}
-		?>
-		<select name="page_slider_width">
-			<?php foreach ($page_slider_widths as $key => $type) : ?>
-				<option <?php echo esc_attr( ($page_slider_width == $key ? "selected" : "") ) ?> value="<?php echo esc_attr($key) ?>"><?php echo esc_html($type) ?></option>
-			<?php endforeach; ?>
-		</select>
-	</div>
+	<select name="page_slider_type">
+		<?php foreach ($slider_types as $key => $type) : ?>
+			<option <?php echo esc_attr( ($page_slider_type == $key ? "selected" : "") ) ?> value="<?php echo esc_attr($key) ?>"><?php echo esc_html($type) ?></option>
+		<?php endforeach; ?>
+	</select>
+	<?php
+	$page_slider_widths = array(
+		'wide'  => esc_html__( "wide", 'accio' ),
+		'fixed' => esc_html__( "fixed", 'accio' ),
+	);
+	if (!isset($page_slider_width)) {
+		$page_slider_width = 'wide';
+	}
+	?>
+	<select name="page_slider_width">
+		<?php foreach ($page_slider_widths as $key => $type) : ?>
+			<option <?php echo esc_attr( ($page_slider_width == $key ? "selected" : "") ) ?> value="<?php echo esc_attr($key) ?>"><?php echo esc_html($type) ?></option>
+		<?php endforeach; ?>
+	</select>
 
 	<hr />
 
 	<div class="native_sliders_groups" <?php if ($page_slider_type == 'layerslider' OR $page_slider_type == 'cuteslider'): ?>style="display: none;"<?php endif; ?>>
 		<p><?php esc_html_e("Slider group", 'accio') ?>:</p>
 		<?php if (!empty($slides)): ?>
-			<div class="sel"><select name="page_slider">
-					<option value=""><?php esc_html_e("Choose slider group", 'accio') ?></option>
-					<?php foreach ($slides as $key => $name) : ?>
+			<select name="page_slider">
+				<option value=""><?php esc_html_e("Choose slider group", 'accio') ?></option>
+				<?php foreach ($slides as $key => $name) : ?>
 
-						<option <?php echo esc_attr( ($page_slider == $key ? "selected" : "") ) ?> value="<?php echo esc_attr($key) ?>"><?php echo esc_html($name) ?></option>
+					<option <?php echo esc_attr( ($page_slider == $key ? "selected" : "") ) ?> value="<?php echo esc_attr($key) ?>"><?php echo esc_html($name) ?></option>
 
-					<?php endforeach; ?>
-				</select></div>
+				<?php endforeach; ?>
+			</select>
 		<?php else: ?>
 			<p><?php esc_html_e("You still haven't created any slider group.", 'accio') ?><br><a href="<?php echo admin_url('post-new.php?post_type=' . TMM_Ext_Sliders::$slug) ?>"><?php esc_html_e("Click here", 'accio') ?></a> <?php esc_html_e("to create one.", 'accio') ?></p>
 		<?php endif; ?>
@@ -54,19 +51,17 @@
 											ORDER BY id ASC LIMIT 200");
 			?>
 			<p><?php esc_html_e("Layerslider's groups", 'accio') ?>:</p>
-			<div class="sel">
-				<select name="layerslider_slide_group">
-					<option value=""><?php esc_html_e("Choose slider group", 'accio') ?></option>
-					<?php if (!empty($sliders)) : ?>
-						<?php foreach ($sliders as $item) : ?>
-							<?php $name = empty($item->name) ? 'Unnamed' : $item->name; ?>
-							<option <?php echo esc_attr( ($layerslider_slide_group == $item->id ? "selected" : "") ) ?> value="<?php echo esc_attr($item->id) ?>"><?php echo esc_html($name) ?></option>
-						<?php endforeach; ?>
-					<?php else: ?>
-						<?php esc_html_e("You still haven't created any slider group for your Layerslider.", 'accio') ?>
-					<?php endif; ?>
-				</select>
-			</div>
+			<select name="layerslider_slide_group">
+				<option value=""><?php esc_html_e("Choose slider group", 'accio') ?></option>
+				<?php if (!empty($sliders)) : ?>
+					<?php foreach ($sliders as $item) : ?>
+						<?php $name = empty($item->name) ? 'Unnamed' : $item->name; ?>
+						<option <?php echo esc_attr( ($layerslider_slide_group == $item->id ? "selected" : "") ) ?> value="<?php echo esc_attr($item->id) ?>"><?php echo esc_html($name) ?></option>
+					<?php endforeach; ?>
+				<?php else: ?>
+					<?php esc_html_e("You still haven't created any slider group for your Layerslider.", 'accio') ?>
+				<?php endif; ?>
+			</select>
 		</div>
 	<?php endif; ?>
 

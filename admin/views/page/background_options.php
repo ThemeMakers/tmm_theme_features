@@ -38,24 +38,22 @@
 	<h4><?php esc_html_e('Page Background', 'accio'); ?></h4>
 	
 	<div class="bg-type-option">
-		<div class="sel">
-			<select name="pagebg_type" class="pagebg_type">
-				<?php
-				$types = array(
-					"default" => esc_html__("Default", 'accio'),
-					"color" => esc_html__("Color", 'accio'),
-					"image" => esc_html__("Image", 'accio'),
-				);
+		<select name="pagebg_type" class="pagebg_type">
+			<?php
+			$types = array(
+				"default" => esc_html__( "Default", 'accio' ),
+				"color"   => esc_html__( "Color", 'accio' ),
+				"image"   => esc_html__( "Image", 'accio' ),
+			);
 
-				if (!$pagebg_type) {
-					$pagebg_type = "color";
-				}
-				?>
-				<?php foreach ($types as $key => $type) : ?>
-					<option <?php echo esc_attr( ($key == $pagebg_type ? "selected" : "") ) ?> value="<?php echo esc_attr( $key ); ?>"><?php echo esc_html( $type ) ?></option>
-				<?php endforeach; ?>
-			</select>
-		</div>
+			if (!$pagebg_type) {
+				$pagebg_type = "color";
+			}
+			?>
+			<?php foreach ($types as $key => $type) : ?>
+				<option <?php echo esc_attr( ($key == $pagebg_type ? "selected" : "") ) ?> value="<?php echo esc_attr( $key ); ?>"><?php echo esc_html( $type ) ?></option>
+			<?php endforeach; ?>
+		</select>
 	</div>
 
 	<ul id="pagebg_type_options">

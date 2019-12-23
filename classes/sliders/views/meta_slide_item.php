@@ -64,16 +64,15 @@ $fonts = array_merge($content_fonts, $google_fonts);
 												?>
 
 												<?php if ($option_key == 'font_family'): ?>
-													<div class="sel"><select name="slides_group[<?php echo esc_attr( $unique_id ) ?>][<?php echo esc_attr( $slider_key ) ?>][field_values][<?php echo esc_attr( $field_key ) ?>][<?php echo esc_attr( $option_key ) ?>]">
-
-															<?php foreach ($fonts as $font_name) : ?>
-																<?php
-																$font_clean_name = explode(":", $font_name);
-																$font_clean_name = $font_clean_name[0];
-																?>
-																<option <?php echo esc_attr( ($font_clean_name == $option_value ? "selected" : "") ) ?> value="<?php echo esc_attr( $font_clean_name ) ?>"><?php echo esc_html( $font_name ) ?></option>
-															<?php endforeach; ?>
-														</select></div>
+													<select name="slides_group[<?php echo esc_attr( $unique_id ) ?>][<?php echo esc_attr( $slider_key ) ?>][field_values][<?php echo esc_attr( $field_key ) ?>][<?php echo esc_attr( $option_key ) ?>]">
+														<?php foreach ($fonts as $font_name) : ?>
+															<?php
+															$font_clean_name = explode(":", $font_name);
+															$font_clean_name = $font_clean_name[0];
+															?>
+															<option <?php echo esc_attr( ($font_clean_name == $option_value ? "selected" : "") ) ?> value="<?php echo esc_attr( $font_clean_name ) ?>"><?php echo esc_html( $font_name ) ?></option>
+														<?php endforeach; ?>
+													</select>
 												<?php endif; ?>
 
 												<?php if ($option_key == 'font_size'): ?>
@@ -83,12 +82,12 @@ $fonts = array_merge($content_fonts, $google_fonts);
 														$font_sizes[] = $i;
 													}
 													?>
-													<div class="sel"><select name="slides_group[<?php echo esc_attr( $unique_id ) ?>][<?php echo esc_attr( $slider_key ) ?>][field_values][<?php echo esc_attr( $field_key ) ?>][<?php echo esc_attr( $option_key ) ?>]">
-															<option value=""></option>
-															<?php foreach ($font_sizes as $size) : ?>
-																<option <?php echo esc_attr( ($size == $option_value ? "selected" : "") ) ?> value="<?php echo esc_attr( $size ) ?>"><?php echo esc_attr( $size ) ?></option>
-															<?php endforeach; ?>
-														</select></div>
+													<select name="slides_group[<?php echo esc_attr( $unique_id ) ?>][<?php echo esc_attr( $slider_key ) ?>][field_values][<?php echo esc_attr( $field_key ) ?>][<?php echo esc_attr( $option_key ) ?>]">
+														<option value=""></option>
+														<?php foreach ($font_sizes as $size) : ?>
+															<option <?php echo esc_attr( ($size == $option_value ? "selected" : "") ) ?> value="<?php echo esc_attr( $size ) ?>"><?php echo esc_attr( $size ) ?></option>
+														<?php endforeach; ?>
+													</select>
 												<?php endif; ?>
 
 												<?php if ($option_key == 'font_color'): ?>

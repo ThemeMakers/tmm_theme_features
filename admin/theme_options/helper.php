@@ -89,15 +89,13 @@ class TMM_OptionsHelper {
 					<?php echo wp_kses_post( $title ); ?>
 
 					<div class="controls">
-						<label class="sel">
-							<select data-default-value="<?php echo esc_attr($data['default_value']) ?>" name="<?php echo esc_attr($data['name']) ?>" class="<?php echo esc_attr($data['css_class']) ?>">
-								<?php if (!empty($data['values'])): ?>
-									<?php foreach ($data['values'] as $key => $option_text) : ?>
-										<option value="<?php echo esc_attr($key) ?>" <?php echo wp_kses_post( ($value == $key ? 'selected=""' : "") ) ?>><?php echo esc_html($option_text) ?></option>
-									<?php endforeach; ?>
-								<?php endif; ?>
-							</select>
-						</label>
+						<select data-default-value="<?php echo esc_attr($data['default_value']) ?>" name="<?php echo esc_attr($data['name']) ?>" class="<?php echo esc_attr($data['css_class']) ?>">
+							<?php if (!empty($data['values'])): ?>
+								<?php foreach ($data['values'] as $key => $option_text) : ?>
+									<option value="<?php echo esc_attr($key) ?>" <?php echo wp_kses_post( ($value == $key ? 'selected=""' : "") ) ?>><?php echo esc_html($option_text) ?></option>
+								<?php endforeach; ?>
+							<?php endif; ?>
+						</select>
 					</div>
 
 					<div class="explain"><?php echo wp_kses_post($data['description']) ?></div>
@@ -155,25 +153,23 @@ class TMM_OptionsHelper {
 					<?php echo wp_kses_post( $title ); ?>
 
 					<div class="controls">
-						<label class="sel">
-							<select data-default-value="<?php echo esc_attr($data['default_value']) ?>" name="<?php echo esc_attr($data['name']) ?>" class="google_font_select">
+						<select data-default-value="<?php echo esc_attr($data['default_value']) ?>" name="<?php echo esc_attr($data['name']) ?>" class="google_font_select">
 
-								<?php foreach ($fonts as $font_name => $font_text): ?>
+							<?php foreach ($fonts as $font_name => $font_text): ?>
 
-									<?php
-										if( isset($font_text->variants) ) {
-											$f_name = $font_text->family . ':' . implode( ",", $font_text->variants );
-										} else {
-											$f_name = $font_text->family;
-										}
-									?>
+								<?php
+									if( isset($font_text->variants) ) {
+										$f_name = $font_text->family . ':' . implode( ",", $font_text->variants );
+									} else {
+										$f_name = $font_text->family;
+									}
+								?>
 
-									<option <?php echo esc_attr( ($f_name == $value ? "selected" : "") ) ?> value="<?php echo esc_attr($f_name); ?>"><?php echo esc_html($font_text->family); ?></option>
+								<option <?php echo esc_attr( ($f_name == $value ? "selected" : "") ) ?> value="<?php echo esc_attr($f_name); ?>"><?php echo esc_html($font_text->family); ?></option>
 
-								<?php endforeach; ?>
+							<?php endforeach; ?>
 
-							</select>
-						</label>
+						</select>
 					</div>
 
 					<div class="explain"><?php echo wp_kses_post($data['description']) ?></div>

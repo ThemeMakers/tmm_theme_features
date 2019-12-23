@@ -114,14 +114,12 @@ class TMM_Onepage {
 		
 		?>
 		<?php if (!empty($onepages)): ?>
-			<div class="sel">
-				<select name="onepage">
-					<option value="0">---</option>
-					<?php foreach ($onepages as $page) : ?>
-						<option value="<?php echo esc_attr($page->ID) ?>" <?php if ($page->ID == $onepage): ?>selected=""<?php endif; ?>><?php echo esc_html($page->post_title) ?></option>
-					<?php endforeach; ?>
-				</select>
-			</div>
+			<select name="onepage">
+				<option value="0">---</option>
+				<?php foreach ($onepages as $page) : ?>
+					<option value="<?php echo esc_attr($page->ID) ?>" <?php if ($page->ID == $onepage): ?>selected=""<?php endif; ?>><?php echo esc_html($page->post_title) ?></option>
+				<?php endforeach; ?>
+			</select>
 		<?php endif; ?>
 		<?php
 	}

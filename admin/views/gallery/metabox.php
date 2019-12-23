@@ -5,20 +5,18 @@
 	<input type="hidden" value="1" name="tmm_meta_saving" />
 	<div class="gallery_layout">
 		<label for=""><?php esc_html_e('Gallery Layout:', 'accio'); ?></label>
-		<div class="sel">
 		<?php $layouts = array(2 => esc_html__('2 columns', 'accio'), esc_html__('3 columns', 'accio'), esc_html__('4 columns', 'accio'));
 		TMM_OptionsHelper::draw_theme_option(array(
-			'name' => "layout",
-			'type' => 'select',
-			'default_value' => 2,
-			'values' => $layouts,
-			'value' => $layout,
-			'description' => "",
-			'css_class' => '',
+			'name'           => "layout",
+			'type'           => 'select',
+			'default_value'  => 2,
+			'values'         => $layouts,
+			'value'          => $layout,
+			'description'    => "",
+			'css_class'      => '',
 			'hide_item_html' => 1
 		));
 		?>
-		</div>
 		<div class="clear"></div>
 		<p><a href="#" class="js_inpost_gallery_add_slide button button-primary"><?php esc_html_e('Add images', 'accio'); ?></a></p>
 	</div>
