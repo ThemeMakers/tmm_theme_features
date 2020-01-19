@@ -194,37 +194,6 @@ h1, h2, h3, h4, h5, h6 {
 	.option input::-webkit-input-placeholder,
 	.option textarea::-webkit-input-placeholder { color: #8F9194; }
 
-	.option .sel {
-		position: relative;
-		display: block;
-		margin: 0;
-		width: 100%;
-		vertical-align: top;
-	}
-
-	.option .sel:after {
-		position: absolute;
-		top: 1px;
-		right: 1px;
-		display: block;
-		width: 30px;
-		height: 94%;
-		height: calc(100% - 2px);
-		background-color: #fff;
-		color: #d5d6d6;
-		content: '\f140';
-		font-size: 25px;
-		font-family: 'dashicons';
-		cursor: pointer;
-		pointer-events: none;
-		line-height: 30px;
-
-		-webkit-transition: color .25s linear;
-				transition: color .25s linear;
-	}
-
-	.option .sel:hover:after { color: #999; }
-
 		/* Radiobutton & Checkbox */
 
 		.option input[type="checkbox"],
@@ -855,10 +824,6 @@ background-color:#FFFFFF;
 	.option-upload input[type="text"] { width: 65%; }
 
 	.ie7 .option-upload input[type="text"] { width: 56%; }
-
-	/* Option Select Browse */
-	.sel { width: 65%; }
-	.tmk_row .sel { width: 80%; }
 
 	/* Option Color */
 	.option-color input[type="text"] { width: 32%; }

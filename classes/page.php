@@ -96,45 +96,35 @@ class TMM_Page {
 
 		$data = array();
                 
-                if (!empty($custom["another_page_title"][0])){
-                    $data['another_page_title'] = $custom["another_page_title"][0];
-                }
-                if (!empty($custom["another_page_description"][0])){
-                    $data['another_page_description'] = $custom["another_page_description"][0];
-                }
-                if (!empty($custom["show_page_title"][0])){
-                    $data['show_page_title'] = $custom["show_page_title"][0];		
-                }
-                if (!empty($custom["pagebg_type"][0])){
-                    $data['pagebg_type'] = $custom["pagebg_type"][0];
-                }
-                if (!empty($custom["pagebg_color"][0])){
-                    $data['pagebg_color'] = $custom["pagebg_color"][0];
-                }
-                if (!empty($custom["pagebg_image"][0])){
-                    $data['pagebg_image'] = $custom["pagebg_image"][0];
-                }
-                if (!empty($custom["pagebg_type_image_option"][0])){
-                    $data['pagebg_type_image_option'] = $custom["pagebg_type_image_option"][0];
-                }
-                if (!empty($custom["headerbg_type"][0])){
-                    $data['headerbg_type'] = $custom["headerbg_type"][0];
-                }
-                if (!empty($custom["page_sidebar_position"][0])){
-                    $data['page_sidebar_position'] = $custom["page_sidebar_position"][0];
-                }
+            if (!empty($custom["another_page_title"][0])){
+                $data['another_page_title'] = $custom["another_page_title"][0];
+            }
+            if (!empty($custom["another_page_description"][0])){
+                $data['another_page_description'] = $custom["another_page_description"][0];
+            }
+            if (!empty($custom["show_page_title"][0])){
+                $data['show_page_title'] = $custom["show_page_title"][0];
+            }
+            if (!empty($custom["pagebg_type"][0])){
+                $data['pagebg_type'] = $custom["pagebg_type"][0];
+            }
+            if (!empty($custom["pagebg_color"][0])){
+                $data['pagebg_color'] = $custom["pagebg_color"][0];
+            }
+            if (!empty($custom["pagebg_image"][0])){
+                $data['pagebg_image'] = $custom["pagebg_image"][0];
+            }
+            if (!empty($custom["pagebg_type_image_option"][0])){
+                $data['pagebg_type_image_option'] = $custom["pagebg_type_image_option"][0];
+            }
+            if (!empty($custom["headerbg_type"][0])){
+                $data['headerbg_type'] = $custom["headerbg_type"][0];
+            }
+            if (!empty($custom["page_sidebar_position"][0])){
+                $data['page_sidebar_position'] = $custom["page_sidebar_position"][0];
+            }
 			
 		return $data;
-	}
-
-	public static function page_seo_options() {
-		global $post;
-		$data = array();
-		$custom = get_post_custom($post->ID);
-		$data['meta_title'] = @$custom["meta_title"][0];
-		$data['meta_keywords'] = @$custom["meta_keywords"][0];
-		$data['meta_description'] = @$custom["meta_description"][0];
-		echo TMM::draw_html('page/seo_options', $data);
 	}
 
 	public static function post_type_meta_box() {

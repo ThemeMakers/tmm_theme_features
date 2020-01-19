@@ -1,7 +1,7 @@
 <?php if (!defined('ABSPATH')) die('No direct access allowed');
 
-wp_enqueue_style('tmm_theme_admin_gallery', TMM_THEME_URI . '/admin/css/gallery.css');
-wp_enqueue_script('tmm_theme_admin_gallery', TMM_THEME_URI . '/admin/js/portfolio.js');
+wp_enqueue_style('tmm_theme_admin_gallery', TMM_THEME_FEATURES_URI . '/admin/css/gallery.css');
+wp_enqueue_script('tmm_theme_admin_gallery', TMM_THEME_FEATURES_URI . '/admin/js/portfolio.js');
 ?>
 
 <div class="gallery-meta-container">

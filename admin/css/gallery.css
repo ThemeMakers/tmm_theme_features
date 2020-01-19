@@ -80,47 +80,6 @@ a:hover.update_gallery_item { background-position: -20px -16px; }
 			box-sizing: border-box;
 }
 
-.gallery-meta-container div.sel { 
-	position: relative;
-	float: left;
-}
-
-.gallery-meta-container div.sel select {
-	background: #fff;
-	-webkit-appearance: none;
-	   -moz-appearance: none;
-			appearance: none;
-	cursor: pointer;
-	opacity: 0.9;
-}
-
-/* Targetting Webkit browsers only. FF will show the dropdown arrow with so much padding. */
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-	.gallery-meta-container div.sel select { padding-right: 27px; }
-}
-
-.gallery-meta-container .gallery_item div.sel select {
-	width: 100%;
-	border: none !important;
-}
-
-.gallery-meta-container div.sel:after {
-	content: '';
-	width: 25px;
-	height: 24px;
-	top: 1px;
-	right: 1px;
-	display: block;
-	background: url(../images/select-pointer.png) 0 0 no-repeat;
-	position: absolute;
-	pointer-events: none;
-	border-radius: 3px;
-}
-
-.gallery-meta-container div.sel:hover:after {
-	background-position: 0 -24px;
-}
-
 .clear {
 	clear: both;
 	height: 0;

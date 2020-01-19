@@ -33,7 +33,7 @@ var TMM_PORTFOLIO_ADMIN = function() {
             jQuery('.js_inpost_gallery_add_video').life('click', function(event)
             {
                 var video_url = prompt("Enter youtube or vimeo link");
-                if (video_url.length > 0) {
+                if (video_url && video_url.length > 0) {
                     var video = [video_url];
                     self.add_meta_slide_items(video, 0);
                 }

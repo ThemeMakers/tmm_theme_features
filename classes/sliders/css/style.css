@@ -14,38 +14,6 @@
 	box-sizing: border-box;		 /* Opera/IE 8+ */
 }
 
-.slide-item div.sel {position: relative;}
-
-/* Targetting Webkit browsers only. FF will show the dropdown arrow with so much padding. */
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-	.slide-item div.sel select {padding-right:24px}
-}
-
-.slide-item div.sel select {
-	background: #fff;
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
-	cursor: pointer;
-}
-
-.slide-item div.sel:after {
-	content: '';
-	width: 25px;
-	height: 24px;
-	top: 4px;
-	right: 1px;
-	display: block;
-	/*overflow: hidden;*/
-	background: url(../images/select-pointer.png) 0 0 no-repeat;
-	position: absolute;
-	pointer-events: none;
-}
-
-.slide-item div.sel:hover:after {
-	background-position: 0 -24px;
-}
-
 .font_family {width: 300px;}
 
 .slide-item input[type="text"].small {width: 65px;}

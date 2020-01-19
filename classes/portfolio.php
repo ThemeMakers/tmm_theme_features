@@ -169,7 +169,6 @@ if (! class_exists('TMM_Portfolio')) {
 			add_meta_box("folio_gallery_meta", esc_html__("Folio images", 'accio'), array(__CLASS__, 'gallery_meta'), self::$slug, "normal", "low");
 			add_meta_box("folio_single_tpl", esc_html__("Single page layout", 'accio'), array(__CLASS__, 'single_tpl_meta'), self::$slug, "side", "low");
 			add_meta_box("folio_featured_video", esc_html__("Featured Video", 'accio'), array(__CLASS__, 'featured_video_meta_box_callback'), self::$slug, "side", "low");
-			add_meta_box("seo_options", esc_html__("Seo options", 'accio'), array('TMM_Page', 'page_seo_options'), self::$slug, "normal", "low");
 		}
 
 		public static function gallery_meta() {

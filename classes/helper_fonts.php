@@ -50,8 +50,7 @@ class TMM_HelperFonts {
 
 	public static function get_google_fonts_link() {
 		$google_fonts = self::get_google_fonts();
-
-		return "<link href='https://fonts.googleapis.com/css?family=" . $google_fonts . "' rel='stylesheet' type='text/css'>";
+		return "<link href='https://fonts.googleapis.com/css?family=" . $google_fonts[0] . "' rel='stylesheet' type='text/css'>";
 	}
 	
 	// get google fonts list
