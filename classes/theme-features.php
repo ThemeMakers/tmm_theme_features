@@ -26,10 +26,10 @@ if (! class_exists('TMM_Theme_Features')) {
 
 			if (is_array($options)) {
 				$options['tracking_code'] = array(
-					'title' => __('Tracking Code', 'tmm_theme_features'),
+					'title' => esc_html__('Tracking Code', 'tmm_theme_features'),
 					'type' => 'textarea',
 					'default_value' => '',
-					'description' => __('Place here your Google Analytics (or other) tracking code. It will be inserted before closing head tag in your theme.', 'tmm_theme_features'),
+					'description' => esc_html__('Place here your Google Analytics (or other) tracking code. It will be inserted before closing head tag in your theme.', 'tmm_theme_features'),
 					'custom_html' => ''
 				);
 			}

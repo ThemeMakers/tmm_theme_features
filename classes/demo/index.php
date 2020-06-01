@@ -16,15 +16,15 @@ class TMM_Ext_Demo {
 	public static $css_files = array();
 
 	public static function get_application_path() {
-		return TMM_THEME_FEATURES_PATH . '/classes/demo';
+		return TMM_THEME_FEATURES_PATH . 'classes/demo';
 	}
 
 	public static function get_application_uri() {
-		return TMM_THEME_FEATURES_URI . '/classes/demo';
+		return TMM_THEME_FEATURES_URI . 'classes/demo';
 	}
 
 	public static function admin_head() {
-		wp_enqueue_script('tmm_ext_demo_js', TMM_THEME_FEATURES_URI . '/classes/demo/js/admin.js', array('jquery'));
+		wp_enqueue_script('tmm_ext_demo_js', TMM_THEME_FEATURES_URI . 'classes/demo/js/admin.js', array('jquery'));
 	}
 
 	public static function wp_head() {
@@ -32,8 +32,8 @@ class TMM_Ext_Demo {
 		if (TMM::get_option('hide_layout_front_popup')) {
 			return;
 		}
-		wp_enqueue_script('tmm_ext_demo_js', TMM_THEME_FEATURES_URI . '/classes/demo/js/front.js', array('jquery'));
-		wp_enqueue_style('tmm_ext_demo_css', TMM_THEME_FEATURES_URI . '/classes/demo/css/styles.css');
+		wp_enqueue_script('tmm_ext_demo_js', TMM_THEME_FEATURES_URI . 'classes/demo/js/front.js', array('jquery'));
+		wp_enqueue_style('tmm_ext_demo_css', TMM_THEME_FEATURES_URI . 'classes/demo/css/styles.css');
 		?>
 		<script type="text/javascript">
 		<?php $data = self::get_theme_schemes(); ?>

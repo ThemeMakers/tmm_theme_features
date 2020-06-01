@@ -22,7 +22,7 @@ do_action('tmm_add_theme_options_tab');
 		<header id="title-bar" class="clearfix">
 
 			<a href="#" class="admin-logo">
-				<img src="<?php echo TMM_THEME_FEATURES_URI ?>/admin/theme_options/images/admin-logo.png" />
+				<img src="<?php echo TMM_THEME_FEATURES_URI ?>admin/theme_options/images/admin-logo.png" />
 			</a>
 			<span class="fw-version">framework v.<?php echo TMM_FRAMEWORK_VERSION ?></span>
 

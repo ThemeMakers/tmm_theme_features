@@ -1,6 +1,6 @@
 <?php if (!defined('ABSPATH')) die('No direct access allowed'); ?>
-<?php wp_enqueue_style('tmm_theme_admin_gallery_css', TMM_THEME_FEATURES_URI . '/admin/css/gallery.css'); ?>
-<?php wp_enqueue_script('tmm_theme_admin_gallery_js', TMM_THEME_FEATURES_URI . '/admin/js/gallery.js'); ?>
+<?php wp_enqueue_style('tmm_theme_admin_gallery_css', TMM_THEME_FEATURES_URI . 'admin/css/gallery.css'); ?>
+<?php wp_enqueue_script('tmm_theme_admin_gallery_js', TMM_THEME_FEATURES_URI . 'admin/js/gallery.js'); ?>
 <div class="gallery-meta-container">
 	<input type="hidden" value="1" name="tmm_meta_saving" />
 	<div class="gallery_layout">

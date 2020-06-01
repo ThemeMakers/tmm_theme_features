@@ -110,7 +110,7 @@ class TMM_Ext_Sliders {
 	}
 
 	public static function get_application_uri() {
-		return TMM_THEME_FEATURES_URI . '/classes/sliders';
+		return TMM_THEME_FEATURES_URI . 'classes/sliders';
 	}
 
 	public static function admin_init() {

@@ -2,7 +2,8 @@ var TMM_APP_DEMO_ADMIN = function() {
 	var self = {
 		init: function() {
 
-			jQuery("#save_current_color_scheme").click(function() {
+			jQuery("#save_current_color_scheme").on('click', function(e) {
+				e.preventDefault();
 				var name = jQuery("#new_color_scheme_name").val();
 				var color = jQuery(".new_color_scheme_color").val();
 				if (name.length == 0) {
@@ -56,7 +57,8 @@ var TMM_APP_DEMO_ADMIN = function() {
 			});
 
 			//*****
-			jQuery("#upload_color_scheme").click(function() {
+			jQuery("#upload_color_scheme").on('click', function(e) {
+				e.preventDefault();
 				var scheme_key = jQuery("#color_schemes_select").val();
 				if (scheme_key.length == 0) {
 					return;
@@ -89,7 +91,8 @@ var TMM_APP_DEMO_ADMIN = function() {
 
 			//***
 
-			jQuery("#edit_color_scheme").click(function() {
+			jQuery("#edit_color_scheme").on('click', function(e) {
+				e.preventDefault();
 				var scheme_key = jQuery("#color_schemes_select").val();
 				var scheme_name = jQuery("#color_schemes_select").find(":selected").text();
 				var new_name = jQuery("#new_color_scheme_name").val();
@@ -136,7 +139,8 @@ var TMM_APP_DEMO_ADMIN = function() {
 
 			//***
 
-			jQuery("#delete_color_scheme").click(function() {
+			jQuery("#delete_color_scheme").on('click', function(e) {
+				e.preventDefault();
 				var scheme_key = jQuery("#color_schemes_select").val();
 				if (scheme_key.length == 0) {
 					return;
@@ -155,7 +159,7 @@ var TMM_APP_DEMO_ADMIN = function() {
 			});
 
 			//***
-			jQuery('#color_schemes_select').change(function() {
+			jQuery('#color_schemes_select').on('change', function() {
 				var color = jQuery(this).find(":selected").data('color');
 				jQuery('.new_color_scheme_color').val(color);
 				jQuery('.new_color_scheme_color').next('div').css('background-color', color);
@@ -172,4 +176,3 @@ jQuery(document).ready(function() {
 	tmm_ext_admin_demo = new TMM_APP_DEMO_ADMIN();
 	tmm_ext_admin_demo.init();
 });
-

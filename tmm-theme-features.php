@@ -5,7 +5,7 @@
  * Plugin URI: http://webtemplatemasters.com
  * Description: Advanced Features for Accio Theme
  * Author: ThemeMakers
- * Version: 1.0.1
+ * Version: 1.0.2
  * Author URI: http://themeforest.net/user/ThemeMakers
  * Text Domain: tmm_theme_features
 */
@@ -15,6 +15,9 @@ define( 'TMM_THEME_FEATURES_PATH', trailingslashit( plugin_dir_path( __FILE__ ) 
 define( 'TMM_THEME_FEATURES_URI', trailingslashit( plugin_dir_url( __FILE__ ) ) );
 
 include_once ABSPATH . 'wp-includes/widgets/class-wp-widget-text.php';
+
+/* Include Plugin Helper */
+include_once TMM_THEME_FEATURES_PATH . '/helper.php';
 
 /* Include Classes */
 require_once TMM_THEME_FEATURES_PATH . 'classes/theme-features.php';

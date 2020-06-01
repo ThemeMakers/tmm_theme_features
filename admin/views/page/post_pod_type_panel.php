@@ -1,6 +1,6 @@
 <?php if (!defined('ABSPATH')) die('No direct access allowed'); ?>
 <input type="hidden" name="tmm_meta_saving" value="1" />
-<?php wp_enqueue_style('tmm_theme_admin_gallery_css', TMM_THEME_FEATURES_URI . '/admin/css/gallery.css'); ?>
+<?php wp_enqueue_style('tmm_theme_admin_gallery_css', TMM_THEME_FEATURES_URI . 'admin/css/gallery.css'); ?>
 <ul>
 	<?php foreach ($post_pod_types as $post_pod_type => $post_type_name): ?>
 

@@ -16,6 +16,22 @@ jQuery(function() {
 
 (function($) {
 
+	window.save_options = function(type) {
+		var data = {
+			type: type,
+			action: "change_options",
+			values: jQuery("#theme_options").serialize()
+		};
+		//send data to server
+		jQuery.post(ajaxurl, data, function(response) {
+			show_info_popup(response);
+
+			if (type == 'reset') {
+				window.location.href = tmm_theme_options_url;
+			}
+		});
+	};
+
 	//options reseting
 	try {
 		if (getURLParameter('tmm_action') === 'save_options') {
@@ -332,23 +348,6 @@ jQuery(function() {
 
 
 	hide_loader();
-
-
-	function save_options(type) {
-		var data = {
-			type: type,
-			action: "change_options",
-			values: jQuery("#theme_options").serialize()
-		};
-		//send data to server
-		jQuery.post(ajaxurl, data, function(response) {
-			show_info_popup(response);
-
-			if (type == 'reset') {
-				window.location.href = tmm_theme_options_url;
-			}
-		});
-	}
 
 
 	//*****
