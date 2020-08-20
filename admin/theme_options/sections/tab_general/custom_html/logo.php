@@ -28,6 +28,7 @@ $logo_type = (TMM::get_option('logo_type') === null || TMM::get_option('logo_typ
 				'title'=> esc_html__('Light Logo Variant (Front Page & Filled Navigation Bar)', 'accio'),
 				'description' => esc_html__('The default theme logo gets displayed in case you keep the logo input field blank. Recommended Logo Dimensions: Max width  300px. In order to get your logo displayed properly and sharp on Retina ready displayed you would need to upload logo with the double dimensions of your main logo. For instance if your logo is 300x100 you need to upload 600x200.', 'accio'),
 				'id' => '',
+				'show_title' => true,
 			));
 			?>
 
@@ -46,6 +47,7 @@ $logo_type = (TMM::get_option('logo_type') === null || TMM::get_option('logo_typ
 				'title'=> esc_html__('Dark Logo Variant (All other pages)', 'accio'),
 				'description' => esc_html__('Recommended Logo Dimensions: Max width  300px.', 'accio'),
 				'id' => '',
+				'show_title' => true,
 			));
 			?>
 
