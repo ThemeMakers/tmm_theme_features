@@ -52,7 +52,7 @@ a:hover.update_gallery_item { background-position: -20px -16px; }
 		position: relative;
 	}
 
-	.sel.gallery_item_category_wrap {
+	.gallery_item_category_wrap {
 		width: 95px;
 		position: absolute;
 		top: 70px;

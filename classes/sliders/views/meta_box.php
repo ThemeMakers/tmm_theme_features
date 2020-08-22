@@ -78,19 +78,17 @@
 											ORDER BY id ASC LIMIT 200");
 			?>
 			<p><?php esc_html_e("Cuteslider's groups", 'accio') ?>:</p>
-			<div class="sel">
-				<select name="cuteslider_slide_group">
-					<option value=""><?php esc_html_e("Choose slider group", 'accio') ?></option>
-					<?php if (!empty($sliders)) : ?>
-						<?php foreach ($sliders as $item) : ?>
-							<?php $name = empty($item->name) ? 'Unnamed' : $item->name; ?>
-							<option <?php echo esc_attr( ($cuteslider_slide_group == $item->id ? "selected" : "") ) ?> value="<?php echo esc_attr($item->id) ?>"><?php echo esc_html($name) ?></option>
-						<?php endforeach; ?>
-					<?php else: ?>
-						<?php esc_html_e("You still haven't created any slider group for your Cuteslider.", 'accio') ?>
-					<?php endif; ?>
-				</select>
-			</div>
+            <select name="cuteslider_slide_group">
+                <option value=""><?php esc_html_e("Choose slider group", 'accio') ?></option>
+                <?php if (!empty($sliders)) : ?>
+                    <?php foreach ($sliders as $item) : ?>
+                        <?php $name = empty($item->name) ? 'Unnamed' : $item->name; ?>
+                        <option <?php echo esc_attr( ($cuteslider_slide_group == $item->id ? "selected" : "") ) ?> value="<?php echo esc_attr($item->id) ?>"><?php echo esc_html($name) ?></option>
+                    <?php endforeach; ?>
+                <?php else: ?>
+                    <?php esc_html_e("You still haven't created any slider group for your Cuteslider.", 'accio') ?>
+                <?php endif; ?>
+            </select>
 		</div>
 	<?php endif; ?>
 	<div class="clear"></div>

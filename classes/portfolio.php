@@ -8,16 +8,16 @@ if (! class_exists('TMM_Portfolio')) {
 		public static function init() {
 
 			$labels = array(
-				'name' => esc_html__('Portfolios', 'accio'),
-				'singular_name' => esc_html__('Portfolio', 'accio'),
+				'name' => esc_html__('Portfolio Items', 'accio'),
+				'singular_name' => esc_html__('Portfolio Item', 'accio'),
 				'add_new' => esc_html__('Add New', 'accio'),
-				'add_new_item' => esc_html__('Add New Portfolio', 'accio'),
-				'edit_item' => esc_html__('Edit Portfolio', 'accio'),
-				'new_item' => esc_html__('New Portfolio', 'accio'),
-				'view_item' => esc_html__('View Portfolio', 'accio'),
-				'search_items' => esc_html__('Search Portfolios', 'accio'),
-				'not_found' => esc_html__('No Portfolios found', 'accio'),
-				'not_found_in_trash' => esc_html__('No Portfolios found in Trash', 'accio'),
+				'add_new_item' => esc_html__('Add New Portfolio Item', 'accio'),
+				'edit_item' => esc_html__('Edit Portfolio Item', 'accio'),
+				'new_item' => esc_html__('New Portfolio Item', 'accio'),
+				'view_item' => esc_html__('View Portfolio Item', 'accio'),
+				'search_items' => esc_html__('Search Portfolio Items', 'accio'),
+				'not_found' => esc_html__('No Portfolio Items found', 'accio'),
+				'not_found_in_trash' => esc_html__('No Portfolio Items found in Trash', 'accio'),
 				'parent_item_colon' => ''
 			);
 
@@ -115,7 +115,7 @@ if (! class_exists('TMM_Portfolio')) {
 			flush_rewrite_rules(false);
 
 			add_filter("manage_folio_posts_columns", array(__CLASS__, "show_edit_columns"));
-			add_action("manage_folio_posts_custom_column", array(__CLASS__, "show_edit_columns_content"));
+			add_action("manage_folio_posts_custom_column", array(__CLASS__, "show_edit_columns_content"), 10, 2);
 
 			//ajax
 			add_action('wp_ajax_add_gallery_folio_item', array(__CLASS__, 'add_gallery_item'));
@@ -221,24 +221,22 @@ if (! class_exists('TMM_Portfolio')) {
 			exit;
 		}
 
-		public static function show_edit_columns_content($column) {
-			global $post;
-
+		public static function show_edit_columns_content($column, $post_id) {
 			switch ($column) {
 				case "image":
-					echo '<img alt="" src="' . TMM_Helper::get_post_featured_image($post->ID, '200*200') . '"/>';
+                    echo get_the_post_thumbnail( $post_id, array(200, 200) );
 					break;
 				case "description":
 					the_excerpt();
 					break;
 				case "tags":
-					echo get_the_tag_list('', '', '', $post->ID);
+					echo get_the_tag_list('', '', '', $post_id);
 					break;
 				case "clients":
-					echo get_the_term_list($post->ID, 'clients', '', ', ', '');
+					echo get_the_term_list($post_id, 'clients', '', ', ', '');
 					break;
 				case "skills":
-					echo get_the_term_list($post->ID, 'skills', '', ', ', '');
+					echo get_the_term_list($post_id, 'skills', '', ', ', '');
 					break;
 			}
 		}
