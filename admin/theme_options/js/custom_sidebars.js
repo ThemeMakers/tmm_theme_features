@@ -24,7 +24,7 @@ jQuery(document).ready(function() {
 
 	});
 
-	jQuery('.js_edit_sidebar').life('click', function() {
+	jQuery(document.body).on('click', '.js_edit_sidebar', function() {
 		var id = jQuery(this).data('id');
 
 		jQuery('#js_sidebar_panel').animate({
@@ -36,7 +36,7 @@ jQuery(document).ready(function() {
 	});
 
 
-	jQuery('.js_back_to_sidebars_list').life('click', function() {
+	jQuery(document.body).on('click', '.js_back_to_sidebars_list', function() {
 		jQuery(this).parent('li').animate({
 			opacity: 0,
 			height: "toggle"
@@ -46,7 +46,7 @@ jQuery(document).ready(function() {
 		});
 	});
 
-	jQuery(".js_remove_sidebar").life('click', function() {
+	jQuery(document.body).on('click', '.js_remove_sidebar', function() {
 		var id = jQuery(this).data('id');
 		jQuery(this).parent().hide(hide_delay, function() {
 			jQuery(this).remove();
@@ -58,7 +58,7 @@ jQuery(document).ready(function() {
 	//*********************************************************************
 
 	var stop_add_new_page = false;
-	jQuery(".add_page").life('click', function() {
+	jQuery(document.body).on('click', '.add_page', function() {
 		if (stop_add_new_page) {
 			return;
 		}
@@ -78,7 +78,7 @@ jQuery(document).ready(function() {
 	});
 
 	var stop_add_new_cat = false;
-	jQuery(".add_category").life('click', function() {
+	jQuery(document.body).on('click', '.add_category', function() {
 		if (stop_add_new_cat) {
 			return;
 		}
@@ -98,7 +98,7 @@ jQuery(document).ready(function() {
 	});
 
 	//for pages and categories
-	jQuery(".remove_page").life('click', function() {
+	jQuery(document.body).on('click', '.remove_page', function() {
 		jQuery(this).parent().slideUp(hide_delay, function() {
 			jQuery(this).remove();
 		});

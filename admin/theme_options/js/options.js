@@ -59,7 +59,7 @@ jQuery(function() {
 
 		show_loader();
 
-		$(".option_checkbox").life('click', function() {
+		$(document.body).on('click', '.option_checkbox', function() {
 			if (jQuery(this).is(":checked")) {
 				jQuery(this).parents(".checker").prev("input[type=hidden]").val(1);
 				jQuery(this).parents(".checker").next("input[type=hidden]").val(1);
@@ -69,14 +69,14 @@ jQuery(function() {
 			}
 		});
 
-		$('.button_save_options').life('click', function() {
+		$(document.body).on('click', '.button_save_options', function() {
 			save_color_pickers_states();
 			save_options("save");
 			return false;
 		});
 
 
-		$(".js_picker_val_ahead").life('click', function() {
+		$(document.body).on('click', '.js_picker_val_ahead', function() {
 			var input = jQuery(this).parent().find(".bg_hex_color").eq(0);
 			var button = jQuery(this).parent().find(".bgpicker").eq(0);
 			var index = parseInt(jQuery(input).attr('value-index'), 10);
@@ -99,7 +99,7 @@ jQuery(function() {
 		});
 
 
-		$(".js_picker_val_back").life('click', function() {
+		$(document.body).on('click', '.js_picker_val_back', function() {
 			var input = jQuery(this).parent().find(".bg_hex_color").eq(0);
 			var button = jQuery(this).parent().find(".bgpicker").eq(0);
 			var index = parseInt(jQuery(input).attr('value-index'), 10);
@@ -119,7 +119,7 @@ jQuery(function() {
 		});
 
 
-		$(".js_picker_val_reset").life('click', function() {
+		$(document.body).on('click', '.js_picker_val_reset', function() {
 			var input = jQuery(this).parent().find(".bg_hex_color").eq(0);
 			var button = jQuery(this).parent().find(".bgpicker").eq(0);
 			var def_val = jQuery(input).data('default-value');
@@ -128,8 +128,7 @@ jQuery(function() {
 		});
 
 
-		$('.button_reset_options').life('click', function()
-		{
+		$(document.body).on('click', '.button_reset_options', function(){
 			if (confirm(lang_sure)) {
 				$.each(tmm_options_reset_array, function(key, value) {
 					var elem = jQuery("[name=" + value + "]"),
@@ -149,7 +148,7 @@ jQuery(function() {
 			jQuery("#favicon_preview_image").attr("src", jQuery(this).val());
 		});
 
-		$(".delegate_click").life('click', function() {
+		$(document.body).on('click', '.delegate_click', function() {
 			var id = jQuery(this).data('id');
 			jQuery("[href=#" + id + "]").trigger('click');
 			return false;

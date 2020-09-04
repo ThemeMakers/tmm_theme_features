@@ -28,7 +28,7 @@ jQuery(document).ready(function() {
 	});
 
 
-	jQuery('.js_edit_contact_form').life('click', function() {
+	jQuery(document.body).on('click', '.js_edit_contact_form', function() {
 		var id = jQuery(this).data('id');
 		jQuery('.js_contact_forms_panel').animate({
 			opacity: 0,
@@ -39,7 +39,7 @@ jQuery(document).ready(function() {
 	});
 
 
-	jQuery('.js_back_to_forms_list').life('click', function() {
+	jQuery(document.body).on('click', '.js_back_to_forms_list', function() {
 		jQuery(this).parent('li').animate({
 			opacity: 0,
 			height: "toggle"			
@@ -51,7 +51,7 @@ jQuery(document).ready(function() {
 
 
 	//delete form
-	jQuery('.delete_contact_form').life('click', function() {
+	jQuery(document.body).on('click', '.delete_contact_form', function() {
 		var id = jQuery(this).data('id');
 		jQuery(this).parent().hide(hide_delay, function() {
 			jQuery(this).remove();
@@ -61,7 +61,7 @@ jQuery(document).ready(function() {
 	});
 
 	//add field
-	jQuery('.add_contact_field_button').life('click', function() {
+	jQuery(document.body).on('click', '.add_contact_field_button', function() {
 		var index = jQuery(this).attr("form-id");
 		var input_index = get_time_miliseconds();
 
@@ -76,7 +76,7 @@ jQuery(document).ready(function() {
 
 
 	//delete field
-	jQuery('.delete_contact_field_button').life('click', function() {
+	jQuery(document.body).on('click', '.delete_contact_field_button', function() {
 		jQuery(this).parent().hide(hide_delay, function() {
 			jQuery(this).closest("li").remove();
 		});
@@ -85,7 +85,7 @@ jQuery(document).ready(function() {
 
 
 	//change select attributes
-	jQuery('.options_type_select').life('change', function() {
+	jQuery(document.body).on('change', '.options_type_select', function() {
 		if (jQuery(this).val() == "select") {
 			jQuery(this).parents(".admin-drag-holder").find(".select_options").eq(0).show(show_delay);
 		} else {
@@ -94,7 +94,7 @@ jQuery(document).ready(function() {
 	});
 
 	//change select form name
-	jQuery('.form_name').life('change', function(event) {
+	jQuery(document.body).on('change', '.form_name', function(event) {
 		var defaultValue = event.target.defaultValue;
 		var newValue = event.target.value;
 		jQuery("a:contains(" + defaultValue + ")").text(newValue);

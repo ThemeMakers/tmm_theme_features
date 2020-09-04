@@ -8,7 +8,7 @@ var TMM_PORTFOLIO_ADMIN = function() {
             self.html_buffer = jQuery("#inpost_gallery_html_buffer");
             jQuery("#gallery_item_list").sortable();
             //*****
-            jQuery('.js_inpost_gallery_add_slide').life('click', function(event)
+            jQuery(document.body).on('click', '.js_inpost_gallery_add_slide', function(event)
             {
                 var frame = wp.media({
                         title: wp.media.view.l10n.chooseImage,
@@ -30,7 +30,7 @@ var TMM_PORTFOLIO_ADMIN = function() {
                 return false;
             });
 
-            jQuery('.js_inpost_gallery_add_video').life('click', function(event)
+            jQuery(document.body).on('click', '.js_inpost_gallery_add_video', function(event)
             {
                 var video_url = prompt("Enter youtube or vimeo link");
                 if (video_url && video_url.length > 0) {
@@ -41,7 +41,7 @@ var TMM_PORTFOLIO_ADMIN = function() {
                 return false;
             });
 
-            jQuery(".delete_gallery_item").life('click', function() {
+            jQuery(document.body).on('click', '.delete_gallery_item', function() {
                 var self_button = this;
                 jQuery(self_button).parents('li').eq(0).hide(333, function() {
                     jQuery(self_button).parents('li').eq(0).remove();

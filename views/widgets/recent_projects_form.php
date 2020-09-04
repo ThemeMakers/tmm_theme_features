@@ -12,8 +12,8 @@ $uniqid = uniqid(); ?>
 </p>
 
 <p>
-    <label for="<?php echo esc_attr( $widget->get_field_id('layout_style') ) ?>"><?php esc_html_e('Layout Style', 'accio') ?>:</label>
-    <select id="<?php echo esc_attr( $widget->get_field_id('layout_style') ) ?>" name="<?php echo esc_attr( $widget->get_field_name('layout_style') ) ?>" class="widefat">
+    <label for="id_<?php echo esc_attr( $uniqid ) ?>"><?php esc_html_e('Layout Style', 'accio') ?>:</label>
+    <select id="id_<?php echo esc_attr( $uniqid ) ?>" name="<?php echo esc_attr( $widget->get_field_name('layout_style') ) ?>" class="widefat">
 		<?php $layout_styles = array(1 => esc_html__('Layout Style 1', 'accio'), 2 => esc_html__('Layout Style 2', 'accio')); ?>
 		<?php foreach ($layout_styles as $style_key => $style_name) : ?>
 			<option <?php echo esc_attr( ($style_key == $instance['layout_style'] ? "selected" : "") ) ?> value="<?php echo esc_attr( $style_key ) ?>"><?php echo esc_html( $style_name ) ?></option>
@@ -70,14 +70,16 @@ $uniqid = uniqid(); ?>
     <label for="<?php echo esc_attr( $widget->get_field_id('show_button') ) ?>"><?php esc_html_e('Show button', 'accio') ?></label>
 </p>
 <script type="text/javascript">
-	jQuery(function() {
-		jQuery('#<?php echo esc_attr( $widget->get_field_id('layout_style') ) ?>').life('change',function() {
+    jQuery(function() {
+		jQuery(document.body).on('change', '#id_<?php echo esc_attr( $uniqid ) ?>', function() {
 			if(parseInt(jQuery(this).val()) == 2){
 				jQuery('.style1_options_<?php echo esc_js( $uniqid ) ?>').show(150);
 			} else {
 				jQuery('.style1_options_<?php echo esc_js( $uniqid ) ?>').hide(150);
 			}
-			
+
 		});
 	});
+
+
 </script>

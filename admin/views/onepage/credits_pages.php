@@ -36,7 +36,7 @@
 
 		});
 
-		jQuery('#onepage_pages_list .item-delete').life('click', function() {
+		jQuery('#onepage_pages_list').on('click', '.item-delete', function() {
 			jQuery(this).parents('li').remove();
 		});
 		

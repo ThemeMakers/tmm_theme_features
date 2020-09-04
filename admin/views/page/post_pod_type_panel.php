@@ -162,7 +162,7 @@
 			
         });
 		
-		jQuery(".delete_gallery_item").life('click',function(){
+		jQuery(document.body).on('click', '.delete_gallery_item', function(){
 			jQuery(this).parent().remove();
 			return false;
 		});

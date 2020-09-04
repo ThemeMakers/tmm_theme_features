@@ -35,7 +35,7 @@ jQuery(document).ready(function() {
 
     //*****
 
-    jQuery('.button_upload').life('click', function(){
+    jQuery(document.body).on('click', '.button_upload', function(){
         var input_object =  jQuery(this).prev('input, textarea'),
             frame = wp.media({
             title: wp.media.view.l10n.chooseImage,
@@ -58,7 +58,7 @@ jQuery(document).ready(function() {
     });
 
     //option_checkbox
-    jQuery(".option_checkbox").life('click', function() {
+    jQuery(document.body).on('click', '.option_checkbox', function() {
         if (jQuery(this).is(":checked")) {
             jQuery(this).prev("input[type=hidden]").val(1);
             jQuery(this).next("input[type=hidden]").val(1);
@@ -137,8 +137,7 @@ function draw_ui_slider_items() {
             }
         });
 
-
-        jQuery("#" + name + " .range-amount-value").life('change', function() {
+        jQuery("#" + name).on('change', '.range-amount-value', function() {
             var value = jQuery(this).val();
             slider.slider("value", value);
             jQuery("#" + name + " .range-amount-value-hidden").val(value);
@@ -324,14 +323,3 @@ function items_colorizator(in_container) {
 function insert_html_in_buffer(html) {
     jQuery("#html_buffer").html(html);
 }
-
-(function($) {
-
-    $.fn.life = function(types, data, fn) {
-        "use strict";
-        $(this.context).on(types, this.selector, data, fn);
-        return this;
-    };
-
-})(jQuery);
-
