@@ -97,8 +97,6 @@ var TMM_ADMIN_SLIDES = function() {
 					$this.next().stop(true, true).slideDown('300');		
 				}
 
-				console.log('ddd');
-
 			});
 			
 			return false;
