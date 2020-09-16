@@ -16,7 +16,7 @@ wp_enqueue_script('tmm_flexslider', TMM_Ext_Sliders::get_application_uri() . '/i
 
 			if ( $flex.length ) {
 
-				jQuery(window).load(function() {
+				jQuery(window).on('load', function() {
 					$flex.flexslider({
 						animation: "<?php echo esc_js($options['animation']) ?>",
 						slideshow: <?php echo esc_js(($options['slideshow'] ? 'true' : 'false') ) ?>,
