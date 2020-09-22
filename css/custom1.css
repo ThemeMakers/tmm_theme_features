@@ -7,14 +7,14 @@ body { background: #fefefe;; }
 
 
 	body {
-	font-family: "Arial";
+	font-family: "Roboto";
 	font-size: 15px;
 	color: #777;
 	}
 
 
 
-	a, a > * { color: #5b5e60; }
+	a, a > * { color: #00c2a8; }
 
 
 
@@ -25,7 +25,7 @@ body { background: #fefefe;; }
 
 	#logo,
 	.transparent #logo {
-	font-family: "Arial";
+	font-family: "Julius Sans One";
 	font-size: 44px;
 	}
 
@@ -184,7 +184,7 @@ body { background: #fefefe;; }
 
 
 	h1 {
-	font-family:"Arial";
+	font-family:"Roboto";
 	font-size:36px;
 	color: #5b5e60;
 	}
@@ -192,7 +192,7 @@ body { background: #fefefe;; }
 
 
 	h2 {
-	font-family:"Arial";
+	font-family:"Roboto";
 	font-size:24px;
 	color:#5b5e60;
 	}
@@ -200,7 +200,7 @@ body { background: #fefefe;; }
 
 
 	h3 {
-	font-family: "Arial";
+	font-family: "Roboto";
 	font-size: 20px;
 	color: #5b5e60;
 	}
@@ -208,7 +208,7 @@ body { background: #fefefe;; }
 
 
 	h4 {
-	font-family: "Arial";
+	font-family: "Roboto";
 	font-size: 18px;
 	color: #5b5e60;
 	}
@@ -216,7 +216,7 @@ body { background: #fefefe;; }
 
 
 	h5 {
-	font-family:"Arial";
+	font-family:"Roboto";
 	font-size:16px;
 	color:#5b5e60;
 	}
@@ -224,7 +224,7 @@ body { background: #fefefe;; }
 
 
 	h6 {
-	font-family:"Arial";
+	font-family:"Roboto";
 	font-size:14px;
 	color:#5b5e60;
 	}
@@ -233,9 +233,9 @@ body { background: #fefefe;; }
 /************************* Main Navigation *******************************/
 
 
-	.navigation a { font-family: "Arial"; }
+	.navigation a { font-family: "Roboto"; }
 
-	.header-shrink .navigation a { font-family: "Arial"; }
+	.header-shrink .navigation a { font-family: "Roboto"; }
 
 
 

@@ -1,4 +1,7 @@
-<?php if (!defined('ABSPATH')) die('No direct access allowed'); ?>
+<?php if (!defined('ABSPATH')) die('No direct access allowed');
+
+$page_sidebar_position = isset($page_sidebar_position) ? $page_sidebar_position : 'sbr';
+?>
 <input type="hidden" name="tmm_meta_saving" value="1" />
 
 <div class="custom-page-options">
@@ -106,12 +109,12 @@
 	<hr>
 
 	<h4><?php esc_html_e('Page Sidebar Position', 'accio'); ?></h4>
-	<input type="hidden" value="<?php echo (!$page_sidebar_position ? "sbr" : esc_attr($page_sidebar_position)) ?>" name="page_sidebar_position" />
+	<input type="hidden" value="<?php echo esc_attr( $page_sidebar_position ) ?>" name="page_sidebar_position" />
 
 	<ul class="admin-page-choice-sidebar clearfix">
-		<li class="lside <?php echo esc_attr( ($page_sidebar_position == "sbl" ? "current-item" : "") ) ?>"><a href="sbl" data-val="sbl"><?php esc_html_e('Left Sidebar', 'accio'); ?></a></li>
-		<li class="wside <?php echo esc_attr( ($page_sidebar_position == "no_sidebar" ? "current-item" : "") ) ?>"><a href="no_sidebar" data-val="no_sidebar"><?php esc_html_e('Without Sidebar', 'accio'); ?></a></li>
-		<li class="rside <?php echo esc_attr( ($page_sidebar_position == "sbr" ? "current-item" : "") ) ?>"><a href="sbr" data-val="sbr"><?php esc_html_e('Right Sidebar', 'accio'); ?></a></li>
+		<li class="lside<?php echo wp_kses_post( ($page_sidebar_position == "sbl" ? " current-item" : "") ) ?>"><a href="sbl" data-val="sbl"><?php esc_html_e('Left Sidebar', 'accio'); ?></a></li>
+		<li class="wside<?php echo wp_kses_post( ($page_sidebar_position == "no_sidebar" ? " current-item" : "") ) ?>"><a href="no_sidebar" data-val="no_sidebar"><?php esc_html_e('Without Sidebar', 'accio'); ?></a></li>
+		<li class="rside<?php echo wp_kses_post( ($page_sidebar_position == "sbr" ? " current-item" : "") ) ?>"><a href="sbr" data-val="sbr"><?php esc_html_e('Right Sidebar', 'accio'); ?></a></li>
 	</ul>	
 	
 </div><!--/ #page-sidebar-position-->
