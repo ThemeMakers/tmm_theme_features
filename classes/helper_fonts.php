@@ -4,19 +4,19 @@ class TMM_HelperFonts {
 
 	public static function get_google_fonts() {
 
-		$google_fonts = TMM_OptionsHelper::$google_fonts;
+		$google_fonts = self::$default_google_fonts;
 
-		$saved_google_fonts = self::get_saved_fonts();
+		$saved_fonts = self::get_saved_fonts();
 
 		$default_fonts = self::get_default_fonts_list();
 
 		$arr_default_fonts = array_column($default_fonts, 'family');
 
 		// remove default fonts out of array if anyone persists
-		$saved_google_fonts = array_diff( $saved_google_fonts, $arr_default_fonts );
+		$saved_fonts = array_diff( $saved_fonts, $arr_default_fonts );
 
-		if (!empty($saved_google_fonts) AND is_array($saved_google_fonts)) {
-			$google_fonts = implode("|", $saved_google_fonts);
+		if (!empty($saved_fonts) AND is_array($saved_fonts)) {
+			$google_fonts = implode("|", $saved_fonts);
 		}
 
 		return $google_fonts;
@@ -50,6 +50,7 @@ class TMM_HelperFonts {
 
 	public static function get_google_fonts_link() {
 		$google_fonts = self::get_google_fonts();
+		echo var_dump($google_fonts);
 		return '<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=' . $google_fonts . '"/>';
 	}
 	
@@ -86,5 +87,7 @@ class TMM_HelperFonts {
 
 		return $content;
 	}
+
+    public static $default_google_fonts = "Roboto:100,300,300italic,400,700|Julius+Sans+One|Roboto+Condensed:300,400";
 
 }

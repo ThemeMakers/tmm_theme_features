@@ -152,6 +152,8 @@
     margin: 0;
     padding: 0;
     height: 12px;
+    min-height: 12px;
+    line-height: 1;
 }
 
 .colorpicker_hex {

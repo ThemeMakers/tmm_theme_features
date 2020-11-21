@@ -1,18 +1,11 @@
 .appearance_page_tmm_theme_options nav ul,
 .appearance_page_tmm_theme_options nav ol {
 	list-style: none;
-	list-style-image: none;
 }
 
 .appearance_page_tmm_theme_options a {
-	margin:0;
-	padding:0;
-	font-size:100%;
-	background:transparent;
-	vertical-align:baseline;
 	color: #939494;
 	text-decoration: none;
-	outline: none;
 }
 
 .not-ie a, .not-ie a > * {
@@ -305,11 +298,6 @@ body.appearance_page_tmm_theme_options {
 
 	-webkit-transition: all .35s ease;
 			transition: all .35s ease;
-}
-
-.admin-button {
-	background-color: #c0c2c4;
-	vertical-align: top;
 }
 
 .admin-container .admin-button:hover  { background-color: #999; }

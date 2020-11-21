@@ -34,7 +34,7 @@ $logo_type = (TMM::get_option('logo_type') === null || TMM::get_option('logo_typ
 
 			<?php $logo_img = TMM::get_option('logo_img') ?>
 			<div class="optional">
-				<img id="logo_preview_image" style="display: <?php if ($logo_img): ?>inline<?php else: ?>none<?php endif; ?>; max-width:300px;" src="<?php echo esc_url($logo_img) ?>" alt="logo" />
+				<img id="logo_preview_image" style="display: <?php if ($logo_img): ?>inline<?php else: ?>none<?php endif; ?>; max-width:250px;" src="<?php echo esc_url($logo_img) ?>" alt="logo" />
 			</div>
 		</div>
 
@@ -53,7 +53,7 @@ $logo_type = (TMM::get_option('logo_type') === null || TMM::get_option('logo_typ
 
 			<?php $logo_img_secondary = TMM::get_option('logo_img_secondary') ?>
 			<div class="optional">
-				<img id="logo_preview_image_secondary" style="display: <?php if ($logo_img_secondary): ?>inline<?php else: ?>none<?php endif; ?>; max-width:300px;" src="<?php echo esc_url($logo_img_secondary) ?>" alt="logo" />
+				<img id="logo_preview_image_secondary" style="display: <?php if ($logo_img_secondary): ?>inline<?php else: ?>none<?php endif; ?>; max-width:250px;" src="<?php echo esc_url($logo_img_secondary) ?>" alt="logo" />
 			</div>
 		</div>
 

@@ -4,10 +4,6 @@ class TMM_OptionsHelper {
 
 	public static $sections = array();
 
-	public static $google_fonts = array(
-		"Roboto:100,300,300italic,400,700|Julius+Sans+One|Roboto+Condensed:300,400"
-	);
-
 	/*
 	 * Drawing theme option for admin panel
 	 */
