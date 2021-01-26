@@ -67,12 +67,12 @@ $content = array(
 		'description' => esc_html__('Upload your favicon here. It will appear in your browser\'s address bar as per example below. Recommended dimensions: 114x114. Recommended image types: png', 'accio'),
 		'custom_html' => ''
 	),
-	'logo' => array(
+	'site_logo' => array(
 		'title' => esc_html__('Website Logo', 'accio'),
 		'type' => 'custom',
-		'default_value' => '',
+		'default_value' => 'text',
 		'description' => '',
-		'custom_html' => TMM::draw_free_page($pagepath . 'logo.php')
+		'custom_html' => TMM::draw_free_page($pagepath . 'site_logo.php')
 	),
 	'sidebar_position' => array(
 		'title' => esc_html__('Default Sidebar Position', 'accio'),

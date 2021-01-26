@@ -72,8 +72,8 @@
 				
 				<div class="switch">
 					<input type="hidden" name="contact_form[__INIQUE_ID__][has_capture]" value="0" />
-					<input type="checkbox" id="form-captcha" class="form_captcha option_checkbox" />
-					<label for="form-captcha"><span></span><?php esc_html_e('Enable Captcha', 'accio'); ?></label>
+					<input type="checkbox" id="form-captcha-02" class="form_captcha option_checkbox" />
+					<label for="form-captcha-02"><span></span><?php esc_html_e('Enable Captcha', 'accio'); ?></label>
 					<input type="hidden" name="contact_form_index" value="__INIQUE_ID__" />
 				</div><!--/ .switch-->		
 			

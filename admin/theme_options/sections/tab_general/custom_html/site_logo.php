@@ -1,6 +1,7 @@
 <?php if (!defined('ABSPATH')) die('No direct access allowed');
 
-$logo_type = (TMM::get_option('logo_type') === null || TMM::get_option('logo_type') === '0') ? 'image' : 'text';
+$logo_type = TMM::get_option('site_logo');
+$logo_type = isset($logo_type) ? $logo_type : 'text';
 ?>
 
 <div class="option option-radio">
@@ -9,7 +10,7 @@ $logo_type = (TMM::get_option('logo_type') === null || TMM::get_option('logo_typ
 		<input id="logotext" type="radio" class="showhide" data-show-hide="logo_text" name="logo_type" value="1" <?php echo esc_attr( ($logo_type === 'text' ? "checked" : "") ) ?> />
 		<label for="logotext"><span></span><?php esc_html_e('Text', 'accio'); ?></label>
 		<input id="logoimage" type="radio" class="showhide" data-show-hide="logo_img" name="logo_type" value="0" <?php echo esc_attr( ($logo_type === 'image' ? "checked" : "") ) ?> />
-		<label for="logoimage"><span></span><?php esc_html_e('Image', 'accio'); ?></label>&nbsp; &nbsp;
+		<label for="logoimage"><span></span><?php esc_html_e('Image', 'accio'); ?></label>
 	</div><!--/ .controls-->
 	
 	<div class="explain"></div>
@@ -27,7 +28,7 @@ $logo_type = (TMM::get_option('logo_type') === null || TMM::get_option('logo_typ
 				'default_value' => '',
 				'title'=> esc_html__('Light Logo Variant (Front Page & Filled Navigation Bar)', 'accio'),
 				'description' => esc_html__('The default theme logo gets displayed in case you keep the logo input field blank. Recommended Logo Dimensions: Max width  300px. In order to get your logo displayed properly and sharp on Retina ready displayed you would need to upload logo with the double dimensions of your main logo. For instance if your logo is 300x100 you need to upload 600x200.', 'accio'),
-				'id' => '',
+				'id' => 'logo_img',
 				'show_title' => true,
 			));
 			?>
@@ -46,7 +47,7 @@ $logo_type = (TMM::get_option('logo_type') === null || TMM::get_option('logo_typ
 				'default_value' => '',
 				'title'=> esc_html__('Dark Logo Variant (All other pages)', 'accio'),
 				'description' => esc_html__('Recommended Logo Dimensions: Max width  300px.', 'accio'),
-				'id' => '',
+				'id' => 'logo_img_secondary',
 				'show_title' => true,
 			));
 			?>
@@ -68,6 +69,7 @@ $logo_type = (TMM::get_option('logo_type') === null || TMM::get_option('logo_typ
 			'description' => esc_html__('Type your website name here, it will appear instead of your Logo in text format.', 'accio'),
 			'default_value' => esc_html__('Accio', 'accio'),
 			'css_class' => '',
+			'id' => 'logo_text',
 			'show_title' => true,
 		));
 		?>
@@ -86,6 +88,7 @@ $logo_type = (TMM::get_option('logo_type') === null || TMM::get_option('logo_typ
 			'values' => $logo_font_size,
 			'default_value' => 44,
 			'css_class' => '',
+            'id' => 'logo_font_size',
 			'show_title' => true,
 			'is_reset' => true
 		));
@@ -97,6 +100,7 @@ $logo_type = (TMM::get_option('logo_type') === null || TMM::get_option('logo_typ
 			'title' => esc_html__('Logo Font Family', 'accio'),
 			'type' => 'google_font_select',
 			'description' => '',
+            'id' => 'logo_font',
 			'default_value' => 'Julius Sans One:regular',
 			'is_reset' => true,
 			'show_title' => true,
@@ -111,6 +115,7 @@ $logo_type = (TMM::get_option('logo_type') === null || TMM::get_option('logo_typ
 			'default_value' => '#232323',
 			'description' => esc_html__('Can be applied for text logo only. Can not be used on One-Page page types', 'accio'),
 			'css_class' => '',
+            'id' => 'logo_text_color',
 			'is_reset' => true,
 			'show_title' => true,
 		));
