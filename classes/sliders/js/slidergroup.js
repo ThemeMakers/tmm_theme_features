@@ -34,7 +34,7 @@ var TMM_ADMIN_SLIDES = function() {
 
 
 			jQuery(document).on('click', '.js_edit_slide', function() {
-                var slide_id = jQuery(this).data('slide-id');
+                var slide_id = jQuery(this).data('slideId');
                 var frame = wp.media({
                     title: wp.media.view.l10n.chooseImage,
                     multiple: false,

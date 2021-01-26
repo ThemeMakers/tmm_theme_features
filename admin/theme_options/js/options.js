@@ -46,7 +46,7 @@ jQuery(function() {
 
 	$(function() {
 
-		$("#theme_options").show(999);
+		$("#theme_options").show();
 
 		$('.admin-container').AdminNavigation();
 
@@ -56,8 +56,6 @@ jQuery(function() {
 
 		$('.thumb-pattern').multiChoice('body_pattern');
 		$('.admin-choice-sidebar').multiChoice('sidebar_position');
-
-		show_loader();
 
 		$(document.body).on('click', '.option_checkbox', function() {
 			if (jQuery(this).is(":checked")) {
@@ -74,7 +72,6 @@ jQuery(function() {
 			save_options("save");
 			return false;
 		});
-
 
 		$(document.body).on('click', '.js_picker_val_ahead', function() {
 			var input = jQuery(this).parent().find(".bg_hex_color").eq(0);
@@ -98,7 +95,6 @@ jQuery(function() {
 			}
 		});
 
-
 		$(document.body).on('click', '.js_picker_val_back', function() {
 			var input = jQuery(this).parent().find(".bg_hex_color").eq(0);
 			var button = jQuery(this).parent().find(".bgpicker").eq(0);
@@ -118,21 +114,19 @@ jQuery(function() {
 			}
 		});
 
-
 		$(document.body).on('click', '.js_picker_val_reset', function() {
 			var input = jQuery(this).parent().find(".bg_hex_color").eq(0);
 			var button = jQuery(this).parent().find(".bgpicker").eq(0);
-			var def_val = jQuery(input).data('default-value');
+			var def_val = jQuery(input).data('defaultValue');
 			jQuery(input).val(def_val);
 			jQuery(button).css('background-color', def_val);
 		});
-
 
 		$(document.body).on('click', '.button_reset_options', function(){
 			if (confirm(lang_sure)) {
 				$.each(tmm_options_reset_array, function(key, value) {
 					var elem = jQuery("[name=" + value + "]"),
-						default_val = elem.data('default-value');
+						default_val = elem.data('defaultValue');
 						elem.val(default_val);
 				});
 
@@ -141,7 +135,6 @@ jQuery(function() {
 
 			return false;
 		});
-
 
 		$("[name=favicon_img]").change(function() {
 			jQuery("#favicon_preview_image").show();
@@ -156,7 +149,6 @@ jQuery(function() {
 
 
 		//ACCORDION
-
 		if ($(".acc-trigger").length) {
 
 			var $container = $('.acc-container'),
@@ -183,7 +175,7 @@ jQuery(function() {
 
 	/* ---------------------------------------------------------------------- */
 	/*	Admin Navigation Plugin
-	 /* ---------------------------------------------------------------------- */
+	/* ---------------------------------------------------------------------- */
 
 	$.AdminNavigation = function(el, options) {
 		this.el = $(el);
@@ -219,14 +211,12 @@ jQuery(function() {
 				sectionTab.hide();
 				jQuery(activeTab).show();
 
-			}
-
-			else{
+			} else {
 				var $navLi = this.adminNav.children('li'),
 					sectionTab = this.sectionTab;
-			sectionTab.hide().first().show();
+				sectionTab.hide().first().show();
 
-			$navLi.eq(0).addClass('current-shortcut');
+				$navLi.eq(0).addClass('current-shortcut');
 			}
 
 			this.adminNav.on('click', 'a', function(e) {
@@ -306,7 +296,7 @@ jQuery(function() {
 									case 'input':
 										el = $(this);
 										target.closest('.section').find('.show-hide-items > li').stop(true, true).animate({height: 'hide', opacity: 0}, 300);
-										$('.' + el.data('show-hide')).stop(true, true).animate({height: 'show', opacity: 1}, 300);
+										$('.' + el.data('showHide')).stop(true, true).animate({height: 'show', opacity: 1}, 300);
 										break;
 									case 'select':
 										el = $(this).children(':selected');
@@ -344,10 +334,6 @@ jQuery(function() {
 	$('#options-framework').css('min-height', $(window).outerHeight(true) -
 			-$('#title-bar').outerHeight(true)
 			- $('.set-holder').outerHeight(true) - 370);
-
-
-	hide_loader();
-
 
 	//*****
 
@@ -429,7 +415,6 @@ jQuery(function() {
 			jQuery(input).attr('value-index', 0);
 		}
 
-
 		return pickers_saved_values[index];
 	}
 
@@ -476,6 +461,5 @@ jQuery(function() {
 			return cookieValue;
 		}
 	};
-
 
 })(jQuery);

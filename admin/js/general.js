@@ -111,8 +111,8 @@ function draw_ui_slider_items() {
         var name = jQuery(item).attr('name');
         var value = jQuery(item).val();
 
-        if (typeof value === 'undefined') {
-            value = jQuery(item).data('default-value');
+        if (!value) {
+            value = jQuery(item).data('defaultValue');
         }
 
         var html = template;

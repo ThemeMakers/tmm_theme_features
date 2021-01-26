@@ -45,7 +45,7 @@ var TMM_GALLERY_ADMIN = function() {
 			});
 
 			jQuery(document.body).on('click', '.js_edit_gallery_item', function() {
-				var unique_id=jQuery(this).data("unique-id");
+				var unique_id=jQuery(this).data("uniqueId");
 				var title=jQuery(this).parent().find(".js_edit_gallery_item_title").val();			
 				var description=jQuery(this).parent().find(".js_edit_gallery_item_description").val();			
 				jQuery("[name='tmm_gallery[" + unique_id + "][title]']").val(title);

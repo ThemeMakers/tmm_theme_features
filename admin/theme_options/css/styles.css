@@ -300,9 +300,11 @@ body.appearance_page_tmm_theme_options {
 			transition: all .35s ease;
 }
 
+.admin-container .button_upload { background-color: #999; }
 .admin-container .admin-button:hover  { background-color: #999; }
 .admin-container .button-yellow		  { background-color: #f4bb00; }
-.admin-container .button-yellow:hover { background-color: #f6a828; }
+.admin-container .button-yellow:hover,
+.admin-container .button_upload:hover { background-color: #f6a828; }
 
 .admin-container .admin-group-button {
 	position: absolute;
