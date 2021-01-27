@@ -112,7 +112,7 @@
 
         <td class="yt">
             <label for="video_vol">Volume Level (1 to 100)</label>
-            <input type="text" name="video_vol" value="<?php echo ( ! empty( $video_vol ) ) ? $video_vol : '100' ?>">
+            <input type="text" name="video_vol" value="<?php echo ( ! empty( $video_vol ) ) ? $video_vol : '1' ?>">
         </td>
 
         <td class="yt">
