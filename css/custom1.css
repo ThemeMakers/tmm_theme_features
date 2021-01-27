@@ -251,6 +251,10 @@ body { background: #fefefe;; }
 
 	.navigation > ul > li > a { color:#5b5e60; }
 
+    @media only screen and (max-width: 1024px) {
+        .navigation > ul > li > a { color: #fff; }
+    }
+
 
 
 	@media only screen and (min-width: 1025px) {

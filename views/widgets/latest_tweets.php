@@ -1,6 +1,7 @@
-<?php if (!defined('ABSPATH')) die('No direct access allowed'); ?>
+<?php if (!defined('ABSPATH')) die('No direct access allowed');
 
-<?php wp_enqueue_script('tmm_widget_twitterFetcher', TMM_THEME_URI . '/js/min/twitterFetcher.min.js'); ?>
+wp_enqueue_script('tmm_widget_twitterFetcher', TMM_THEME_URI . '/js/min/twitterFetcher.min.js');
+?>
 
 <div class="widget widget_latest_tweets">
 

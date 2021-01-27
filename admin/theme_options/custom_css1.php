@@ -412,6 +412,10 @@ body { <?php echo esc_attr( TMM_Helper::draw_body_bg() ) ?>; }
 
 	.navigation > ul > li > a { color:<?php echo esc_attr( $main_nav_def_text_color ) ?>; }
 
+    @media only screen and (max-width: 1024px) {
+        .navigation > ul > li > a { color: <?php echo esc_attr( $main_nav_def_trans_text_color ) ?>; }
+    }
+
 <?php endif; ?>
 
 <?php if (!empty($main_nav_def_trans_text_color)): ?>
