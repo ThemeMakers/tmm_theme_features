@@ -28,7 +28,8 @@ jQuery(document).ready(function() {
 	});
 
 
-	jQuery(document.body).on('click', '.js_edit_contact_form', function() {
+	jQuery(document.body).on('click', '.js_edit_contact_form', function(e) {
+		e.preventDefault();
 		var id = jQuery(this).data('id');
 		jQuery('.js_contact_forms_panel').animate({
 			opacity: 0,
@@ -39,7 +40,8 @@ jQuery(document).ready(function() {
 	});
 
 
-	jQuery(document.body).on('click', '.js_back_to_forms_list', function() {
+	jQuery(document.body).on('click', '.js_back_to_forms_list', function(e) {
+		e.preventDefault();
 		jQuery(this).parent('li').animate({
 			opacity: 0,
 			height: "toggle"			
@@ -51,7 +53,8 @@ jQuery(document).ready(function() {
 
 
 	//delete form
-	jQuery(document.body).on('click', '.delete_contact_form', function() {
+	jQuery(document.body).on('click', '.delete_contact_form', function(e) {
+		e.preventDefault();
 		var id = jQuery(this).data('id');
 		jQuery(this).parent().hide(hide_delay, function() {
 			jQuery(this).remove();
@@ -61,7 +64,8 @@ jQuery(document).ready(function() {
 	});
 
 	//add field
-	jQuery(document.body).on('click', '.add_contact_field_button', function() {
+	jQuery(document.body).on('click', '.add_contact_field_button', function(e) {
+		e.preventDefault();
 		var index = jQuery(this).attr("form-id");
 		var input_index = get_time_miliseconds();
 
@@ -76,7 +80,8 @@ jQuery(document).ready(function() {
 
 
 	//delete field
-	jQuery(document.body).on('click', '.delete_contact_field_button', function() {
+	jQuery(document.body).on('click', '.delete_contact_field_button', function(e) {
+		e.preventDefault();
 		jQuery(this).parent().hide(hide_delay, function() {
 			jQuery(this).closest("li").remove();
 		});

@@ -16,7 +16,7 @@
 				<option <?php echo esc_attr( ($current_form == $contact_form['title'] ? "selected" : "") ) ?> value="<?php echo esc_attr( $contact_form['title'] ) ?>"><?php echo esc_html( $contact_form['title'] ) ?></option>
 			<?php endforeach; ?>
 		<?php endif; ?>
-    </select><br />
+    </select>
 </p>
 
 <p>
@@ -25,7 +25,7 @@
 		<?php foreach ($widget->css_anim() as $key => $value): ?>
 			<option <?php if ($instance['animation'] == $key): ?>selected<?php endif; ?> value="<?php echo esc_attr( $key ) ?>"><?php echo esc_html( $value ) ?></option>
 		<?php endforeach; ?>
-	</select><br />
+	</select>
 </p>
 
 <p>

@@ -103,7 +103,7 @@ if (! class_exists('TMM_Contact_Form')) {
 			//capcha
 			if ( @$form['has_capture'] ) {
 				if ( substr( $data['verify_code'], 7, 5 ) != $data['verify'] ) {
-					$errors["verify"] = "Capcha";
+					$errors["verify"] = "Captcha";
 				}
 			}
 

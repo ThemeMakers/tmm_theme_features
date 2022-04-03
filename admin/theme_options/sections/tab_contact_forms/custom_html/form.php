@@ -46,6 +46,7 @@ if (isset($contact_form['inique_id'])) {
 					'type' => 'select',
 					'values' => TMM_OptionsHelper::get_theme_buttons(),
 					'value' => $contact_form['submit_button'],
+					'default_value' => '',
 					'show_title' => true,
 					'css_class' => '',
 					'description' => esc_html__('Button color', 'accio')
@@ -62,6 +63,8 @@ if (isset($contact_form['inique_id'])) {
 					'title' => esc_html__('Recipient\'s e-mail field:', 'accio'),
 					'type' => 'text',
 					'value' => $contact_form['recepient_email'],
+					'default_value' => '',
+					'show_title' => true,
 					'css_class' => '',
 					'description' => ''
 				));
@@ -77,6 +80,8 @@ if (isset($contact_form['inique_id'])) {
 					'title' => esc_html__('Submit button text', 'accio'),
 					'type' => 'text',
 					'value' => $contact_form['submit_button_text'],
+					'default_value' => '',
+					'show_title' => true,
 					'css_class' => '',
 					'description' => ''
 				));
@@ -103,6 +108,7 @@ if (isset($contact_form['inique_id'])) {
 							'type' => 'select',
 							'values' => TMM_Contact_Form::$types,
 							'value' => $input['type'],
+							'default_value' => '',
 							'css_class' => 'options_type_select',
 							'show_title' => true,
 							'description' => ''
@@ -115,12 +121,16 @@ if (isset($contact_form['inique_id'])) {
 							'title' => esc_html__('Field Label', 'accio'),
 							'type' => 'text',
 							'value' => $input['label'],
+							'default_value' => '',
+							'show_title' => true,
 							'css_class' => 'label',
 							'description' => ""
 						));
+
+						$inp_type = $input['type'];
 						?>
 
-						<div class="select_options" style="display: <?php echo esc_attr( ($input['type'] == "select" ? "block" : "none") ) ?>;">
+						<div class="select_options" style="display: <?php echo esc_attr( ($inp_type == "select" ? "block" : "none") ) ?>;">
 							
 							<?php
 							TMM_OptionsHelper::draw_theme_option(array(
@@ -128,6 +138,8 @@ if (isset($contact_form['inique_id'])) {
 								'title' => esc_html__('Options (comma separated)', 'accio'),
 								'type' => 'text',
 								'value' => $input['options'],
+								'default_value' => '',
+								'show_title' => true,
 								'css_class' => 'options',
 								'description' => ""
 							));
@@ -140,13 +152,13 @@ if (isset($contact_form['inique_id'])) {
 							<?php
 							TMM_OptionsHelper::draw_theme_option(array(
 								'name' => "contact_form[" . $form_index . "][inputs][" . $key_input . "][is_required]",
-								'title' => esc_html__('Additional Options', 'accio'),
 								'type' => 'checkbox',
 								'default_value' => 0,
 								'title' => esc_html__('Required Field', 'accio'),
 								'description' => '',
 								'css_class' => 'form_required',
 								'value' => $input['is_required'],
+								'show_title' => true,
 								'id' => ''
 							));
 							?>
@@ -163,6 +175,3 @@ if (isset($contact_form['inique_id'])) {
 	</div><!--/ .form-holder-->	
 
 </div><!--/ .section-->
-
-
-

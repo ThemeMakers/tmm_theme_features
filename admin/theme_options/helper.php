@@ -27,7 +27,6 @@ class TMM_OptionsHelper {
 			$title = '<h4 class="option-title">' . $data['title'] . '</h4>';
 		}
 
-
 		switch ($data['type']) {
 			case 'slider':
 				?>
@@ -49,7 +48,6 @@ class TMM_OptionsHelper {
 				<div class="option option-text">
 
 					<?php echo wp_kses_post( $title ); ?>
-
 					<div class="controls">
 						<input data-default-value="<?php echo esc_attr( $data['default_value'] ) ?>" type="text" class="<?php echo esc_attr( $data['css_class'] ) ?>" name="<?php echo esc_attr( $data['name'] ) ?>" value="<?php echo esc_attr( $value ) ?>">
 					</div><!--/ .controls-->
@@ -75,7 +73,6 @@ class TMM_OptionsHelper {
 				<?php
 				break;
 			case 'select':
-
 				if (($data['name']=='frontpage' || $data['name']=='blogpage' || $data['name']=='folio_page_onepage' )&&(function_exists('icl_object_id')))
 					$value = icl_object_id($value, 'page', false, ICL_LANGUAGE_CODE);
 
