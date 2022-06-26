@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ThemeMakers Cardealer Features\n"
-"POT-Creation-Date: 2019-06-13 22:59+0200\n"
-"PO-Revision-Date: 2019-06-13 23:01+0200\n"
+"POT-Creation-Date: 2021-11-27 01:02+0100\n"
+"PO-Revision-Date: 2021-11-27 01:02+0100\n"
 "Last-Translator: ThemeMakers <support@webtemplatemasters.com>\n"
 "Language-Team: Alex TM <support@webtemplatemasters.com>\n"
 "Language: de_DE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.2.3\n"
+"X-Generator: Poedit 2.4.3\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-WPHeader: index.php\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: index.php:28
 msgid "Slider Groups"
-msgstr "Schieberegler-Gruppen"
+msgstr "Slider Gruppen"
 
 #: index.php:29
 msgid "Group"
@@ -30,11 +30,11 @@ msgstr "Gruppe"
 
 #: index.php:30 index.php:67 index.php:103 index.php:128
 msgid "Add New"
-msgstr "Neues hinzufügen"
+msgstr "Erstellen"
 
 #: index.php:31
 msgid "Add New Slider Group"
-msgstr "Neue Slider-Gruppe hinzufügen"
+msgstr "Neue Slider-Gruppe erstellen"
 
 #: index.php:32
 msgid "Edit Slider Group"
@@ -46,19 +46,19 @@ msgstr "Neue Slider-Gruppe"
 
 #: index.php:34
 msgid "View Slider Group"
-msgstr "Slider anzeigen"
+msgstr "Slider-Gruppe anzeigen"
 
 #: index.php:35
 msgid "Search Slider Groups"
-msgstr "Suche Slider Gruppen"
+msgstr "Suche nach Slider-Gruppe"
 
 #: index.php:36
 msgid "No Slide Groups found"
-msgstr "Keine Folie Gruppen gefunden"
+msgstr "Keine Slider-Gruppe gefunden"
 
 #: index.php:37
 msgid "No Slide Groups found in Trash"
-msgstr "Kein Slide im Papierkorb gefunden"
+msgstr "Keine Slider-Gruppe im Papierkorb gefunden"
 
 #: index.php:65 index.php:66
 msgid "Staff"
@@ -66,7 +66,7 @@ msgstr "Mitarbeiter"
 
 #: index.php:68
 msgid "Add New Staff"
-msgstr "Neues Personal hinzufügen"
+msgstr "Neuen Mitarbeiter erstellen"
 
 #: index.php:69
 msgid "Edit Staff"
@@ -78,7 +78,7 @@ msgstr "Neuer Mitarbeiter"
 
 #: index.php:71
 msgid "View Staff"
-msgstr "Personal anzeigen"
+msgstr "Mitarbeitern anzeigen"
 
 #: index.php:72
 msgid "Search In Staff"
@@ -134,7 +134,7 @@ msgstr "carproducer"
 
 #: index.php:126
 msgid "Cars"
-msgstr "Autos oder Teile"
+msgstr "Fahrzeuge"
 
 #: index.php:127
 msgid "Car"
