@@ -2,7 +2,12 @@
 <input type="hidden" name="tmm_meta_saving" value="1" />
 <?php wp_enqueue_style('tmm_theme_admin_gallery_css', TMM_THEME_FEATURES_URI . 'admin/css/gallery.css'); ?>
 <ul>
-	<?php foreach ($post_pod_types as $post_pod_type => $post_type_name): ?>
+	<?php foreach ($post_pod_types as $post_pod_type => $post_type_name):
+		
+	// echo var_dump($post_type_values);
+	// echo var_dump($post_pod_type);
+	$post_type_values = !empty($post_type_values) ? $post_type_values : array();
+	?>
 
 		<li style="display: <?php echo esc_attr( ($current_post_pod_type == $post_pod_type ? 'block' : 'none') ) ?>"  class="post_type_<?php echo esc_attr($post_pod_type) ?>_conrainer post_type_conrainer">
 
@@ -34,7 +39,7 @@
 								</label>
 							</th>
 							<td>
-								<input type="text" style="width:100%; margin-right: 0; float:left;" size="30" value="<?php echo esc_attr($post_type_values[$post_pod_type]) ?>" class="" name="post_type_values[<?php echo esc_attr($post_pod_type) ?>]">
+								<input type="text" style="width:100%; margin-right: 0; float:left;" size="30" value="<?php echo esc_attr($post_type_values[$post_pod_type] ?? null) ?>" class="" name="post_type_values[<?php echo esc_attr($post_pod_type) ?>]">
 							</td>
 						</tr>
 					</table>
@@ -53,7 +58,7 @@
 								</label>
 							</th>
 							<td>
-								<input type="text" style="width:90%; margin-right: 0; float:left;" size="30" value="<?php echo esc_attr($post_type_values[$post_pod_type]) ?>" class="" name="post_type_values[<?php echo esc_attr($post_pod_type) ?>]">
+								<input type="text" style="width:90%; margin-right: 0; float:left;" size="30" value="<?php echo esc_attr($post_type_values[$post_pod_type] ?? null) ?>" class="" name="post_type_values[<?php echo esc_attr($post_pod_type) ?>]">
 								&nbsp;<a class="button button_upload image-button" href="#" style="float: left; margin-left: 9px;"><?php esc_html_e('Browse', 'accio'); ?></a>
 							</td>
 						</tr>
@@ -74,7 +79,7 @@
 								</label>
 							</th>
 							<td>
-								<input type="text" style="width:90%; margin-right: 0; float:left;" size="30" value="<?php echo esc_attr($post_type_values[$post_pod_type]) ?>" class="" name="post_type_values[<?php echo esc_attr($post_pod_type) ?>]">
+								<input type="text" style="width:90%; margin-right: 0; float:left;" size="30" value="<?php echo esc_attr($post_type_values[$post_pod_type] ?? null) ?>" class="" name="post_type_values[<?php echo esc_attr($post_pod_type) ?>]">
 							</td>
 						</tr>
 					</table>
@@ -94,7 +99,7 @@
 								</label>
 							</th>
 							<td>
-								<textarea name="post_type_values[<?php echo esc_attr($post_pod_type) ?>]" style="width:95%; margin-right: 20px; height:200px;"><?php echo esc_html($post_type_values[$post_pod_type]) ?></textarea>
+								<textarea name="post_type_values[<?php echo esc_attr($post_pod_type) ?>]" style="width:95%; margin-right: 20px; height:200px;"><?php echo esc_html($post_type_values[$post_pod_type] ?? null) ?></textarea>
 							</td>
 						</tr>
 					</table>

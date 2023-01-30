@@ -143,40 +143,41 @@ class TMM_Ext_Sliders {
 		echo TMM::draw_free_page(self::get_application_path() . '/views/meta.php', $data);
 	}
 
-	public static function draw_page_slides_meta_box() {
-		wp_enqueue_script('tmm_ext_sliders_js', self::get_application_uri() . '/js/slidergroup.js');
-		global $post;
-		$data = array();
-		$data['slides'] = self::get_list_of_groups();
-		$data['slider_types'] = self::get_slider_types();
-		$data = array_merge($data, self::get_page_settings($post->ID));
-		$data['layerslider_slide_group'] = $data['layerslider_slide_group'];
-		echo TMM::draw_free_page(self::get_application_path() . '/views/meta_box.php', $data);
-	}
+	// public static function draw_page_slides_meta_box() {
+	// 	wp_enqueue_script('tmm_ext_sliders_js', self::get_application_uri() . '/js/slidergroup.js');
+	// 	global $post;
+	// 	$data = array();
+	// 	$data['slides'] = self::get_list_of_groups();
+	// 	$data['slider_types'] = self::get_slider_types();
+	// 	$data = array_merge($data, self::get_page_settings($post->ID));
+	// 	$data['layerslider_slide_group'] = $data['layerslider_slide_group'];
+	// 	echo TMM::draw_free_page(self::get_application_path() . '/views/meta_box.php', $data);
+	// }
 
 	public static function save_post($post_id) {
 		global $post;
 		if (is_object($post) AND !empty($_POST)) {
-			$allows_post_types = array(self::$slug, 'post', 'page');
+			// $allows_post_types = array(self::$slug, 'post', 'page');
+			$allows_post_types = array(self::$slug);
 			if (in_array($post->post_type, $allows_post_types)) {
 				update_post_meta($post_id, "slides_group", $_POST["slides_group"]);
-				update_post_meta($post_id, "page_slider", $_POST["page_slider"]);
-				update_post_meta($post_id, "page_slider_width", $_POST["page_slider_width"]);
-				update_post_meta($post_id, "layerslider_slide_group", $_POST["layerslider_slide_group"]);
-				update_post_meta($post_id, "page_slider_type", $_POST["page_slider_type"]);
+				// update_post_meta($post_id, "page_slider", $_POST["page_slider"]);
+				// update_post_meta($post_id, "page_slider_width", $_POST["page_slider_width"]);
+				// update_post_meta($post_id, "layerslider_slide_group", $_POST["layerslider_slide_group"]);
+				// update_post_meta($post_id, "page_slider_type", $_POST["page_slider_type"]);
 			}
 		}
 	}
 
-	public static function get_page_settings($post_id) {
-		$custom = get_post_custom($post_id);
-		$data = array();
-		$data['page_slider'] = $custom["page_slider"][0];
-		$data['page_slider_width'] = $custom["page_slider_width"][0];
-		$data['layerslider_slide_group'] = $custom["layerslider_slide_group"][0];
-		$data['page_slider_type'] = $custom["page_slider_type"][0];
-		return $data;
-	}
+	// public static function get_page_settings($post_id) {
+	// 	$custom = get_post_custom($post_id);
+	// 	$data = array();
+	// 	$data['page_slider'] = $custom["page_slider"][0];
+	// 	$data['page_slider_width'] = $custom["page_slider_width"][0];
+	// 	$data['layerslider_slide_group'] = $custom["layerslider_slide_group"][0];
+	// 	$data['page_slider_type'] = $custom["page_slider_type"][0];
+	// 	return $data;
+	// }
 
 	public static function get_page_slides_count($post_id) {
 		$slides = self::get_page_slides($post_id);
@@ -263,31 +264,31 @@ class TMM_Ext_Sliders {
 		return $options;
 	}
 
-	public static function draw_page_slider($post_id) {
-		$page_settings = self::get_page_settings($post_id);
+	// public static function draw_page_slider($post_id) {
+	// 	$page_settings = self::get_page_settings($post_id);
 
-		if ($page_settings['page_slider_type'] == 'layerslider') {
-			if ($page_settings['layerslider_slide_group'] > 0) {
-				return do_shortcode('[layerslider id="' . $page_settings['layerslider_slide_group'] . '"]');
-			}
-			return "";
-		}
+	// 	if ($page_settings['page_slider_type'] == 'layerslider') {
+	// 		if ($page_settings['layerslider_slide_group'] > 0) {
+	// 			return do_shortcode('[layerslider id="' . $page_settings['layerslider_slide_group'] . '"]');
+	// 		}
+	// 		return "";
+	// 	}
 
-		if (!$page_settings['page_slider']) {
-			return "";
-		}
+	// 	if (!$page_settings['page_slider']) {
+	// 		return "";
+	// 	}
 
-		if (!isset(self::$slider_options[$page_settings['page_slider_type']])) {
-			return "";
-		}
+	// 	if (!isset(self::$slider_options[$page_settings['page_slider_type']])) {
+	// 		return "";
+	// 	}
 
-		$data = array();
-		$data['post_id'] = $post_id;
-		$data['slides'] = self::get_page_slides($page_settings['page_slider']);
-		$data['options'] = self::get_slider_js_options($page_settings['page_slider_type']);
-		$_REQUEST['page_slider_activated'] = TRUE; //if I need to know is page slider activated
-		return TMM::draw_free_page(self::get_application_path() . '/items/' . $page_settings['page_slider_type'] . '/views/page_output.php', $data);
-	}
+	// 	$data = array();
+	// 	$data['post_id'] = $post_id;
+	// 	$data['slides'] = self::get_page_slides($page_settings['page_slider']);
+	// 	$data['options'] = self::get_slider_js_options($page_settings['page_slider_type']);
+	// 	$_REQUEST['page_slider_activated'] = TRUE; //if I need to know is page slider activated
+	// 	return TMM::draw_free_page(self::get_application_path() . '/items/' . $page_settings['page_slider_type'] . '/views/page_output.php', $data);
+	// }
 
 	//for shortcode slider only
 	public static function draw_shortcode_slider($type, $group_id, $alias) {

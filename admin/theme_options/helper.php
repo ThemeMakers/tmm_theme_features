@@ -10,22 +10,14 @@ class TMM_OptionsHelper {
 
 	public static function draw_theme_option($data, $prefix = TMM_THEME_PREFIX) {
 
-		$value = "";
-		$title = "";
+		// $value = "";
+		// $default_value = "";
+		// $title = "";
 
-		if ( isset( $data['value'] ) ) {
-			$value = $data['value'];
-		} else {
-			$value = TMM::get_option($data['name'], $prefix);
-		}
-
-		if ( isset( $data['default_value'] ) && ! isset( $value ) ) {
-			$value = $data['default_value'];
-		}
-
-		if ( isset( $data['title'] ) && isset( $data['show_title'] ) && $data['show_title'] ) {
-			$title = '<h4 class="option-title">' . $data['title'] . '</h4>';
-		}
+		$default_value =  isset($data['default_value']) ? $data['default_value'] : '';
+		$value = isset($data['value']) ? $data['value'] : $data['default_value'];
+		$title = isset( $data['title'] ) && isset( $data['show_title'] ) ? '<h4 class="option-title">' . $data['title'] . '</h4>' : '';
+		$id = isset($data['id']) ? $data['id'] : '';
 
 		switch ($data['type']) {
 			case 'slider':
@@ -35,7 +27,14 @@ class TMM_OptionsHelper {
 					<?php echo wp_kses_post( $title ); ?>
 
 					<div class="controls">
-						<input data-default-value="<?php echo esc_attr( $data['default_value'] ) ?>" type="text" name="<?php echo esc_attr( $data['name'] ) ?>" value="<?php echo esc_attr($value) ?>" min-value="<?php echo esc_attr( $data['min'] ) ?>" max-value="<?php echo esc_attr($data['max']) ?>" class="ui_slider_item" />
+						<input 
+							type="text"
+							class="ui_slider_item"
+							data-default-value="<?php echo esc_attr( $default_value ) ?>"
+							name="<?php echo esc_attr( $data['name'] ) ?>"
+							value="<?php echo esc_attr($value) ?>"
+							min-value="<?php echo esc_attr( $data['min'] ) ?>"
+							max-value="<?php echo esc_attr($data['max']) ?>" />
 					</div>
 
 					<div class="explain"><?php echo wp_kses_post( $data['description'] ) ?></div>
@@ -49,7 +48,12 @@ class TMM_OptionsHelper {
 
 					<?php echo wp_kses_post( $title ); ?>
 					<div class="controls">
-						<input data-default-value="<?php echo esc_attr( $data['default_value'] ) ?>" type="text" class="<?php echo esc_attr( $data['css_class'] ) ?>" name="<?php echo esc_attr( $data['name'] ) ?>" value="<?php echo esc_attr( $value ) ?>">
+						<input 
+							type="text"
+							data-default-value="<?php echo esc_attr( $default_value ) ?>"
+							class="<?php echo esc_attr( $data['css_class'] ) ?>"
+							name="<?php echo esc_attr( $data['name'] ) ?>"
+							value="<?php echo esc_attr( $value ) ?>" />
 					</div><!--/ .controls-->
 
 					<div class="explain"><?php echo wp_kses_post( $data['description'] ) ?></div>
@@ -63,7 +67,10 @@ class TMM_OptionsHelper {
 
 					<?php echo wp_kses_post( $title ); ?>
 
-					<textarea data-default-value="<?php echo esc_attr($data['default_value']) ?>" name="<?php echo esc_attr($data['name']) ?>" class="<?php echo esc_attr($data['css_class']) ?>"><?php echo esc_html($value) ?></textarea>
+					<textarea
+						data-default-value="<?php echo esc_attr($default_value) ?>"
+						name="<?php echo esc_attr($data['name']) ?>"
+						class="<?php echo esc_attr($data['css_class']) ?>"><?php echo esc_html($value) ?></textarea>
 
 					<div class="explain">
 						<?php echo wp_kses_post($data['description']) ?>
@@ -82,7 +89,10 @@ class TMM_OptionsHelper {
 					<?php echo wp_kses_post( $title ); ?>
 
 					<div class="controls">
-						<select data-default-value="<?php echo esc_attr($data['default_value']) ?>" name="<?php echo esc_attr($data['name']) ?>" class="<?php echo esc_attr($data['css_class']) ?>">
+						<select
+							data-default-value="<?php echo esc_attr($default_value) ?>"
+							name="<?php echo esc_attr($data['name']) ?>"
+							class="<?php echo esc_attr($data['css_class']) ?>">
 							<?php if (!empty($data['values'])): ?>
 								<?php foreach ($data['values'] as $key => $option_text) : ?>
 									<option value="<?php echo esc_attr($key) ?>" <?php echo wp_kses_post( ($value == $key ? 'selected=""' : "") ) ?>><?php echo esc_html($option_text) ?></option>
@@ -101,8 +111,16 @@ class TMM_OptionsHelper {
 				<div class="option option-checkbox">
 
 					<div class="controls">
-						<input data-default-value="<?php echo esc_attr($data['default_value']) ?>" type="hidden" value="<?php echo esc_attr( ($value == 1 ? "1" : "0") ) ?>" name="<?php echo esc_attr($data['name']) ?>">
-						<input type="checkbox" id="<?php echo esc_attr($data['name']) ?>" class="option_checkbox <?php echo esc_attr($data['css_class']) ?>" <?php echo esc_attr( ($value == 1 ? "checked" : "") ) ?> />
+						<input
+							type="hidden"
+							data-default-value="<?php echo esc_attr($default_value) ?>"
+							value="<?php echo esc_attr( ($value == 1 ? "1" : "0") ) ?>"
+							name="<?php echo esc_attr($data['name']) ?>">
+						<input
+							type="checkbox"
+							id="<?php echo esc_attr($data['name']) ?>"
+							class="option_checkbox <?php echo esc_attr($data['css_class']) ?>"
+							<?php echo esc_attr( ($value == 1 ? "checked" : "") ) ?> />
 						<label for="<?php echo esc_attr($data['name']) ?>"><span></span><?php echo esc_html( isset($data['title']) ? $data['title'] : '') ?></label>
 					</div>
 
@@ -120,7 +138,13 @@ class TMM_OptionsHelper {
 					<?php echo wp_kses_post( $title ); ?>
 
 					<div class="controls">
-						<input data-default-value="<?php echo esc_attr( $data['default_value'] ) ?>" value-index="0" type="text" class="bg_hex_color text small <?php echo esc_attr( $data['css_class'] ) ?>" value="<?php echo esc_attr( $value ) ?>" name="<?php echo esc_attr( $data['name'] ) ?>">
+						<input
+							type="text"
+							value-index="0"
+							class="bg_hex_color text small <?php echo esc_attr( $data['css_class'] ) ?>"
+							data-default-value="<?php echo esc_attr( $default_value ) ?>"
+							value="<?php echo esc_attr( $value ) ?>"
+							name="<?php echo esc_attr( $data['name'] ) ?>" />
 						<div class="bgpicker" style="background-color: <?php echo esc_attr( $value ) ?>"></div>
 
 						<?php if ($_GET['page'] == 'tmm_theme_options'): ?>
@@ -146,7 +170,10 @@ class TMM_OptionsHelper {
 					<?php echo wp_kses_post( $title ); ?>
 
 					<div class="controls">
-						<select data-default-value="<?php echo esc_attr($data['default_value']) ?>" name="<?php echo esc_attr($data['name']) ?>" class="google_font_select">
+						<select
+							data-default-value="<?php echo esc_attr($default_value) ?>"
+							name="<?php echo esc_attr($data['name']) ?>"
+							class="google_font_select">
 
 							<?php foreach ($fonts as $font_name => $font_text): ?>
 
@@ -179,7 +206,13 @@ class TMM_OptionsHelper {
 					<?php echo wp_kses_post( $title ); ?>
 
 					<div class="controls">
-						<input data-default-value="" <?php if (isset($data['id'])): ?>id="<?php echo esc_attr($data['id']) ?>"<?php endif; ?> class="middle" type="text" name="<?php echo esc_attr($data['name']) ?>" value="<?php echo esc_attr($value) ?>">
+						<input
+							type="text"
+							data-default-value=""
+							id="<?php echo esc_attr($id) ?>"
+							class="middle"
+							name="<?php echo esc_attr($data['name']) ?>"
+							value="<?php echo esc_attr($value) ?>" />
 						<a class="admin-button button_upload" href="#"><?php esc_html_e('Browse', 'accio'); ?></a>
 					</div>
 

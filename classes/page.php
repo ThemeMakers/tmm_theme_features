@@ -28,25 +28,30 @@ class TMM_Page {
 	public static function save_post() {
 		global $post;
 		if (is_object($post)) {
-			if (isset($_POST) AND !empty($_POST) AND ($post->post_type == 'post' OR $post->post_type == 'page')) {
-				update_post_meta($post->ID, "meta_title", $_POST["meta_title"]);
-				update_post_meta($post->ID, "meta_keywords", $_POST["meta_keywords"]);
-				update_post_meta($post->ID, "meta_description", $_POST["meta_description"]);
+			if (isset($_POST) AND !empty($_POST)) {
+				// update_post_meta($post->ID, "meta_title", $_POST["meta_title"]);
+				// update_post_meta($post->ID, "meta_keywords", $_POST["meta_keywords"]);
+				// update_post_meta($post->ID, "meta_description", $_POST["meta_description"]);
 			
-				update_post_meta($post->ID, "post_pod_type", $_POST["post_pod_type"]);
-				update_post_meta($post->ID, "post_type_values", $_POST["post_type_values"]);
+				if($post->post_type == 'post') {
+					update_post_meta($post->ID, "post_pod_type", $_POST["post_pod_type"]);
+					update_post_meta($post->ID, "post_type_values", $_POST["post_type_values"]);
+				}
+
+				if($post->post_type == 'post' OR $post->post_type == 'page') {
+					update_post_meta($post->ID, "another_page_title", $_POST["another_page_title"]);
+					update_post_meta($post->ID, "another_page_description", $_POST["another_page_description"]);
+					update_post_meta($post->ID, "show_page_title", $_POST["show_page_title"]);
+					
+					update_post_meta($post->ID, "pagebg_type", $_POST["pagebg_type"]);
+					update_post_meta($post->ID, "pagebg_color", $_POST["pagebg_color"]);
+					update_post_meta($post->ID, "pagebg_image", $_POST["pagebg_image"]);
+					update_post_meta($post->ID, "pagebg_type_image_option", $_POST["pagebg_type_image_option"]);
+					// update_post_meta($post->ID, "headerbg_type", $_POST["headerbg_type"]);
+					
+					update_post_meta($post->ID, "page_sidebar_position", $_POST["page_sidebar_position"]);
+				}
 				
-				update_post_meta($post->ID, "another_page_title", $_POST["another_page_title"]);
-				update_post_meta($post->ID, "another_page_description", $_POST["another_page_description"]);
-				update_post_meta($post->ID, "show_page_title", $_POST["show_page_title"]);
-				
-				update_post_meta($post->ID, "pagebg_type", $_POST["pagebg_type"]);
-				update_post_meta($post->ID, "pagebg_color", $_POST["pagebg_color"]);
-				update_post_meta($post->ID, "pagebg_image", $_POST["pagebg_image"]);
-				update_post_meta($post->ID, "pagebg_type_image_option", $_POST["pagebg_type_image_option"]);
-				update_post_meta($post->ID, "headerbg_type", $_POST["headerbg_type"]);
-				
-				update_post_meta($post->ID, "page_sidebar_position", $_POST["page_sidebar_position"]);
 			}
 		}
 	}

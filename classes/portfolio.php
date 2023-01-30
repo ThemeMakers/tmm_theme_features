@@ -87,7 +87,6 @@ if (! class_exists('TMM_Portfolio')) {
 			));
 
 			register_taxonomy("folio_category", array(self::$slug), array(
-				"hierarchical" => true,
 				"labels" => array(
 					'name' => esc_html__('Categories', 'accio'),
 					'singular_name' => esc_html__('Category', 'accio'),
@@ -101,13 +100,14 @@ if (! class_exists('TMM_Portfolio')) {
 					'not_found_in_trash' => esc_html__('No Categories found in Trash', 'accio'),
 					'parent_item_colon' => ''
 				),
-				"singular_label" => esc_html__("category", 'accio'),
-				"show_tagcloud" => true,
+				"description" => esc_html__("Portfolio category", 'accio'),
+				"public" => true,
+				"publicly_queryable" => true,
+				"hierarchical" => true,
 				'query_var' => true,
 				'rewrite' => true,
 				'show_in_nav_menus' => false,
-				'capabilities' => array('manage_terms'),
-				'show_ui' => true
+				'capabilities' => array('manage_terms')
 			));
 
 
@@ -119,8 +119,6 @@ if (! class_exists('TMM_Portfolio')) {
 
 			//ajax
 			add_action('wp_ajax_add_gallery_folio_item', array(__CLASS__, 'add_gallery_item'));
-//		add_action('wp_ajax_folio_get_masonry_piece', array(__CLASS__, 'get_masonry_piece'));
-//		add_action('wp_ajax_nopriv_folio_get_masonry_piece', array(__CLASS__, 'get_masonry_piece'));
 		}
 
 		public static function admin_init() {

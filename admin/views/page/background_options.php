@@ -1,6 +1,8 @@
 <?php if (!defined('ABSPATH')) die('No direct access allowed');
 
 $page_sidebar_position = isset($page_sidebar_position) ? $page_sidebar_position : 'sbr';
+$pagebg_type = isset( $pagebg_type ) ? $pagebg_type : "color";
+$pagebg_type_image_option = isset( $pagebg_type_image_option ) ? $pagebg_type_image_option : "repeat";
 ?>
 <input type="hidden" name="tmm_meta_saving" value="1" />
 
@@ -48,10 +50,6 @@ $page_sidebar_position = isset($page_sidebar_position) ? $page_sidebar_position 
 				"color"   => esc_html__( "Color", 'accio' ),
 				"image"   => esc_html__( "Image", 'accio' ),
 			);
-
-			if (!$pagebg_type) {
-				$pagebg_type = "color";
-			}
 			?>
 			<?php foreach ($types as $key => $type) : ?>
 				<option <?php echo esc_attr( ($key == $pagebg_type ? "selected" : "") ) ?> value="<?php echo esc_attr( $key ); ?>"><?php echo esc_html( $type ) ?></option>
@@ -79,10 +77,6 @@ $page_sidebar_position = isset($page_sidebar_position) ? $page_sidebar_position 
 						"repeat-x" => "Repeat-X",
 						"fixed" => "Fixed",
 					);
-
-					if (!$pagebg_type_image_option) {
-						$pagebg_type_image_option = "repeat";
-					}
 					?>
 					<?php foreach ($options as $key => $option) : ?>
 						<option <?php echo esc_attr( ($key == $pagebg_type_image_option ? "selected" : "") ) ?> value="<?php echo esc_attr( $key ) ?>"><?php echo esc_html( $option ) ?></option>
