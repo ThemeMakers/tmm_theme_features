@@ -1,9 +1,10 @@
 /* -------------------------------------------------- */
 /*	Default Styles
 /* -------------------------------------------------- */
-#tmm_advanced_wp_popup{
-	height: 1px;
+#tmm_advanced_wp_popup2{
+	height: 1;
 	position: absolute;
+    z-index: 1090;
 }
 .tmm_advanced_wp_popup_li input[type="text"],
 .tmm_advanced_wp_popup_li select {
@@ -11,8 +12,10 @@
 	width: 100%;
 	height: auto;
 	color: #8f9296;
-	font-style: italic;
-	font-size: 11px;
+	font-style: normal;
+	font-size: 13px;
+	line-height: inherit;
+	-webkit-appearance: none;
 }
 
 .tmm_advanced_wp_popup_li select {
@@ -26,10 +29,15 @@
 
 .tmm_advanced_wp_popup_li h6,
 .tmm_advanced_wp_popup_li h4 { 
-	margin: 0 0 8px 0;
+	margin: 0 0 5px 0;
 	font-family: Verdana;
 	font-size: 13px;
 }
+
+.tmm_advanced_wp_popup_li input[type="text"][disabled] {
+	box-shadow: none !important;
+}
+
 
 /* ---------------------------------------------------------------------- */
 /*	Popup
@@ -41,12 +49,9 @@
 	left: 50%;
 	z-index: 1001;
 	display: none;
-	overflow: hidden;
-	margin-left: -200px;
+	margin-left: -400px;
 	padding: 3px;
 	width: 400px;
-	max-height: 500px;
-	overflow-y: auto;
     background-color: #eee;
     border: 1px solid #ddd;
     color: #333;
@@ -105,8 +110,6 @@
 				   -moz-transition: all .25s linear;
 						transition: all .25s linear;	
 			}
-			
-			#google_font_set_list input[type="checkbox"] { position: static; opacity: 1; }
 
 		/* Checkbox */
 
@@ -168,8 +171,23 @@
 	/* -------------------------------------------------- */
 	/*	Content
 	/* -------------------------------------------------- */
-
-	.advanced_wp_popup_content { padding: 13px;}
+	.advanced_wp_popup_container {
+		position: relative;
+		height: 550px;
+	}
+	.advanced_wp_popup_content { 
+		padding: 13px;
+		overflow-y: auto;
+		height: calc(100% - 60px);
+	}
+	
+		.advanced_wp_popup_content pre {
+			margin: 10px;
+			padding: 5px;
+			background-color: #fff;
+			font-size: 12px;
+			white-space: normal;
+		}
 	
 		.tmm_item { margin-bottom: 10px; }
 
@@ -178,10 +196,11 @@
 	/* -------------------------------------------------- */	
 
 	.advanced_wp_popup_buttons {
+		box-sizing: border-box;
 		padding: 8px 13px;
 		border-top: 1px solid #cacaca;
 		text-align: right;
-		
+		width: 100%;
 		-webkit-box-shadow: inset 0 1px 0 0 #fff;
 				box-shadow: inset 0 1px 0 0 #fff;
 	}
@@ -235,7 +254,7 @@
 		position: fixed;
 		top: 0;
 		left: 0;
-		z-index: 1001;
+		z-index: 1010;
 		display: none;
 		width: 100%;
 		height: 100%;
@@ -247,9 +266,9 @@
 	/*	Close Button
 	/* -------------------------------------------------- */
 
-	.tmm_titlebar .advanced_wp_popup_close {
+	.tmm_titlebar .advanced_wp_popup_close2 {
 		position: absolute;
-		top: 6px;
+		top: 7px;
 		right: 7px;
 		overflow: hidden;
 		padding: 2px;
@@ -260,9 +279,10 @@
 		background-position: 0 0;
 		background-repeat: no-repeat;
 		
+		-webkit-transition: none;
+				transition: none;
 		-webkit-border-radius: 3px;
 				border-radius: 3px;
 	}
 	
-	.tmm_titlebar .advanced_wp_popup_close:hover { background-position: 0 bottom; }
-
+	.tmm_titlebar .advanced_wp_popup_close2:hover { background-position: 0 bottom; }
