@@ -10,11 +10,13 @@
  * Text Domain: tmm_theme_features
  */
 
-class TMM_Theme_Features {
+class TMM_Theme_Features
+{
 
     private $text_domain;
 
-    public function __construct() {
+    public function __construct()
+    {
         // Set the text domain
         $this->text_domain = 'cardealer';
 
@@ -29,32 +31,38 @@ class TMM_Theme_Features {
         add_action('init', array($this, 'register_post_types_and_taxonomy'));
     }
 
-    public function activate_plugin() {
+    public function activate_plugin()
+    {
         // Code to run on plugin activation
     }
 
-    public function deactivate_plugin() {
+    public function deactivate_plugin()
+    {
         // Code to run on plugin deactivation
     }
 
-    public function load_text_domain() {
+    public function load_text_domain()
+    {
         // Load the text domain for translation
         load_plugin_textdomain($this->text_domain, false, dirname(plugin_basename(__FILE__)) . '/languages/');
     }
 
-    public function register_post_types_and_taxonomy() {
+    public function register_post_types_and_taxonomy()
+    {
         $this->register_post_types();
         $this->register_taxonomy();
     }
 
-    private function register_post_types() {
-        $this->register_post_type('slidergroup', __('Slider Group', $this->text_domain), false, false, false, array('title', 'thumbnail'), false, array());
-        $this->register_post_type('staff-page', __('Staff', $this->text_domain), false, true, true, array('title', 'thumbnail'), true, array('position'));
-        $this->register_post_type('car', __('Cars', $this->text_domain), true, true, true, array('title', 'excerpt', 'tags', 'comments'), true, array('carlocation', 'carproducer'));
+    private function register_post_types()
+    {
+        $this->register_post_type('slidergroup', __('Slider Group', $this->text_domain), false, false, false, false, array('title', 'thumbnail'), array());
+        $this->register_post_type('staff-page', __('Staff', $this->text_domain), false, true, true, true, array('title', 'thumbnail'), array('position'));
+        $this->register_post_type('car', __('Cars', $this->text_domain), true, true, true, true, array('title', 'excerpt', 'tags', 'comments'), array('carlocation', 'carproducer'));
         // Add more post types as needed
     }
 
-    private function register_post_type($post_type_slug, $post_type_label, $public, $publicly_queryable, $has_archive, $supports = array(), $show_in_admin_bar, $taxonomies = array()) {
+    private function register_post_type($post_type_slug, $post_type_label, $public, $publicly_queryable, $has_archive, $show_in_admin_bar, $supports = array(), $taxonomies = array())
+    {
         $labels = array(
             'name'               => esc_html_x($post_type_label, 'post type general name', $this->text_domain),
             'singular_name'      => esc_html_x($post_type_label, 'post type singular name', $this->text_domain),
@@ -93,12 +101,14 @@ class TMM_Theme_Features {
         register_post_type(sanitize_title($post_type_slug), $args);
     }
 
-    private function register_taxonomy() {
+    private function register_taxonomy()
+    {
         $this->register_taxonomy_for_post_type('carproducer', __('Producers', $this->text_domain), __('Producer', $this->text_domain), 'car', array('manage_terms'));
         // Add more taxonomies as needed
     }
 
-    private function register_taxonomy_for_post_type($taxonomy_slug, $taxonomy_label, $singular_label, $post_type, $capabilities = array()) {
+    private function register_taxonomy_for_post_type($taxonomy_slug, $taxonomy_label, $singular_label, $post_type, $capabilities = array())
+    {
         $labels = array(
             'name'              => esc_html_x($taxonomy_label, 'taxonomy general name', $this->text_domain),
             'singular_name'     => esc_html_x($singular_label, 'taxonomy singular name', $this->text_domain),
