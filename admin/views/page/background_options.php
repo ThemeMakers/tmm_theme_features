@@ -1,10 +1,11 @@
 <?php if (!defined('ABSPATH')) die('No direct access allowed');
 
 $page_sidebar_position = isset($page_sidebar_position) ? $page_sidebar_position : 'sbr';
-$pagebg_type = isset( $pagebg_type ) ? $pagebg_type : "color";
-$pagebg_type_image_option = isset( $pagebg_type_image_option ) ? $pagebg_type_image_option : "repeat";
+$pagebg_type = isset($pagebg_type) ? $pagebg_type : "color";
+$pagebg_type_image_option = isset($pagebg_type_image_option) ? $pagebg_type_image_option : "repeat";
 ?>
 <input type="hidden" name="tmm_meta_saving" value="1" />
+<?php wp_nonce_field('tmm_save_meta', 'tmm_nonce'); ?>
 
 <div class="custom-page-options">
 
@@ -21,17 +22,21 @@ $pagebg_type_image_option = isset( $pagebg_type_image_option ) ? $pagebg_type_im
 	</p>
 
 	<p>
-		<textarea name="another_page_description"><?php if (isset($another_page_description)) echo esc_attr($another_page_description) ?></textarea>
+		<textarea name="another_page_description"><?php if (isset($another_page_description)) echo esc_textarea($another_page_description); ?></textarea>
 	</p>
-	
+
 	<p>
 		<strong><?php esc_html_e('Show Page Title', 'accio'); ?></strong>
 	</p>
-	
-	<p>           
-		<select name="show_page_title">			                       
-			<option <?php if ((!empty($show_page_title))&&($show_page_title == 'yes')){ echo 'selected'; } ?> value="yes">Yes</option>
-			<option <?php if (!empty($show_page_title)&&($show_page_title == 'no')){ echo 'selected'; } ?> value="no">No</option>
+
+	<p>
+		<select name="show_page_title">
+			<option <?php if ((!empty($show_page_title)) && ($show_page_title == 'yes')) {
+								echo 'selected';
+							} ?> value="yes">Yes</option>
+			<option <?php if (!empty($show_page_title) && ($show_page_title == 'no')) {
+								echo 'selected';
+							} ?> value="no">No</option>
 		</select>
 	</p>
 
@@ -39,20 +44,20 @@ $pagebg_type_image_option = isset( $pagebg_type_image_option ) ? $pagebg_type_im
 
 
 <div class="custom-page-options">
-	
+
 	<h4><?php esc_html_e('Page Background', 'accio'); ?></h4>
-	
+
 	<div class="bg-type-option">
 		<select name="pagebg_type" class="pagebg_type">
 			<?php
 			$types = array(
-				"default" => esc_html__( "Default", 'accio' ),
-				"color"   => esc_html__( "Color", 'accio' ),
-				"image"   => esc_html__( "Image", 'accio' ),
+				"default" => esc_html__("Default", 'accio'),
+				"color"   => esc_html__("Color", 'accio'),
+				"image"   => esc_html__("Image", 'accio'),
 			);
 			?>
 			<?php foreach ($types as $key => $type) : ?>
-				<option <?php echo esc_attr( ($key == $pagebg_type ? "selected" : "") ) ?> value="<?php echo esc_attr( $key ); ?>"><?php echo esc_html( $type ) ?></option>
+				<option value="<?php echo esc_attr($key); ?>" <?php selected($key, $pagebg_type); ?>><?php echo esc_html($type) ?></option>
 			<?php endforeach; ?>
 		</select>
 	</div>
@@ -72,14 +77,14 @@ $pagebg_type_image_option = isset( $pagebg_type_image_option ) ? $pagebg_type_im
 				<select name="pagebg_type_image_option" class="pagebg_type_image_option">
 					<?php
 					$options = array(
-						"no-repeat" => "No Repeat",
-						"repeat" => "Repeat",
-						"repeat-x" => "Repeat-X",
-						"fixed" => "Fixed",
+						"no-repeat" => esc_html__("No Repeat", 'accio'),
+						"repeat" => esc_html__("Repeat", 'accio'),
+						"repeat-x" => esc_html__("Repeat-X", 'accio'),
+						"fixed" => esc_html__("Fixed", 'accio'),
 					);
 					?>
 					<?php foreach ($options as $key => $option) : ?>
-						<option <?php echo esc_attr( ($key == $pagebg_type_image_option ? "selected" : "") ) ?> value="<?php echo esc_attr( $key ) ?>"><?php echo esc_html( $option ) ?></option>
+						<option value="<?php echo esc_attr($key); ?>" <?php selected($key, $pagebg_type_image_option); ?>><?php echo esc_html($option) ?></option>
 					<?php endforeach; ?>
 				</select>
 			</div>
@@ -99,52 +104,51 @@ $pagebg_type_image_option = isset( $pagebg_type_image_option ) ? $pagebg_type_im
 
 
 <div id="page-sidebar-position" class="clearfix">
-	
+
 	<hr>
 
 	<h4><?php esc_html_e('Page Sidebar Position', 'accio'); ?></h4>
-	<input type="hidden" value="<?php echo esc_attr( $page_sidebar_position ) ?>" name="page_sidebar_position" />
+	<input type="hidden" value="<?php echo esc_attr($page_sidebar_position) ?>" name="page_sidebar_position" />
 
 	<ul class="admin-page-choice-sidebar clearfix">
-		<li class="lside<?php echo wp_kses_post( ($page_sidebar_position == "sbl" ? " current-item" : "") ) ?>"><a href="sbl" data-val="sbl"><?php esc_html_e('Left Sidebar', 'accio'); ?></a></li>
-		<li class="wside<?php echo wp_kses_post( ($page_sidebar_position == "no_sidebar" ? " current-item" : "") ) ?>"><a href="no_sidebar" data-val="no_sidebar"><?php esc_html_e('Without Sidebar', 'accio'); ?></a></li>
-		<li class="rside<?php echo wp_kses_post( ($page_sidebar_position == "sbr" ? " current-item" : "") ) ?>"><a href="sbr" data-val="sbr"><?php esc_html_e('Right Sidebar', 'accio'); ?></a></li>
-	</ul>	
-	
+		<li class="lside<?php echo wp_kses_post(($page_sidebar_position == "sbl" ? " current-item" : "")) ?>"><a href="sbl" data-val="sbl"><?php esc_html_e('Left Sidebar', 'accio'); ?></a></li>
+		<li class="wside<?php echo wp_kses_post(($page_sidebar_position == "no_sidebar" ? " current-item" : "")) ?>"><a href="no_sidebar" data-val="no_sidebar"><?php esc_html_e('Without Sidebar', 'accio'); ?></a></li>
+		<li class="rside<?php echo wp_kses_post(($page_sidebar_position == "sbr" ? " current-item" : "")) ?>"><a href="sbr" data-val="sbr"><?php esc_html_e('Right Sidebar', 'accio'); ?></a></li>
+	</ul>
+
 </div><!--/ #page-sidebar-position-->
 
 
 <script type="text/javascript">
-	
 	jQuery(document).ready(function() {
 
-		jQuery("#pagebg_type_<?php echo esc_attr( $pagebg_type ) ?>").show();
+		jQuery("#pagebg_type_<?php echo esc_attr($pagebg_type) ?>").show();
 
-		jQuery("[name=pagebg_type]").on('change', function () {
+		jQuery("[name=pagebg_type]").on('change', function() {
 			jQuery("#pagebg_type_options li").hide(200);
 			jQuery("#pagebg_type_" + jQuery(this).val()).show(400);
 		});
 
-		jQuery(document.body).on('click', '.button_reset', function () {
+		jQuery(document.body).on('click', '.button_reset', function() {
 			jQuery("#pagebg_type_options input").val("");
 			jQuery("#pagebg_type_options select").val(0);
 			return false;
 		});
 
-		jQuery(document.body).on('click', '.headerbg_button_reset', function () {
+		jQuery(document.body).on('click', '.headerbg_button_reset', function() {
 			jQuery("#headerbg_type_options input").val("");
 			jQuery("#headerbg_type_options select").val(0);
 			return false;
 		});
 
-		(function ($) {
-			
+		(function($) {
+
 			var select = $('[name=onepage]'),
 				value = $('[name=onepage] :selected').val(),
 				pageSidebar = $('#page-sidebar-position');
-			
+
 			function actionChange(value) {
-				
+
 				if (value !== 0) {
 					if (pageSidebar.is(':visible')) {
 						pageSidebar.slideUp(200);
@@ -153,17 +157,17 @@ $pagebg_type_image_option = isset( $pagebg_type_image_option ) ? $pagebg_type_im
 
 				if (value == undefined || value == 0) {
 					pageSidebar.slideDown(200);
-				}	
+				}
 			}
-			
+
 			actionChange(value);
-			
-			select.on('change', function () {
-				var $this = $(this), 
+
+			select.on('change', function() {
+				var $this = $(this),
 					changeValue = $this.val();
 				actionChange(changeValue);
 			});
-			
+
 		})(jQuery);
 
 	});

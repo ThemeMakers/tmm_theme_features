@@ -1,18 +1,20 @@
-<?php if ( ! defined( 'ABSPATH' ) ) { exit; } // Exit if accessed directly.
+<?php if (! defined('ABSPATH')) {
+  exit;
+} // Exit if accessed directly.
 
 /*
  * Plugin Name: ThemeMakers Accio Features
  * Plugin URI: http://webtemplatemasters.com
  * Description: Advanced Features for Accio Theme
  * Author: ThemeMakers
- * Version: 1.1.0
+ * Version: 1.1.1
  * Author URI: http://themeforest.net/user/ThemeMakers
  * Text Domain: tmm_theme_features
 */
 
 /* Set constant path to the plugin directory. */
-define( 'TMM_THEME_FEATURES_PATH', trailingslashit( plugin_dir_path( __FILE__ ) ) );
-define( 'TMM_THEME_FEATURES_URI', trailingslashit( plugin_dir_url( __FILE__ ) ) );
+define('TMM_THEME_FEATURES_PATH', trailingslashit(plugin_dir_path(__FILE__)));
+define('TMM_THEME_FEATURES_URI', trailingslashit(plugin_dir_url(__FILE__)));
 
 include_once ABSPATH . 'wp-includes/widgets/class-wp-widget-text.php';
 
