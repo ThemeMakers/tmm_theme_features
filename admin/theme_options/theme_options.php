@@ -14,25 +14,28 @@ include_once TMM_THEME_FEATURES_PATH . '/admin/theme_options/sections/tab_footer
 do_action('tmm_add_theme_options_tab');
 
 ?>
-<script type="text/javascript">var tmm_options_reset_array = [];</script>
+<script type="text/javascript">
+	var tmm_options_reset_array = [];
+</script>
 
 <form id="theme_options" name="theme_options" method="post" style="display: none;">
+	<?php wp_nonce_field('tmm_theme_options_save', 'tmm_theme_options_nonce'); ?>
 	<section class="admin-container clearfix">
 
 		<header id="title-bar" class="clearfix">
 
 			<a href="#" class="admin-logo">
-				<img src="<?php echo TMM_THEME_FEATURES_URI ?>admin/theme_options/images/admin-logo.png" />
+				<img src="<?php echo esc_url(TMM_THEME_FEATURES_URI . 'admin/theme_options/images/admin-logo.png'); ?>" alt="<?php esc_attr_e('Admin Logo', 'accio'); ?>" />
 			</a>
-			<span class="fw-version">framework v.<?php echo TMM_FRAMEWORK_VERSION ?></span>
+			<span class="fw-version">framework v.<?php echo esc_html(TMM_FRAMEWORK_VERSION); ?></span>
 
 		</header><!--/ #title-bar-->
 
 		<section class="set-holder clearfix">
 
 			<ul class="support-links">
-				<li><a class="support-docs" href="<?php echo TMM_THEME_LINK ?>" target="_blank"><?php esc_html_e('View Theme Docs', 'accio'); ?></a></li>
-				<li><a class="support-forum" href="<?php echo TMM_THEME_FORUM_LINK ?>" target="_blank"><?php esc_html_e('Visit Forum', 'accio'); ?></a></li>
+				<li><a class="support-docs" href="<?php echo esc_url(TMM_THEME_LINK); ?>" target="_blank" rel="noopener noreferrer"><?php esc_html_e('View Theme Docs', 'accio'); ?></a></li>
+				<li><a class="support-forum" href="<?php echo esc_url(TMM_THEME_FORUM_LINK); ?>" target="_blank" rel="noopener noreferrer"><?php esc_html_e('Visit Forum', 'accio'); ?></a></li>
 			</ul><!--/ .support-links-->
 
 			<div class="button-options">
@@ -50,11 +53,11 @@ do_action('tmm_add_theme_options_tab');
 
 					<?php foreach (TMM_OptionsHelper::$sections as $section_key => $section) : ?>
 
-						<?php if (!empty($section['child_sections'])): ?>
+						<?php if (! empty($section['child_sections']) && is_array($section['child_sections'])): ?>
 
 							<li>
-								<?php if ($section['show_general_page']): ?>
-									<a class="<?php echo esc_attr($section['css_class']) ?>" href="<?php echo '#'.$section_key ?>">
+								<?php if (! empty($section['show_general_page'])): ?>
+									<a class="<?php echo esc_attr($section['css_class']) ?>" href="<?php echo esc_attr('#' . $section_key); ?>">
 										<i class="dashicons <?php echo esc_attr($section['menu_icon']) ?>"></i>
 										<?php echo esc_html($section['name']) ?>
 									</a>
@@ -64,29 +67,29 @@ do_action('tmm_add_theme_options_tab');
 									reset($section['child_sections']);
 									$first_child_section_key = key($section['child_sections']);
 									?>
-									<a class="<?php echo esc_attr($section['css_class']) ?>" href="<?php echo '#'.$first_child_section_key ?>">
+									<a class="<?php echo esc_attr($section['css_class']) ?>" href="<?php echo esc_attr('#' . $first_child_section_key); ?>">
 										<i class="dashicons <?php echo esc_attr($section['menu_icon']) ?>"></i>
 										<?php echo esc_html($section['name']) ?>
 									</a>
 
 								<?php endif; ?>
 
-									<ul>
-										<?php if ($section['show_general_page']): ?>
-											<li><a href="<?php echo '#'.$section_key ?>"><?php esc_html_e('General', 'accio'); ?></a></li>
-										<?php endif; ?>
+								<ul>
+									<?php if (! empty($section['show_general_page'])): ?>
+										<li><a href="<?php echo esc_attr('#' . $section_key); ?>"><?php esc_html_e('General', 'accio'); ?></a></li>
+									<?php endif; ?>
 
-										<?php foreach ($section['child_sections'] as $child_section_key => $child_section) : ?>
-											<li><a href="<?php echo '#'.$child_section_key ?>"><?php echo esc_html($child_section['name']) ?></a></li>
-										<?php endforeach; ?>
-									</ul>
+									<?php foreach ($section['child_sections'] as $child_section_key => $child_section) : ?>
+										<li><a href="<?php echo esc_attr('#' . $child_section_key); ?>"><?php echo esc_html($child_section['name']) ?></a></li>
+									<?php endforeach; ?>
+								</ul>
 
 							</li>
 
 						<?php else: ?>
 
 							<li>
-								<a class="<?php echo esc_attr($section['css_class']) ?>" href="<?php echo '#'.$section_key ?>">
+								<a class="<?php echo esc_attr($section['css_class']) ?>" href="<?php echo esc_attr('#' . $section_key); ?>">
 									<i class="dashicons <?php echo esc_attr($section['menu_icon']) ?>"></i>
 									<?php echo esc_html($section['name']) ?>
 								</a>
@@ -103,7 +106,7 @@ do_action('tmm_add_theme_options_tab');
 			<section id="options-framework" class="clearfix">
 
 				<?php foreach (TMM_OptionsHelper::$sections as $section_key => $section) : ?>
-					<?php if ($section['show_general_page']): ?>
+					<?php if (! empty($section['show_general_page'])): ?>
 						<div id="<?php echo esc_attr($section_key) ?>" class="section-tab">
 							<h1 class="section-tab-title"><?php echo esc_html($section['name']) ?></h1>
 
@@ -132,7 +135,7 @@ do_action('tmm_add_theme_options_tab');
 						</div><!--/ .section-tab-->
 					<?php endif; ?>
 
-					<?php if (!empty($section['child_sections'])): ?>
+					<?php if (! empty($section['child_sections']) && is_array($section['child_sections'])): ?>
 						<?php foreach ($section['child_sections'] as $child_section_key => $child_section) : ?>
 							<div id="<?php echo esc_attr($child_section_key) ?>" class="section-tab">
 
@@ -180,23 +183,24 @@ do_action('tmm_add_theme_options_tab');
 
 <?php
 
-function tmm_print_options_item($item_key, $item) {
+function tmm_print_options_item($item_key, $item)
+{
 	switch ($item['type']) {
 		case 'textarea':
 		case 'text':
 		case 'google_font_select':
 		case 'color':
-		TMM_OptionsHelper::draw_theme_option(array(
-			'name' => $item_key,
-			'title' => isset($item['title']) ? $item['title'] : '',
-			'type' => isset($item['type']) ? $item['type'] : '',
-			'default_value' => isset($item['default_value']) ? $item['default_value'] : '',
-			'description' => isset($item['description']) ? $item['description'] : '',
-			'show_title' => isset($item['show_title']) ? $item['show_title'] : false,
-			'is_reset' => isset($item['is_reset']) ? $item['is_reset'] : false,
-			'css_class' => isset($item['css_class']) ? $item['css_class'] : ''
-		));
-		break;
+			TMM_OptionsHelper::draw_theme_option(array(
+				'name' => $item_key,
+				'title' => isset($item['title']) ? $item['title'] : '',
+				'type' => isset($item['type']) ? $item['type'] : '',
+				'default_value' => isset($item['default_value']) ? $item['default_value'] : '',
+				'description' => isset($item['description']) ? $item['description'] : '',
+				'show_title' => isset($item['show_title']) ? $item['show_title'] : false,
+				'is_reset' => isset($item['is_reset']) ? $item['is_reset'] : false,
+				'css_class' => isset($item['css_class']) ? $item['css_class'] : ''
+			));
+			break;
 		case 'upload':
 		case 'checkbox':
 			TMM_OptionsHelper::draw_theme_option(array(
@@ -236,12 +240,16 @@ function tmm_print_options_item($item_key, $item) {
 				'css_class' => isset($item['css_class']) ? $item['css_class'] : ''
 			));
 			break;
-        case 'tmm_db_migrate':
-           printf( $item['html'] );
-            break;
+		case 'tmm_db_migrate':
+			if (! empty($item['html'])) {
+				echo $item['html'];
+			}
+			break;
 		default:
 			break;
 	}
 
-	printf( $item['custom_html'] );
+	if (! empty($item['custom_html'])) {
+		echo $item['custom_html'];
+	}
 }
