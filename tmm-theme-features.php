@@ -7,7 +7,7 @@
  * Plugin URI: http://webtemplatemasters.com
  * Description: Advanced Features for Accio Theme
  * Author: ThemeMakers
- * Version: 1.1.1
+ * Version: 1.1.2
  * Author URI: http://themeforest.net/user/ThemeMakers
  * Text Domain: tmm_theme_features
 */
