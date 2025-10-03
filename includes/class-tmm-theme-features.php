@@ -21,7 +21,6 @@ class TMM_Theme_Features
     register_deactivation_hook(__FILE__, array($this, 'deactivate_plugin'));
 
     // Hook into the initialization of WordPress
-    add_action('init', array($this, 'load_text_domain'));
     add_action('init', array($this, 'register_post_types_and_taxonomy'));
   }
 
@@ -33,12 +32,6 @@ class TMM_Theme_Features
   public function deactivate_plugin()
   {
     // Code to run on plugin deactivation
-  }
-
-  public function load_text_domain()
-  {
-    // Load the text domain for translation
-    load_plugin_textdomain($this->text_domain, false, dirname(plugin_basename(__FILE__)) . '/languages/');
   }
 
   public function register_post_types_and_taxonomy()
