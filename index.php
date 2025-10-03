@@ -6,7 +6,7 @@
  * Description: Advanced Features for Cardealer Theme
  * Author: ThemeMakers
  * Version: 1.1.5
- * Author URI: http://themeforest.net/user/ThemeMakers
+ * Author URI: https://themeforest.net/user/ThemeMakers
  * Text Domain: tmm_theme_features
  * Domain Path: /languages/
  */
@@ -14,6 +14,15 @@
 if (!defined('ABSPATH')) {
     exit; // Exit if accessed directly
 }
+
+if (!function_exists('tmm_theme_features_load_textdomain')) {
+    function tmm_theme_features_load_textdomain()
+    {
+        load_plugin_textdomain('tmm_theme_features', false, dirname(plugin_basename(__FILE__)) . '/languages/');
+    }
+}
+
+add_action('plugins_loaded', 'tmm_theme_features_load_textdomain');
 
 // Include the class file
 require_once plugin_dir_path(__FILE__) . 'includes/class-tmm-theme-features.php';

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ThemeMakers Cardealer Features\n"
-"POT-Creation-Date: 2023-12-08 00:36+0100\n"
-"PO-Revision-Date: 2023-12-08 00:38+0100\n"
+"POT-Creation-Date: 2025-10-03 17:58+0200\n"
+"PO-Revision-Date: 2025-10-03 17:58+0200\n"
 "Last-Translator: ThemeMakers <support@webtemplatemasters.com>\n"
 "Language-Team: Alex TM <support@webtemplatemasters.com>\n"
 "Language: de_DE\n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.2\n"
+"X-Generator: Poedit 3.4.4\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-WPHeader: index.php\n"
 "X-Poedit-SourceCharset: UTF-8\n"
@@ -20,63 +20,70 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: index.php:51
+#: includes/class-tmm-theme-features.php:45
 msgid "Slider Group"
 msgstr "Slider Gruppen"
 
-#: index.php:52
+#: includes/class-tmm-theme-features.php:46
 msgid "Staff"
 msgstr "Mitarbeiter"
 
-#: index.php:53
+#: includes/class-tmm-theme-features.php:47
 msgid "Cars"
 msgstr "Fahrzeuge"
 
-#: index.php:61
+#: includes/class-tmm-theme-features.php:56
 msgid "Add New"
 msgstr "Erstellen"
 
-#: index.php:62 index.php:111
+#: includes/class-tmm-theme-features.php:57
+#: includes/class-tmm-theme-features.php:108
 msgid "Add New "
 msgstr "Neu hinzufügen"
 
-#: index.php:63 index.php:109
+#: includes/class-tmm-theme-features.php:58
+#: includes/class-tmm-theme-features.php:106
 msgid "Edit "
 msgstr "Bearbeiten"
 
-#: index.php:64 index.php:112
+#: includes/class-tmm-theme-features.php:59
+#: includes/class-tmm-theme-features.php:109
 msgid "New "
 msgstr "Neu"
 
-#: index.php:65 index.php:106
+#: includes/class-tmm-theme-features.php:60
+#: includes/class-tmm-theme-features.php:103
 msgid "All "
 msgstr "Alle "
 
-#: index.php:66
+#: includes/class-tmm-theme-features.php:61
 msgid "View "
 msgstr "Ansehen"
 
-#: index.php:67 index.php:105
+#: includes/class-tmm-theme-features.php:62
+#: includes/class-tmm-theme-features.php:102
 msgid "Search "
 msgstr "Suche "
 
-#: index.php:68 index.php:69
+#: includes/class-tmm-theme-features.php:63
+#: includes/class-tmm-theme-features.php:64
 msgid "No "
 msgstr "Keine "
 
-#: index.php:97
+#: includes/class-tmm-theme-features.php:93
 msgid "Producers"
 msgstr "Hersteller"
 
-#: index.php:97
+#: includes/class-tmm-theme-features.php:93
 msgid "Producer"
 msgstr "Hersteller"
 
-#: index.php:107 index.php:108
+#: includes/class-tmm-theme-features.php:104
+#: includes/class-tmm-theme-features.php:105
 msgid "Parent "
 msgstr "Eltern "
 
-#: index.php:110
+#: includes/class-tmm-theme-features.php:107
 msgid "Update "
 msgstr "Aktualisieren"
 
@@ -85,7 +92,9 @@ msgid "ThemeMakers Cardealer Features"
 msgstr "ThemeMakers Cardealer Eigenschaften"
 
 #. Plugin URI of the plugin/theme
-msgid "http://webtemplatemasters.com"
+#, fuzzy
+#| msgid "http://webtemplatemasters.com"
+msgid "https://webtemplatemasters.com"
 msgstr "http://webtemplatemasters.com"
 
 #. Description of the plugin/theme
@@ -97,7 +106,9 @@ msgid "ThemeMakers"
 msgstr "ThemeMakers"
 
 #. Author URI of the plugin/theme
-msgid "http://themeforest.net/user/ThemeMakers"
+#, fuzzy
+#| msgid "http://themeforest.net/user/ThemeMakers"
+msgid "https://themeforest.net/user/ThemeMakers"
 msgstr "http://themeforest.net/user/Thememakers"
 
 #~ msgid "Group"

@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ThemeMakers Cardealer Features\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-08 00:39+0100\n"
-"PO-Revision-Date: 2023-12-08 00:40+0100\n"
+"POT-Creation-Date: 2025-10-03 17:58+0200\n"
+"PO-Revision-Date: 2025-10-03 17:58+0200\n"
 "Last-Translator: ThemeMakers <support@webtemplatemasters.com>\n"
 "Language-Team: Czech\n"
 "Language: cs_CZ\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=( n == 1 ) ? 0 : ( n >= 2 && n <= 4 ) ? 1 : "
 "2;\n"
-"X-Generator: Poedit 3.2\n"
+"X-Generator: Poedit 3.4.4\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-WPHeader: index.php\n"
 "X-Poedit-SourceCharset: UTF-8\n"
@@ -22,65 +22,72 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: index.php:51
+#: includes/class-tmm-theme-features.php:45
 #, fuzzy
 #| msgid "Slider Groups"
 msgid "Slider Group"
 msgstr "Slider skupiny"
 
-#: index.php:52
+#: includes/class-tmm-theme-features.php:46
 msgid "Staff"
 msgstr "Staff"
 
-#: index.php:53
+#: includes/class-tmm-theme-features.php:47
 msgid "Cars"
 msgstr "Vozidla"
 
-#: index.php:61
+#: includes/class-tmm-theme-features.php:56
 msgid "Add New"
 msgstr "Přidání nového"
 
-#: index.php:62 index.php:111
+#: includes/class-tmm-theme-features.php:57
+#: includes/class-tmm-theme-features.php:108
 msgid "Add New "
 msgstr "Přidat nový "
 
-#: index.php:63 index.php:109
+#: includes/class-tmm-theme-features.php:58
+#: includes/class-tmm-theme-features.php:106
 msgid "Edit "
 msgstr "Upravit "
 
-#: index.php:64 index.php:112
+#: includes/class-tmm-theme-features.php:59
+#: includes/class-tmm-theme-features.php:109
 msgid "New "
 msgstr "Nový "
 
-#: index.php:65 index.php:106
+#: includes/class-tmm-theme-features.php:60
+#: includes/class-tmm-theme-features.php:103
 msgid "All "
 msgstr "Vše "
 
-#: index.php:66
+#: includes/class-tmm-theme-features.php:61
 msgid "View "
 msgstr "Zobrazit "
 
-#: index.php:67 index.php:105
+#: includes/class-tmm-theme-features.php:62
+#: includes/class-tmm-theme-features.php:102
 msgid "Search "
 msgstr "Hledat "
 
-#: index.php:68 index.php:69
+#: includes/class-tmm-theme-features.php:63
+#: includes/class-tmm-theme-features.php:64
 msgid "No "
 msgstr "Ne "
 
-#: index.php:97
+#: includes/class-tmm-theme-features.php:93
 msgid "Producers"
 msgstr "Výrobci"
 
-#: index.php:97
+#: includes/class-tmm-theme-features.php:93
 msgid "Producer"
 msgstr "Výrobce"
 
-#: index.php:107 index.php:108
+#: includes/class-tmm-theme-features.php:104
+#: includes/class-tmm-theme-features.php:105
 msgid "Parent "
 msgstr "Nadřazený "
 
-#: index.php:110
+#: includes/class-tmm-theme-features.php:107
 msgid "Update "
 msgstr "Aktualizovat "
 
@@ -89,7 +96,7 @@ msgid "ThemeMakers Cardealer Features"
 msgstr "Funkce Cardealera Thememakeru"
 
 #. Plugin URI of the plugin/theme
-msgid "http://webtemplatemasters.com"
+msgid "https://webtemplatemasters.com"
 msgstr ""
 
 #. Description of the plugin/theme
@@ -101,7 +108,9 @@ msgid "ThemeMakers"
 msgstr "ThemeMakers"
 
 #. Author URI of the plugin/theme
-msgid "http://themeforest.net/user/ThemeMakers"
+#, fuzzy
+#| msgid "http://themeforest.net/user/ThemeMakers"
+msgid "https://themeforest.net/user/ThemeMakers"
 msgstr "http://themeforest.net/user/ThemeMakers"
 
 #~ msgid "Group"
